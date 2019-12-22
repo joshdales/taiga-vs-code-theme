@@ -1,0 +1,21 @@
+{
+  "name": "my-code-theme",
+  "displayName": "my-code-theme",
+  "description": "My theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Theme-time",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Theme-time-color-theme.json"
+      }
+    ]
+  }
+}

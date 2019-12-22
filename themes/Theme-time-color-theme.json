@@ -20,14 +20,15 @@
 		"activityBarBadge.background": "#007a2c",
 		// sideBar
 		"sideBar.background": "#0D141F",
+		"sideBar.foreground": "#eeffffce",
 		"sideBarTitle.foreground": "#bbbbbb",
 		"sideBarSectionHeader.background": "#162133",
 		"sideBar.border": "#162133",
 		"sideBar.dropBackground": "#496FAB44",
 		// list
-		"list.hoverBackground": "#375380b0",
-		"list.activeSelectionBackground": "#1B2940",
-		"list.inactiveSelectionBackground": "#1b2940ce",
+		"list.activeSelectionBackground": "#3753802c",
+		"list.hoverBackground": "#3753809c",
+		"list.inactiveSelectionBackground": "#3753802c",
 		// scroll
 		"scrollbarSlider.background": "#496FAB44",
 		"scrollbarSlider.hoverBackground": "#496FAB71",
@@ -46,6 +47,33 @@
 		"button.hoverBackground": "#527CBF",
 		// statusBar
 		"statusBar.background": "#162133",
+		// widget
+		"editorWidget.background": "#162133",
+		"editorHoverWidget.statusBarBackground": "#1B2940",
+		"editorWidget.border": "#162133",
+		"editorSuggestWidget.background": "#162133",
+		"editorSuggestWidget.highlightForeground": "#527CBF",
+		"editorSuggestWidget.selectedBackground": "#1B2940",
+		"editorSuggestWidget.foreground": "#eeffff",
+		// link
+		"textLink.foreground": "#00C749",
+		"textLink.activeForeground": "#00c74971",
+		// git
+		"gitDecoration.untrackedResourceForeground": "#3ED074",
+		"gitDecoration.addedResourceForeground": "#3ED074",
+		"editorGutter.addedBackground": "#3ED074",
+		"editorOverviewRuler.addedForeground": "#3ED074",
+		"minimapGutter.addedBackground": "#3ED074",
+		"gitDecoration.modifiedResourceForeground": "#d9a845",
+		"editorGutter.modifiedBackground": "#209E96",
+		"editorOverviewRuler.modifiedForeground": "#209E96",
+		"minimapGutter.modifiedBackground": "#209E96",
+		"gitDecoration.deletedResourceForeground": "#D1453F",
+		"editorGutter.deletedBackground": "#D1453F",
+		"editorOverviewRuler.deletedForeground": "#D1453F",
+		"minimapGutter.deletedBackground": "#D1453F",
+		"gitDecoration.conflictingResourceForeground": "#9C57D9",
+		"gitDecoration.ignoredResourceForeground": "#eeffff6e",
 	},
 	"tokenColors": [
 		{

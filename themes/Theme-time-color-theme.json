@@ -6,6 +6,7 @@
 		"badge.background": "#007a2c",
 		"foreground": "#D7FCFEd8",
 		"descriptionForeground": "#D7FCFE9f",
+		"editorWhitespace.foreground": "#d7fcfe56",
 		// editor
 		"editor.background": "#0D141F",
 		"editor.foreground": "#D7FCFE",
@@ -667,7 +668,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#d7fcfe96",
+				"foreground": "#d7fcfea6",
 				"fontStyle": "italic"
 			}
 		},
@@ -679,7 +680,8 @@
 				"keyword.operator.type.annotation",
 				"keyword.operator.optional.",
 				"keyword.operator.assignment",
-				"keyword.operator.comparison"
+				"keyword.operator.comparison",
+				"keyword.operator.arithmetic"
 			],
 			"settings": {
 				"foreground": "#d7fcfecb",
@@ -708,28 +710,20 @@
 			}
 		},
 		{
-			"name": "Function definition",
-			"scope": [
-				"meta.definition entity.name.function"
-			],
-			"settings": {
-				"foreground": "#d1534f"
-			}
-		},
-		{
 			"name": "Strings",
 			"scope": [
 				"string",
 				"punctuation.definition.string",
 			],
 			"settings": {
-				"foreground": "#f37daeb6"
+				"foreground": "#FAB97F"
 			}
 		},
 		{
 			"name": "JSON Key",
 			"scope": [
-				"source.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json support.type.property-name.json",
+				"punctuation.support.type.property-name"
 			],
 			"settings": {
 				"foreground": "#C775EA"
@@ -790,6 +784,15 @@
 			}
 		},
 		{
+			"name": "Tag attributes",
+			"scope": [
+				"entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#E37474",
+			}
+		},
+		{
 			"name": "Console This",
 			"scope": [
 				"variable.language.this",
@@ -809,6 +812,15 @@
 			"settings": {
 				"foreground": "#C775EA",
 			}
-		}
+		},
+		{
+			"name": "Numbers",
+			"scope": [
+				"constant"
+			],
+			"settings": {
+				"foreground": "#E37474",
+			}
+		},
 	]
 }

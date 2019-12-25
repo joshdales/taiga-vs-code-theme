@@ -703,6 +703,7 @@
 				"storage.type.function",
 				"storage.type",
 				"storage.modifier",
+				"punctuation.definition.keyword",
 			],
 			"settings": {
 				"foreground": "#C775EA",
@@ -820,6 +821,53 @@
 			],
 			"settings": {
 				"foreground": "#E37474",
+			}
+		},
+		{
+			"name": "CSS Class",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.class.css punctuation.definition.entity.css"
+			],
+			"settings": {
+				"foreground": "#E37474",
+			}
+		},
+		{
+			"name": "CSS ID",
+			"scope": [
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.id.css punctuation.definition.entity.css"
+			],
+			"settings": {
+				"foreground": "#53ceffd5",
+			}
+		},
+		{
+			"name": "CSS function",
+			"scope": [
+				"source.css support.function",
+			],
+			"settings": {
+				"foreground": "#53ceffd5",
+			}
+		},
+		{
+			"name": "CSS unit",
+			"scope": [
+				"keyword.other.unit"
+			],
+			"settings": {
+				"foreground": "#E37474",
+			}
+		},
+		{
+			"name": "CSS unit",
+			"scope": [
+				"support.constant.media"
+			],
+			"settings": {
+				"foreground": "#3ed074",
 			}
 		},
 	]

@@ -7,7 +7,7 @@ function Component(props) {
   const foo = `foo ${props.bar}`
 
   return (
-    <div>
+    <div className="class">
       Foo = {foo}
     </div>
   )

@@ -11,7 +11,7 @@ function Component(props: iProps) {
   const foo: string = `foo ${props.bar}`
 
   return (
-    <div>
+    <div className="class">
       Foo = {foo}
     </div>
   )

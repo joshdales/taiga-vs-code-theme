@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 interface iProps {
   bar?: string
@@ -21,16 +21,21 @@ interface iState {
 
 }
 
-class App extends React.Component<iProps, iState> {
+export class App extends React.Component<iProps, iState> {
   private keepItSecret = (): void => {
     console.log("keep it safe")
+  }
+
+  get somethingForYou(): string {
+    this.keepItSecret()
+    return "Here you go"
   }
 
   render() {
     return (
       <div>
-        {this.keepItSecret}
-        <Component bar="foo" />
+        {this.somethingForYou}
+        <Component bar={WHAT_THIS} />
       </div>
     )
   }

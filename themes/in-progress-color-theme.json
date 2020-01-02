@@ -198,7 +198,8 @@
 				"meta.type.annotation"
 			],
 			"settings": {
-				"foreground": "#FAB267"
+				"foreground": "#FAB267",
+				"fontStyle": "italic"
 			}
 		},
 		{

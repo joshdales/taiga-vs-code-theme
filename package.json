@@ -1,8 +1,8 @@
 {
-  "name": "my-code-theme",
-  "displayName": "my-code-theme",
-  "description": "My theme",
-  "version": "0.0.1",
+  "name": "in-progress-vscode-theme",
+  "displayName": "In progress VSCode theme",
+  "description": "A dark theme for Visual Studio Code",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Theme-time",
+        "label": "In Progress",
         "uiTheme": "vs-dark",
-        "path": "./themes/Theme-time-color-theme.json"
+        "path": "./themes/in-progress-color-theme.json"
       }
     ]
   }

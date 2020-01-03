@@ -104,7 +104,24 @@
 		"editorLightBulb.foreground": "#007a2c",
 		// welcomePage
 		"welcomePage.buttonBackground":"#152133",
-		"welcomePage.buttonHoverBackground": "#15213381"
+		"welcomePage.buttonHoverBackground": "#15213381",
+		// terminal
+		"terminal.ansiBlack": "#0D141F",
+		"terminal.ansiBrightBlack": "#365280",
+		"terminal.ansiBlue": "#507BBF",
+		"terminal.ansiBrightBlue": "#53CEFF",
+		"terminal.ansiCyan": "#209E96",
+		"terminal.ansiBrightCyan": "#2FEBDE",
+		"terminal.ansiGreen": "#007A2C",
+		"terminal.ansiBrightGreen": "#56F290",
+		"terminal.ansiMagenta": "#9C57D9",
+		"terminal.ansiBrightMagenta": "#E67CFE",
+		"terminal.ansiRed": "#D1453F",
+		"terminal.ansiBrightRed": "#E37474",
+		"terminal.ansiWhite": "#D7FCFEd8",
+		"terminal.ansiBrightWhite": "#D7FCFE",
+		"terminal.ansiYellow": "#D9A845",
+		"terminal.ansiBrightYellow": "#FAD97F",
 	},
 	"tokenColors": [
 		{

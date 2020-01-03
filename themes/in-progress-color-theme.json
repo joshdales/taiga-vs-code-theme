@@ -127,7 +127,8 @@
 				"keyword.operator.optional.",
 				"keyword.operator.assignment",
 				"keyword.operator.comparison",
-				"keyword.operator.arithmetic"
+				"keyword.operator.arithmetic",
+				"meta.type.annotation meta.brace"
 			],
 			"settings": {
 				"foreground": "#d7fcfecb",
@@ -150,6 +151,7 @@
 				"storage.type",
 				"storage.modifier",
 				"punctuation.definition.keyword",
+				"support.function"
 			],
 			"settings": {
 				"foreground": "#C775EA",
@@ -177,6 +179,15 @@
 			}
 		},
 		{
+			"name": "YAML Key",
+			"scope": [
+				"source.yaml entity.name.tag"
+			],
+			"settings": {
+				"foreground": "#C775EA"
+			}
+		},
+		{
 			"name": "Class and Interface Names",
 			"scope": [
 				"meta.class",
@@ -185,6 +196,7 @@
 				"meta.interface entity.name",
 				"support.class",
 				"meta.module",
+				"entity.name"
 			],
 			"settings": {
 				"foreground": "#FAB267"
@@ -414,5 +426,25 @@
 				"foreground": "#56F290",
 			}
 		},
+		{
+			"name": "Ruby Symbol",
+			"scope": [
+				"source.ruby constant.other.symbol",
+				"source.ruby constant.other.symbol punctuation"
+			],
+			"settings": {
+				"foreground": "#E37474"
+			}
+		},
+		{
+			"name": "Ruby Class",
+			"scope": [
+				"meta.class.ruby keyword.operator",
+				"meta.module.ruby entity.other.inherited-class punctuation"
+			],
+			"settings": {
+				"foreground": "#FAB97F"
+			}
+		}
 	]
 }

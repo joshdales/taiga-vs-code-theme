@@ -240,8 +240,7 @@
 				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#3ed0747e",
-				"fontStyle": "bold"
+				"foreground": "#d7fcfebb"
 			}
 		},
 		{

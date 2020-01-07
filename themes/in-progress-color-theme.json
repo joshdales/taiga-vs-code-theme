@@ -158,7 +158,8 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"punctuation.definition.variable"
+				"punctuation.definition.variable",
+				"support.variable.property"
 			],
 			"settings": {
 				"foreground": "#3ed074D9",
@@ -219,7 +220,8 @@
 				"meta.interface entity.name",
 				"support.class",
 				"meta.module",
-				"entity.name"
+				"entity.name",
+				"support.constant"
 			],
 			"settings": {
 				"foreground": "#FAB267"
@@ -280,7 +282,8 @@
 			"scope": [
 				"variable.language.this",
 				"support.class.console",
-				"variable.language.self.ruby"
+				"variable.language.self.ruby",
+				"support.variable.object"
 			],
 			"settings": {
 				"foreground": "#FAB267",

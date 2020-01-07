@@ -77,6 +77,7 @@
 		"editorGutter.addedBackground": "#3ED074",
 		"editorOverviewRuler.addedForeground": "#3ED074",
 		"minimapGutter.addedBackground": "#3ED074",
+		"diffEditor.insertedTextBackground": "#3ed0742d",
 		"gitDecoration.modifiedResourceForeground": "#d9a845",
 		"editorGutter.modifiedBackground": "#209E96",
 		"editorOverviewRuler.modifiedForeground": "#209E96",
@@ -85,6 +86,7 @@
 		"editorGutter.deletedBackground": "#D1453F",
 		"editorOverviewRuler.deletedForeground": "#D1453F",
 		"minimapGutter.deletedBackground": "#D1453F",
+		"diffEditor.removedTextBackground": "#d1443f44",
 		"gitDecoration.conflictingResourceForeground": "#9C57D9",
 		"gitDecoration.ignoredResourceForeground": "#D7FCFE6e",
 		// errors
@@ -100,8 +102,6 @@
 		"notificationsErrorIcon.foreground": "#D1453F",
 		"notificationsWarningIcon.foreground": "#d9a845",
 		"notificationsInfoIcon.foreground": "#527CBF",
-		// lightbulb
-		// "editorLightBulb.foreground": "#007a2c",
 		// welcomePage
 		"welcomePage.buttonBackground":"#152133",
 		"welcomePage.buttonHoverBackground": "#15213381",
@@ -109,11 +109,11 @@
 		"terminal.ansiBlack": "#0D141F",
 		"terminal.ansiBrightBlack": "#252B35",
 		"terminal.ansiBlue": "#507BBF",
-		"terminal.ansiBrightBlue": "#507BBF",
+		"terminal.ansiBrightBlue": "#6A8FC8",
 		"terminal.ansiCyan": "#209E96",
 		"terminal.ansiBrightCyan": "#41ACA6",
 		"terminal.ansiGreen": "#3ED074",
-		"terminal.ansiBrightGreen": "#3ED074",
+		"terminal.ansiBrightGreen": "#5BD789",
 		"terminal.ansiMagenta": "#9C57D9",
 		"terminal.ansiBrightMagenta": "#AB70DE",
 		"terminal.ansiRed": "#D1453F",
@@ -124,6 +124,7 @@
 		"terminal.ansiBrightYellow": "#DEB561",
 		// errors
 		"list.errorForeground": "#D1453F",
+		"editorMarkerNavigationError.background": "#D1453F"
 	},
 	"tokenColors": [
 		{
@@ -133,7 +134,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#d7fcfeD9",
+				"foreground": "#d7fcfe6c",
 				"fontStyle": "italic"
 			}
 		},
@@ -156,7 +157,8 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"variable"
+				"variable",
+				"punctuation.definition.variable"
 			],
 			"settings": {
 				"foreground": "#3ed074D9",
@@ -201,7 +203,8 @@
 		{
 			"name": "YAML Key",
 			"scope": [
-				"source.yaml entity.name.tag"
+				"source.yaml entity.name.tag",
+				"source.yaml punctuation.separator.key-value"
 			],
 			"settings": {
 				"foreground": "#3ed074D9"
@@ -464,6 +467,15 @@
 			],
 			"settings": {
 				"foreground": "#FAB97F"
+			}
+		},
+		{
+			"name": "Ruby Hash Rocket",
+			"scope": [
+				"source.ruby punctuation.separator.key-value"
+			],
+			"settings": {
+				"foreground": "#9C57D9",
 			}
 		}
 	]

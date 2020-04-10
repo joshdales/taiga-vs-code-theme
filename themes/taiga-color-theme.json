@@ -197,6 +197,7 @@
 				"meta.class entity.name",
 				"meta.class entity.other.inherited-class",
 				"meta.interface entity.name",
+				"meta.interface entity.other.inherited-class",
 				"support.class",
 				"meta.module",
 				"entity.name",
@@ -457,6 +458,19 @@
 			],
 			"settings": {
 				"foreground": "#9C57D9"
+			}
+		},
+		{
+			"name": "Ruby Hash",
+			"scope": [
+				"source.ruby constant.language.symbol.ruby",
+				"source.ruby punctuation.section.symbol.begin.ruby",
+				"source.ruby punctuation.section.symbol.end.ruby",
+				"source.ruby punctuation.definition.constant.ruby",
+				"source.ruby constant.language.symbol.hashkey.ruby",
+			],
+			"settings": {
+				"foreground": "#209E96",
 			}
 		}
 	]

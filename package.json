@@ -25,7 +25,7 @@
       {
         "label": "Taiga",
         "uiTheme": "vs-dark",
-        "path": "./themes/taiga-theme.json"
+        "path": "./themes/taiga-color-theme.json"
       }
     ]
   }

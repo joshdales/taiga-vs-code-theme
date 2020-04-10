@@ -1,20 +1,26 @@
 {
-  "name": "in-progress-vscode-theme",
-  "displayName": "In progress VSCode theme",
+  "name": "taiga-theme",
+  "displayName": "Taiga Theme",
   "description": "A dark theme for Visual Studio Code",
+  "publisher": "joshdales",
   "version": "1.0.0",
   "engines": {
-    "vscode": "^1.41.0"
+    "vscode": "^1.40.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "taiga"
+  ],
   "contributes": {
     "themes": [
       {
-        "label": "In Progress",
+        "label": "Taiga",
         "uiTheme": "vs-dark",
-        "path": "./themes/in-progress-color-theme.json"
+        "path": "./themes/taiga-theme.json"
       }
     ]
   }

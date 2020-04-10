@@ -6,5 +6,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
-  - Support for `typescript`, `javascript`, `css`/`scss`, `html`, `markdown`, `json`, `ruby`, `yaml` (at least these are the only things that I have checked).
+### Initial release
+🎉
+- `typescript`
+- `javascript`
+- `css` / `scss`
+- `html`
+- `markdown`
+- `json`
+- `ruby`
+- `yaml`

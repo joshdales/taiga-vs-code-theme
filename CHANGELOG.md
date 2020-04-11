@@ -1,12 +1,12 @@
 # Change Log
-
-All notable changes to the "my-code-theme" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Here's what's been happening here recently
 
 ## [Unreleased]
+🐛
+- Inherited interfaces in typescript
+- Punctuation in ruby hashes
 
-### Initial release
+### 1.0.0
 🎉
 - `typescript`
 - `javascript`

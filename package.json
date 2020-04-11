@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/joshdales/taiga-vs-code-theme"
   },
+  "bugs": {
+    "url": "https://github.com/joshdales/taiga-vs-code-theme/issues"
+  },
   "homepage": "https://github.com/joshdales/taiga-vs-code-theme",
   "categories": [
     "Themes"

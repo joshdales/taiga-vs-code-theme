@@ -1,7 +1,7 @@
 # Change Log
 Here's what's been happening recently
 
-## [Unreleased]
+<!-- ## [Unreleased] -->
 
 ### 1.0.2
 - 🐛 More obvious colours for editor suggestions.

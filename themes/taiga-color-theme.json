@@ -127,7 +127,8 @@
 				"keyword.operator.assignment",
 				"keyword.operator.comparison",
 				"keyword.operator.arithmetic",
-				"meta.type.annotation meta.brace"
+				"meta.type.annotation meta.brace",
+				"meta.field.declaration"
 			],
 			"settings": {
 				"foreground": "#d7fcfecb"

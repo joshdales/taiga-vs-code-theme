@@ -105,6 +105,7 @@
 		"list.errorForeground": "#D1453F",
 		"editorMarkerNavigationError.background": "#D1453F"
 	},
+	"semanticHighlighting": true,
 	"tokenColors": [
 		{
 			"name": "Comments",

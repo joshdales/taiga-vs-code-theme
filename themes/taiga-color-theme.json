@@ -103,7 +103,8 @@
 		"terminal.ansiYellow": "#D9A845",
 		"terminal.ansiBrightYellow": "#DEB561",
 		"list.errorForeground": "#D1453F",
-		"editorMarkerNavigationError.background": "#D1453F"
+		"editorMarkerNavigationError.background": "#D1453F",
+		"sash.hoverBorder": "#527cbf81",
 	},
 	"semanticHighlighting": true,
 	"tokenColors": [

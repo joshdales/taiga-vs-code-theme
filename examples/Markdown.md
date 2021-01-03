@@ -12,6 +12,10 @@ We have some text here, and a [link](http://github.com).
   Block of code text
 ```
 
+Oh and don't forget about `inline code`.
+
+---
+
 - Unordered list
 - item
   - sub-item

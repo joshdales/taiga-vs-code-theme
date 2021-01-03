@@ -10,8 +10,11 @@
 		"errorForeground": "#d1443f",
 		"sash.hoverBorder": "#527cbf81",
 		// Text Colours
+		"textBlockQuote.background": "#162133",
+		"textBlockQuote.border": "#527CBF",
 		"textLink.foreground": "#3ED074",
 		"textLink.activeForeground": "#3ed074D9",
+		"textPreformat.foreground": "#d9a845",
 		// Button Control
 		"button.background": "#375380",
 		"button.hoverBackground": "#527CBF",

@@ -38,10 +38,13 @@
 		// Progress Bar
 		"progressBar.background": "#527CBF",
 		// Lists & Trees
-		"list.activeSelectionBackground": "#3753802c",
+		"list.focusBackground": "#1B2940",
+		"list.activeSelectionBackground": "#375380",
 		"list.hoverBackground": "#3753809c",
-		"list.inactiveSelectionBackground": "#3753802c",
+		"list.inactiveSelectionBackground": "#37538056",
 		"list.errorForeground": "#D1453F",
+		"list.warningForeground": "#D9A845",
+		"tree.indentGuidesStroke":"#D7FCFE",
 		// Activity Bar
 		"activityBar.background": "#162133",
 		"activityBarBadge.background": "#007a2c",

@@ -161,6 +161,12 @@
 		"gitDecoration.deletedResourceForeground": "#D1453F",
 		"gitDecoration.conflictingResourceForeground": "#9C57D9",
 		"gitDecoration.ignoredResourceForeground": "#D7FCFE6e",
+		// Settings Editor Colours
+		"settings.modifiedItemIndicator": "#209E96",
+		"settings.focusedRowBackground": "#527cbf38",
+		"notebook.focusedRowBorder": "#527cbf38",
+		"notebook.rowHoverBackground": "#527cbf6c",
+		// TODO: Symbol Icons Colours
 	},
 	"semanticHighlighting": true,
 	"tokenColors": [

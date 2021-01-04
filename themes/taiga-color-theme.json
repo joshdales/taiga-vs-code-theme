@@ -155,7 +155,7 @@
 		"welcomePage.buttonBackground": "#152133",
 		"welcomePage.buttonHoverBackground": "#15213381",
 		// Git Colours
-		"gitDecoration.untrackedResourceForeground": "#3ED074",
+		"gitDecoration.untrackedResourceForeground": "#209E96",
 		"gitDecoration.addedResourceForeground": "#3ED074",
 		"gitDecoration.modifiedResourceForeground": "#d9a845",
 		"gitDecoration.deletedResourceForeground": "#D1453F",
@@ -166,6 +166,12 @@
 		"settings.focusedRowBackground": "#527cbf38",
 		"notebook.focusedRowBorder": "#527cbf38",
 		"notebook.rowHoverBackground": "#527cbf6c",
+		// Breadcrumbs colours
+		"breadcrumb.foreground": "#D7FCFE",
+		"breadcrumb.background": "#15213381",
+		"breadcrumb.focusForeground": "#86DCFF",
+		"breadcrumb.activeSelectionForeground": "#86DCFF",
+		"breadcrumbPicker.background": "#152133"
 		// TODO: Symbol Icons Colours
 	},
 	"semanticHighlighting": true,

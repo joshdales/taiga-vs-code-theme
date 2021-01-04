@@ -1,12 +1,13 @@
 # Change Log
 Here's what's been happening recently
 
-## [Unreleased]
+### 1.1.0
 - 🎉 Quite a lot of minor UI tweaks all over the place:
-  - Minimap, scrollbar, editor.
+  - Minimap and scrollbar.
   - Highlight colours when searching.
   - Peek view.
   - Notifications.
+  - A few more things throughout the editor.
 - 🐛 List items have a focus background.
 
 ### 1.0.2

@@ -125,8 +125,12 @@
 		"statusBar.background": "#162133",
 		// Title Bar Colours
 		"titleBar.activeBackground": "#152133",
+		"titleBar.activeForeground": "#D7FCFE",
 		"titleBar.inactiveBackground": "#152133",
 		// Notification Colours
+		"notificationCenterHeader.foreground": "#D7FCFE",
+		"notificationCenterHeader.background": "#1B2940",
+		"notificationLink.foreground": "#3ED074",
 		"notificationsErrorIcon.foreground": "#D1453F",
 		"notificationsWarningIcon.foreground": "#d9a845",
 		"notificationsInfoIcon.foreground": "#527CBF",

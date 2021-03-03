@@ -1,3 +1,3 @@
-# Tiaga VSCode Theme
+# Taiga VSCode Theme
 
 A dark VSCode theme.

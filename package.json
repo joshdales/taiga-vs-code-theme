@@ -3,7 +3,7 @@
   "displayName": "Taiga Theme",
   "description": "A dark theme for Visual Studio Code",
   "publisher": "joshdales",
-  "icon": "./logo.png",
+  "icon": "logo.png",
   "galleryBanner": {
     "color": "#0D141F",
     "theme": "dark"

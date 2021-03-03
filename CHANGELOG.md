@@ -1,6 +1,9 @@
 # Change Log
 Here's what's been happening recently
 
+### 1.1.1
+No actual changes here, I'm adding a logo thanks to my friend [Hana](http://nameishana.com)
+
 ### 1.1.0
 - 🎉 Quite a lot of minor UI tweaks all over the place:
   - Minimap and scrollbar.

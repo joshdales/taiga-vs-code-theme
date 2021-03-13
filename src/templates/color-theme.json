@@ -59,7 +59,7 @@
     "minimap.selectionHighlight": "{{ colours.blue }}",
     "minimap.errorHighlight": "{{ colours.red }}",
     "minimapGutter.addedBackground": "{{ colours.green }}",
-    "minimapGutter.modifiedBackground": "#209E96",
+    "minimapGutter.modifiedBackground": "{{ colours.teal }}",
     "minimapGutter.deletedBackground": "{{ colours.red }}",
     // Editor Groups & Tabs
     "editorGroup.border": "{{ colours.blue }}81",
@@ -77,12 +77,12 @@
     "editor.selectionBackground": "{{ colours.blue }}48",
     "editor.inactiveSelectionBackground": "{{ colours.blue }}4f",
     "editor.selectionHighlightBackground": "{{ colours.blue }}4f",
-    "editor.wordHighlightStrongBackground": "#209e963f",
-    "editor.wordHighlightBackground": "#209e963d",
+    "editor.wordHighlightStrongBackground": "{{ colours.teal }}3f",
+    "editor.wordHighlightBackground": "{{ colours.teal }}3d",
     "editor.findMatchBackground": "#b9903f50",
     "editor.findMatchHighlightBackground": "#b9903f28",
     "editor.findRangeHighlightBackground": "#fab87f17",
-    "editor.hoverHighlightBackground": "#209e963a",
+    "editor.hoverHighlightBackground": "{{ colours.teal }}3a",
     "editorBracketMatch.border": "{{ colours.blue }}71",
     "editorBracketMatch.background": "{{ colours.blue }}4d",
     "editorCursor.foreground": "{{ colours.yellow }}",
@@ -90,7 +90,7 @@
     "editorLineNumber.activeForeground": "#FAD97F",
     "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
-    "editorSuggestWidget.highlightForeground": "#209E96",
+    "editorSuggestWidget.highlightForeground": "{{ colours.teal }}",
     "editorSuggestWidget.selectedBackground": "{{ colours.blue }}8c",
     "editorSuggestWidget.foreground": "{{ ui.text }}",
     "editorLink.activeForeground": "#86DCFF",
@@ -98,8 +98,8 @@
     "editorError.foreground": "{{ colours.red }}",
     "editorGutter.addedBackground": "{{ colours.green }}",
     "editorOverviewRuler.addedForeground": "{{ colours.green }}",
-    "editorGutter.modifiedBackground": "#209E96",
-    "editorOverviewRuler.modifiedForeground": "#209E96",
+    "editorGutter.modifiedBackground": "{{ colours.teal }}",
+    "editorOverviewRuler.modifiedForeground": "{{ colours.teal }}",
     "editorGutter.deletedBackground": "{{ colours.red }}",
     "editorOverviewRuler.deletedForeground": "{{ colours.red }}",
     "editorOverviewRuler.errorForeground": "{{ colours.red }}",
@@ -139,11 +139,11 @@
     "terminal.ansiBrightBlack": "#252B35",
     "terminal.ansiBlue": "{{ colours.blue }}",
     "terminal.ansiBrightBlue": "#6A8FC8",
-    "terminal.ansiCyan": "#209E96",
+    "terminal.ansiCyan": "{{ colours.teal }}",
     "terminal.ansiBrightCyan": "#41ACA6",
     "terminal.ansiGreen": "{{ colours.green }}",
     "terminal.ansiBrightGreen": "#5BD789",
-    "terminal.ansiMagenta": "#9C57D9",
+    "terminal.ansiMagenta": "{{ colours.purple }}",
     "terminal.ansiBrightMagenta": "#AB70DE",
     "terminal.ansiRed": "{{ colours.red }}",
     "terminal.ansiBrightRed": "#D8615C",
@@ -155,14 +155,14 @@
     "welcomePage.buttonBackground": "{{ ui.1 }}",
     "welcomePage.buttonHoverBackground": "{{ ui.1 }}81",
     // Git Colours
-    "gitDecoration.untrackedResourceForeground": "#209E96",
+    "gitDecoration.untrackedResourceForeground": "{{ colours.teal }}",
     "gitDecoration.addedResourceForeground": "{{ colours.green }}",
     "gitDecoration.modifiedResourceForeground": "{{ colours.yellow }}",
     "gitDecoration.deletedResourceForeground": "{{ colours.red }}",
-    "gitDecoration.conflictingResourceForeground": "#9C57D9",
+    "gitDecoration.conflictingResourceForeground": "{{ colours.purple }}",
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}6e",
     // Settings Editor Colours
-    "settings.modifiedItemIndicator": "#209E96",
+    "settings.modifiedItemIndicator": "{{ colours.teal }}",
     "settings.focusedRowBackground": "{{ colours.blue }}38",
     "notebook.focusedRowBorder": "{{ colours.blue }}38",
     "notebook.rowHoverBackground": "{{ colours.blue }}6c",
@@ -324,7 +324,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "{{ colours.teal }}"
       }
     },
     {
@@ -356,7 +356,7 @@
         "constant"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "{{ colours.teal }}"
       }
     },
     {
@@ -366,7 +366,7 @@
         "entity.other.attribute-name.class.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "{{ colours.teal }}"
       }
     },
     {
@@ -394,7 +394,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "{{ colours.teal }}"
       }
     },
     {
@@ -528,7 +528,7 @@
         "source.ruby punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#9C57D9"
+        "foreground": "{{ colours.purple }}"
       }
     },
     {
@@ -541,7 +541,7 @@
         "source.ruby constant.language.symbol.hashkey.ruby",
       ],
       "settings": {
-        "foreground": "#209E96",
+        "foreground": "{{ colours.teal }}",
       }
     }
   ]

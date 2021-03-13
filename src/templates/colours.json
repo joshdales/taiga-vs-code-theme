@@ -16,6 +16,11 @@
     "text": "#D7FCFE"
   },
   "light": {
-    "yellow": "#DEB561"
+    "yellow": "#DEB561",
+    "red": "#D8615C",
+    "blue": "#86DCFF",
+    "teal": "#38CEC6",
+    "green": "#81E0A4",
+    "purple": "#C775EA"
   }
 }

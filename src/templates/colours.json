@@ -1,12 +1,4 @@
 {
-  "colours": {
-    "green": "#3ED07E",
-    "yellow": "#D9A845",
-    "red": "#D1453F",
-    "purple": "#9C57D9",
-    "teal": "#209E96",
-    "blue": "#507BBF"
-  },
   "ui": {
     "0": "#0D141F",
     "1": "#152133",
@@ -15,13 +7,21 @@
     "highlight": "#007A2C",
     "text": "#D7FCFE"
   },
+  "main": {
+    "blue": "#507BBF",
+    "green": "#3ED07E",
+    "purple": "#9C57D9",
+    "red": "#D1453F",
+    "teal": "#209E96",
+    "yellow": "#D9A845"
+  },
   "light": {
-    "yellow": "#EDBB54",
-    "red": "#D8615C",
     "blue": "#86DCFF",
-    "teal": "#38CEC6",
     "green": "#81E0A4",
     "purple": "#C775EA",
-    "white": "#DDFCFE"
+    "red": "#D8615C",
+    "teal": "#38CEC6",
+    "white": "#DDFCFE",
+    "yellow": "#EDBB54"
   }
 }

@@ -5,19 +5,19 @@
     // Base colours
     "focusBorder": "{{ ui.1 }}",
     "foreground": "{{ ui.text }}D9",
-    "selection.background": "{{ colours.blue }}60",
+    "selection.background": "{{ main.blue }}60",
     "descriptionForeground": "{{ ui.text }}9f",
-    "errorForeground": "{{ colours.red }}",
-    "sash.hoverBorder": "{{ colours.blue }}81",
+    "errorForeground": "{{ main.red }}",
+    "sash.hoverBorder": "{{ main.blue }}81",
     // Text Colours
     "textBlockQuote.background": "{{ ui.1 }}",
-    "textBlockQuote.border": "{{ colours.blue }}",
-    "textLink.foreground": "{{ colours.green }}",
-    "textLink.activeForeground": "{{ colours.green }}D9",
-    "textPreformat.foreground": "{{ colours.yellow }}",
+    "textBlockQuote.border": "{{ main.blue }}",
+    "textLink.foreground": "{{ main.green }}",
+    "textLink.activeForeground": "{{ main.green }}D9",
+    "textPreformat.foreground": "{{ main.yellow }}",
     // Button Control
     "button.background": "{{ ui.3 }}",
-    "button.hoverBackground": "{{ colours.blue }}",
+    "button.hoverBackground": "{{ main.blue }}",
     // Dropdown Control
     "dropdown.background": "{{ ui.1 }}",
     "dropdown.foreground": "{{ ui.text }}",
@@ -27,23 +27,23 @@
     "input.foreground": "{{ ui.text }}c4",
     "input.placeholderForeground": "{{ ui.text }}79",
     "inputOption.activeBackground": "{{ ui.3 }}b0",
-    "inputValidation.errorBackground": "{{ colours.red }}",
-    "inputValidation.errorBorder": "{{ colours.red }}",
+    "inputValidation.errorBackground": "{{ main.red }}",
+    "inputValidation.errorBorder": "{{ main.red }}",
     // Scrollbar Control
-    "scrollbarSlider.background": "{{ colours.blue }}44",
-    "scrollbarSlider.hoverBackground": "{{ colours.blue }}71",
-    "scrollbarSlider.activeBackground": "{{ colours.blue }}44",
+    "scrollbarSlider.background": "{{ main.blue }}44",
+    "scrollbarSlider.hoverBackground": "{{ main.blue }}71",
+    "scrollbarSlider.activeBackground": "{{ main.blue }}44",
     // Badge
     "badge.background": "{{ ui.highlight }}",
     // Progress Bar
-    "progressBar.background": "{{ colours.blue }}",
+    "progressBar.background": "{{ main.blue }}",
     // Lists & Trees
     "list.focusBackground": "{{ ui.2 }}",
     "list.activeSelectionBackground": "{{ ui.3 }}",
     "list.hoverBackground": "{{ ui.3 }}9c",
     "list.inactiveSelectionBackground": "{{ ui.3 }}56",
-    "list.errorForeground": "{{ colours.red }}",
-    "list.warningForeground": "{{ colours.yellow }}",
+    "list.errorForeground": "{{ main.red }}",
+    "list.warningForeground": "{{ main.yellow }}",
     "tree.indentGuidesStroke":"{{ ui.text }}",
     // Activity Bar
     "activityBar.background": "{{ ui.1 }}",
@@ -51,18 +51,18 @@
     // Side Bar
     "sideBar.background": "{{ ui.0 }}",
     "sideBar.foreground": "{{ ui.text }}ce",
-    "sideBar.dropBackground": "{{ colours.blue }}44",
+    "sideBar.dropBackground": "{{ main.blue }}44",
     "sideBarTitle.foreground": "{{ ui.text }}",
     "sideBarSectionHeader.background": "{{ ui.1 }}",
     // Minimap
-    "minimap.findMatchHighlight": "{{ colours.yellow }}af",
-    "minimap.selectionHighlight": "{{ colours.blue }}",
-    "minimap.errorHighlight": "{{ colours.red }}",
-    "minimapGutter.addedBackground": "{{ colours.green }}",
-    "minimapGutter.modifiedBackground": "{{ colours.teal }}",
-    "minimapGutter.deletedBackground": "{{ colours.red }}",
+    "minimap.findMatchHighlight": "{{ main.yellow }}af",
+    "minimap.selectionHighlight": "{{ main.blue }}",
+    "minimap.errorHighlight": "{{ main.red }}",
+    "minimapGutter.addedBackground": "{{ main.green }}",
+    "minimapGutter.modifiedBackground": "{{ main.teal }}",
+    "minimapGutter.deletedBackground": "{{ main.red }}",
     // Editor Groups & Tabs
-    "editorGroup.border": "{{ colours.blue }}81",
+    "editorGroup.border": "{{ main.blue }}81",
     "editorGroup.dropBackground": "{{ ui.2 }}bd",
     "editorGroupHeader.tabsBackground": "{{ ui.0 }}",
     "editorGroupHeader.noTabsBackground": "{{ ui.0 }}",
@@ -73,48 +73,48 @@
     "editorWhitespace.foreground": "{{ ui.text }}3b",
     "editor.background": "{{ ui.0 }}",
     "editor.foreground": "{{ ui.text }}",
-    "editor.lineHighlightBorder": "{{ colours.blue }}",
-    "editor.selectionBackground": "{{ colours.blue }}48",
-    "editor.inactiveSelectionBackground": "{{ colours.blue }}4f",
-    "editor.selectionHighlightBackground": "{{ colours.blue }}4f",
-    "editor.wordHighlightStrongBackground": "{{ colours.teal }}3f",
-    "editor.wordHighlightBackground": "{{ colours.teal }}3d",
-    "editor.findMatchBackground": "{{ colours.yellow }}50",
-    "editor.findMatchHighlightBackground": "{{ colours.yellow }}28",
+    "editor.lineHighlightBorder": "{{ main.blue }}",
+    "editor.selectionBackground": "{{ main.blue }}48",
+    "editor.inactiveSelectionBackground": "{{ main.blue }}4f",
+    "editor.selectionHighlightBackground": "{{ main.blue }}4f",
+    "editor.wordHighlightStrongBackground": "{{ main.teal }}3f",
+    "editor.wordHighlightBackground": "{{ main.teal }}3d",
+    "editor.findMatchBackground": "{{ main.yellow }}50",
+    "editor.findMatchHighlightBackground": "{{ main.yellow }}28",
     "editor.findRangeHighlightBackground": "{{ light.yellow }}17",
-    "editor.hoverHighlightBackground": "{{ colours.teal }}3a",
-    "editorBracketMatch.border": "{{ colours.blue }}71",
-    "editorBracketMatch.background": "{{ colours.blue }}4d",
-    "editorCursor.foreground": "{{ colours.yellow }}",
+    "editor.hoverHighlightBackground": "{{ main.teal }}3a",
+    "editorBracketMatch.border": "{{ main.blue }}71",
+    "editorBracketMatch.background": "{{ main.blue }}4d",
+    "editorCursor.foreground": "{{ main.yellow }}",
     "editorLineNumber.foreground": "{{ ui.text }}b2",
     "editorLineNumber.activeForeground": "{{ light.yellow }}",
     "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
-    "editorSuggestWidget.highlightForeground": "{{ colours.teal }}",
-    "editorSuggestWidget.selectedBackground": "{{ colours.blue }}8c",
+    "editorSuggestWidget.highlightForeground": "{{ main.teal }}",
+    "editorSuggestWidget.selectedBackground": "{{ main.blue }}8c",
     "editorSuggestWidget.foreground": "{{ ui.text }}",
     "editorLink.activeForeground": "{{ light.blue }}",
     "editorRuler.foreground": "{{ ui.text }}3b",
-    "editorError.foreground": "{{ colours.red }}",
-    "editorGutter.addedBackground": "{{ colours.green }}",
-    "editorOverviewRuler.addedForeground": "{{ colours.green }}",
-    "editorGutter.modifiedBackground": "{{ colours.teal }}",
-    "editorOverviewRuler.modifiedForeground": "{{ colours.teal }}",
-    "editorGutter.deletedBackground": "{{ colours.red }}",
-    "editorOverviewRuler.deletedForeground": "{{ colours.red }}",
-    "editorOverviewRuler.errorForeground": "{{ colours.red }}",
-    "editorMarkerNavigationError.background": "{{ colours.red }}",
+    "editorError.foreground": "{{ main.red }}",
+    "editorGutter.addedBackground": "{{ main.green }}",
+    "editorOverviewRuler.addedForeground": "{{ main.green }}",
+    "editorGutter.modifiedBackground": "{{ main.teal }}",
+    "editorOverviewRuler.modifiedForeground": "{{ main.teal }}",
+    "editorGutter.deletedBackground": "{{ main.red }}",
+    "editorOverviewRuler.deletedForeground": "{{ main.red }}",
+    "editorOverviewRuler.errorForeground": "{{ main.red }}",
+    "editorMarkerNavigationError.background": "{{ main.red }}",
     // Diff Editor Colours
-    "diffEditor.insertedTextBackground": "{{ colours.green }}2d",
-    "diffEditor.removedTextBackground": "{{ colours.red }}44",
+    "diffEditor.insertedTextBackground": "{{ main.green }}2d",
+    "diffEditor.removedTextBackground": "{{ main.red }}44",
     // Peek View Colours
-    "peekView.border": "{{ colours.blue }}",
+    "peekView.border": "{{ main.blue }}",
     "peekViewEditor.background": "{{ ui.0 }}",
     "peekViewEditorGutter.background": "{{ ui.0 }}",
-    "peekViewEditor.matchHighlightBackground": "{{ colours.yellow }}50",
+    "peekViewEditor.matchHighlightBackground": "{{ main.yellow }}50",
     "peekViewResult.background": "{{ ui.1 }}",
     "peekViewResult.lineForeground": "{{ ui.text }}",
-    "peekViewResult.matchHighlightBackground": "{{ colours.yellow }}50",
+    "peekViewResult.matchHighlightBackground": "{{ main.yellow }}50",
     "peekViewTitle.background": "{{ ui.1 }}",
     "peekViewTitleDescription.foreground": "{{ ui.text }}a8",
     "peekViewTitleLabel.foreground": "{{ ui.text }}",
@@ -130,42 +130,42 @@
     // Notification Colours
     "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "{{ ui.2 }}",
-    "notificationLink.foreground": "{{ colours.green }}",
-    "notificationsErrorIcon.foreground": "{{ colours.red }}",
-    "notificationsWarningIcon.foreground": "{{ colours.yellow }}",
-    "notificationsInfoIcon.foreground": "{{ colours.blue }}",
+    "notificationLink.foreground": "{{ main.green }}",
+    "notificationsErrorIcon.foreground": "{{ main.red }}",
+    "notificationsWarningIcon.foreground": "{{ main.yellow }}",
+    "notificationsInfoIcon.foreground": "{{ main.blue }}",
     // Integrated Terminal Colours
     "terminal.ansiBlack": "{{ ui.0 }}",
     "terminal.ansiBrightBlack": "{{ ui.2 }}",
-    "terminal.ansiBlue": "{{ colours.blue }}",
+    "terminal.ansiBlue": "{{ main.blue }}",
     "terminal.ansiBrightBlue": "{{ light.blue }}",
-    "terminal.ansiCyan": "{{ colours.teal }}",
+    "terminal.ansiCyan": "{{ main.teal }}",
     "terminal.ansiBrightCyan": "{{ light.teal }}",
-    "terminal.ansiGreen": "{{ colours.green }}",
+    "terminal.ansiGreen": "{{ main.green }}",
     "terminal.ansiBrightGreen": "{{ light.green }}",
-    "terminal.ansiMagenta": "{{ colours.purple }}",
+    "terminal.ansiMagenta": "{{ main.purple }}",
     "terminal.ansiBrightMagenta": "{{ light.purple }}",
-    "terminal.ansiRed": "{{ colours.red }}",
+    "terminal.ansiRed": "{{ main.red }}",
     "terminal.ansiBrightRed": "{{ light.red }}",
     "terminal.ansiWhite": "{{ ui.text }}",
     "terminal.ansiBrightWhite": "{{ light.white }}",
-    "terminal.ansiYellow": "{{ colours.yellow }}",
+    "terminal.ansiYellow": "{{ main.yellow }}",
     "terminal.ansiBrightYellow": "{{ light.yellow }}",
     // Welcome Page Colours
     "welcomePage.buttonBackground": "{{ ui.1 }}",
     "welcomePage.buttonHoverBackground": "{{ ui.1 }}81",
     // Git Colours
-    "gitDecoration.untrackedResourceForeground": "{{ colours.teal }}",
-    "gitDecoration.addedResourceForeground": "{{ colours.green }}",
-    "gitDecoration.modifiedResourceForeground": "{{ colours.yellow }}",
-    "gitDecoration.deletedResourceForeground": "{{ colours.red }}",
-    "gitDecoration.conflictingResourceForeground": "{{ colours.purple }}",
+    "gitDecoration.untrackedResourceForeground": "{{ main.teal }}",
+    "gitDecoration.addedResourceForeground": "{{ main.green }}",
+    "gitDecoration.modifiedResourceForeground": "{{ main.yellow }}",
+    "gitDecoration.deletedResourceForeground": "{{ main.red }}",
+    "gitDecoration.conflictingResourceForeground": "{{ main.purple }}",
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}6e",
     // Settings Editor Colours
-    "settings.modifiedItemIndicator": "{{ colours.teal }}",
-    "settings.focusedRowBackground": "{{ colours.blue }}38",
-    "notebook.focusedRowBorder": "{{ colours.blue }}38",
-    "notebook.rowHoverBackground": "{{ colours.blue }}6c",
+    "settings.modifiedItemIndicator": "{{ main.teal }}",
+    "settings.focusedRowBackground": "{{ main.blue }}38",
+    "notebook.focusedRowBorder": "{{ main.blue }}38",
+    "notebook.rowHoverBackground": "{{ main.blue }}6c",
     // Breadcrumbs colours
     "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}81",
@@ -212,7 +212,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -248,7 +248,7 @@
         "meta.objectliteral meta.object-literal.key"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -258,7 +258,7 @@
         "source.yaml punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -306,7 +306,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -324,7 +324,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "{{ colours.teal }}"
+        "foreground": "{{ main.teal }}"
       }
     },
     {
@@ -356,7 +356,7 @@
         "constant"
       ],
       "settings": {
-        "foreground": "{{ colours.teal }}"
+        "foreground": "{{ main.teal }}"
       }
     },
     {
@@ -366,7 +366,7 @@
         "entity.other.attribute-name.class.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "{{ colours.teal }}"
+        "foreground": "{{ main.teal }}"
       }
     },
     {
@@ -394,7 +394,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "{{ colours.teal }}"
+        "foreground": "{{ main.teal }}"
       }
     },
     {
@@ -403,7 +403,7 @@
         "support.constant.media"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -414,7 +414,7 @@
         "markup.heading entity.name.section"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -485,7 +485,7 @@
         "meta.separator.markdown"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9",
+        "foreground": "{{ main.green }}D9",
         "fontStyle": "bold"
       }
     },
@@ -499,7 +499,7 @@
         "meta.image.inline"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -509,7 +509,7 @@
         "source.ruby constant.other.symbol punctuation"
       ],
       "settings": {
-        "foreground": "{{ colours.green }}D9"
+        "foreground": "{{ main.green }}D9"
       }
     },
     {
@@ -528,7 +528,7 @@
         "source.ruby punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "{{ colours.purple }}"
+        "foreground": "{{ main.purple }}"
       }
     },
     {
@@ -541,7 +541,7 @@
         "source.ruby constant.language.symbol.hashkey.ruby",
       ],
       "settings": {
-        "foreground": "{{ colours.teal }}",
+        "foreground": "{{ main.teal }}",
       }
     }
   ]

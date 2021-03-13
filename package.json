@@ -38,6 +38,9 @@
       }
     ]
   },
+  "scripts": {
+    "build": "node src/buildTheme.js"
+  },
   "devDependencies": {
     "json5": "^2.2.0",
     "mustache": "^4.1.0"

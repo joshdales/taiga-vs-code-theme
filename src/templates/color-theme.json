@@ -87,7 +87,7 @@
     "editorBracketMatch.background": "{{ colours.blue }}4d",
     "editorCursor.foreground": "{{ colours.yellow }}",
     "editorLineNumber.foreground": "{{ ui.text }}b2",
-    "editorLineNumber.activeForeground": "#FAD97F",
+    "editorLineNumber.activeForeground": "{{ light.yellow }}",
     "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.highlightForeground": "{{ colours.teal }}",
@@ -150,7 +150,7 @@
     "terminal.ansiWhite": "{{ ui.text }}",
     "terminal.ansiBrightWhite": "#DDFCFE",
     "terminal.ansiYellow": "{{ colours.yellow }}",
-    "terminal.ansiBrightYellow": "#DEB561",
+    "terminal.ansiBrightYellow": "{{ light.yellow }}",
     // Welcome Page Colours
     "welcomePage.buttonBackground": "{{ ui.1 }}",
     "welcomePage.buttonHoverBackground": "{{ ui.1 }}81",
@@ -445,7 +445,7 @@
         "markup.list punctuation.definition.list.begin"
       ],
       "settings": {
-        "foreground": "#FAB97F",
+        "foreground": "{{ light.yellow }}",
         "fontStyle": "bold"
       }
     },
@@ -456,7 +456,7 @@
         "markup.inline.raw punctuation.definition.raw"
       ],
       "settings": {
-        "foreground": "#FAB97F"
+        "foreground": "{{ light.yellow }}"
       }
     },
     {
@@ -466,7 +466,7 @@
         "markup.fenced_code.block punctuation.definition"
       ],
       "settings": {
-        "foreground": "#FAB97F"
+        "foreground": "{{ light.yellow }}"
       }
     },
     {
@@ -519,7 +519,7 @@
         "meta.module.ruby entity.other.inherited-class punctuation"
       ],
       "settings": {
-        "foreground": "#FAB97F"
+        "foreground": "{{ light.yellow }}"
       }
     },
     {

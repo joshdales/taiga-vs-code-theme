@@ -14,5 +14,8 @@
     "3": "#375380",
     "highlight": "#007A2C",
     "text": "#D7FCFE"
+  },
+  "light": {
+    "yellow": "#DEB561"
   }
 }

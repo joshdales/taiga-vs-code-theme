@@ -3,14 +3,14 @@
   "type": "dark",
   "colors": {
     // Base colours
-    "focusBorder": "#162133",
+    "focusBorder": "{{ ui.1 }}",
     "foreground": "#D7FCFED9" ,
     "selection.background": "#527cbf60",
     "descriptionForeground": "#D7FCFE9f",
     "errorForeground": "#d1443f",
     "sash.hoverBorder": "#527cbf81",
     // Text Colours
-    "textBlockQuote.background": "#162133",
+    "textBlockQuote.background": "{{ ui.1 }}",
     "textBlockQuote.border": "#527CBF",
     "textLink.foreground": "#3ED074",
     "textLink.activeForeground": "#3ed074D9",
@@ -19,11 +19,11 @@
     "button.background": "#375380",
     "button.hoverBackground": "#527CBF",
     // Dropdown Control
-    "dropdown.background": "#162133",
+    "dropdown.background": "{{ ui.1 }}",
     "dropdown.foreground": "#D7FCFE",
     "dropdown.listBackground": "#0D141F",
     // Input Control
-    "input.background": "#162133",
+    "input.background": "{{ ui.1 }}",
     "input.foreground": "#D7FCFEc4",
     "input.placeholderForeground": "#D7FCFE79",
     "inputOption.activeBackground": "#375380b0",
@@ -46,14 +46,14 @@
     "list.warningForeground": "#D9A845",
     "tree.indentGuidesStroke":"#D7FCFE",
     // Activity Bar
-    "activityBar.background": "#162133",
+    "activityBar.background": "{{ ui.1 }}",
     "activityBarBadge.background": "#007a2c",
     // Side Bar
     "sideBar.background": "#0D141F",
     "sideBar.foreground": "#D7FCFEce",
     "sideBar.dropBackground": "#527CBF44",
     "sideBarTitle.foreground": "#bbbbbb",
-    "sideBarSectionHeader.background": "#162133",
+    "sideBarSectionHeader.background": "{{ ui.1 }}",
     // Minimap
     "minimap.findMatchHighlight": "#b9903faf",
     "minimap.selectionHighlight": "#527CBF",
@@ -89,7 +89,7 @@
     "editorLineNumber.foreground": "#d7fcfeb2",
     "editorLineNumber.activeForeground": "#FAD97F",
     "editorHoverWidget.statusBarBackground": "#1B2940",
-    "editorSuggestWidget.background": "#162133",
+    "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.highlightForeground": "#209E96",
     "editorSuggestWidget.selectedBackground": "#527cbf8c",
     "editorSuggestWidget.foreground": "#D7FCFE",
@@ -112,21 +112,21 @@
     "peekViewEditor.background": "#0D141F",
     "peekViewEditorGutter.background": "#0D141F",
     "peekViewEditor.matchHighlightBackground": "#b9903f50",
-    "peekViewResult.background": "#152133",
+    "peekViewResult.background": "{{ ui.1 }}",
     "peekViewResult.lineForeground": "#D7FCFE",
     "peekViewResult.matchHighlightBackground": "#b9903f50",
-    "peekViewTitle.background": "#152133",
+    "peekViewTitle.background": "{{ ui.1 }}",
     "peekViewTitleDescription.foreground": "#d7fcfea8",
     "peekViewTitleLabel.foreground": "#D7FCFE",
     // Editor Widget Colours
-    "editorWidget.background": "#162133",
-    "editorWidget.border": "#162133",
+    "editorWidget.background": "{{ ui.1 }}",
+    "editorWidget.border": "{{ ui.1 }}",
     // Status Bar Colours
-    "statusBar.background": "#162133",
+    "statusBar.background": "{{ ui.1 }}",
     // Title Bar Colours
-    "titleBar.activeBackground": "#152133",
+    "titleBar.activeBackground": "{{ ui.1 }}",
     "titleBar.activeForeground": "#D7FCFE",
-    "titleBar.inactiveBackground": "#152133",
+    "titleBar.inactiveBackground": "{{ ui.1 }}",
     // Notification Colours
     "notificationCenterHeader.foreground": "#D7FCFE",
     "notificationCenterHeader.background": "#1B2940",
@@ -152,8 +152,8 @@
     "terminal.ansiYellow": "#D9A845",
     "terminal.ansiBrightYellow": "#DEB561",
     // Welcome Page Colours
-    "welcomePage.buttonBackground": "#152133",
-    "welcomePage.buttonHoverBackground": "#15213381",
+    "welcomePage.buttonBackground": "{{ ui.1 }}",
+    "welcomePage.buttonHoverBackground": "{{ ui.1 }}81",
     // Git Colours
     "gitDecoration.untrackedResourceForeground": "#209E96",
     "gitDecoration.addedResourceForeground": "#3ED074",
@@ -168,10 +168,10 @@
     "notebook.rowHoverBackground": "#527cbf6c",
     // Breadcrumbs colours
     "breadcrumb.foreground": "#D7FCFE",
-    "breadcrumb.background": "#15213381",
+    "breadcrumb.background": "{{ ui.1 }}81",
     "breadcrumb.focusForeground": "#86DCFF",
     "breadcrumb.activeSelectionForeground": "#86DCFF",
-    "breadcrumbPicker.background": "#152133"
+    "breadcrumbPicker.background": "{{ ui.1 }}"
     // TODO: Symbol Icons Colours
   },
   "semanticHighlighting": true,

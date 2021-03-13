@@ -12,9 +12,9 @@
     // Text Colours
     "textBlockQuote.background": "{{ ui.1 }}",
     "textBlockQuote.border": "{{ colours.blue }}",
-    "textLink.foreground": "#3ED074",
-    "textLink.activeForeground": "#3ed074D9",
-    "textPreformat.foreground": "#d9a845",
+    "textLink.foreground": "{{ colours.green }}",
+    "textLink.activeForeground": "{{ colours.green }}D9",
+    "textPreformat.foreground": "{{ colours.yellow }}",
     // Button Control
     "button.background": "#375380",
     "button.hoverBackground": "{{ colours.blue }}",
@@ -43,7 +43,7 @@
     "list.hoverBackground": "#3753809c",
     "list.inactiveSelectionBackground": "#37538056",
     "list.errorForeground": "{{ colours.red }}",
-    "list.warningForeground": "#D9A845",
+    "list.warningForeground": "{{ colours.yellow }}",
     "tree.indentGuidesStroke":"{{ ui.text }}",
     // Activity Bar
     "activityBar.background": "{{ ui.1 }}",
@@ -58,7 +58,7 @@
     "minimap.findMatchHighlight": "#b9903faf",
     "minimap.selectionHighlight": "{{ colours.blue }}",
     "minimap.errorHighlight": "{{ colours.red }}",
-    "minimapGutter.addedBackground": "#3ED074",
+    "minimapGutter.addedBackground": "{{ colours.green }}",
     "minimapGutter.modifiedBackground": "#209E96",
     "minimapGutter.deletedBackground": "{{ colours.red }}",
     // Editor Groups & Tabs
@@ -85,7 +85,7 @@
     "editor.hoverHighlightBackground": "#209e963a",
     "editorBracketMatch.border": "{{ colours.blue }}71",
     "editorBracketMatch.background": "{{ colours.blue }}4d",
-    "editorCursor.foreground": "#d9a845",
+    "editorCursor.foreground": "{{ colours.yellow }}",
     "editorLineNumber.foreground": "{{ ui.text }}b2",
     "editorLineNumber.activeForeground": "#FAD97F",
     "editorHoverWidget.statusBarBackground": "#1B2940",
@@ -96,8 +96,8 @@
     "editorLink.activeForeground": "#86DCFF",
     "editorRuler.foreground": "{{ ui.text }}3b",
     "editorError.foreground": "{{ colours.red }}",
-    "editorGutter.addedBackground": "#3ED074",
-    "editorOverviewRuler.addedForeground": "#3ED074",
+    "editorGutter.addedBackground": "{{ colours.green }}",
+    "editorOverviewRuler.addedForeground": "{{ colours.green }}",
     "editorGutter.modifiedBackground": "#209E96",
     "editorOverviewRuler.modifiedForeground": "#209E96",
     "editorGutter.deletedBackground": "{{ colours.red }}",
@@ -105,7 +105,7 @@
     "editorOverviewRuler.errorForeground": "{{ colours.red }}",
     "editorMarkerNavigationError.background": "{{ colours.red }}",
     // Diff Editor Colours
-    "diffEditor.insertedTextBackground": "#3ed0742d",
+    "diffEditor.insertedTextBackground": "{{ colours.green }}2d",
     "diffEditor.removedTextBackground": "{{ colours.red }}44",
     // Peek View Colours
     "peekView.border": "{{ colours.blue }}",
@@ -130,9 +130,9 @@
     // Notification Colours
     "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "#1B2940",
-    "notificationLink.foreground": "#3ED074",
+    "notificationLink.foreground": "{{ colours.green }}",
     "notificationsErrorIcon.foreground": "{{ colours.red }}",
-    "notificationsWarningIcon.foreground": "#d9a845",
+    "notificationsWarningIcon.foreground": "{{ colours.yellow }}",
     "notificationsInfoIcon.foreground": "{{ colours.blue }}",
     // Integrated Terminal Colours
     "terminal.ansiBlack": "#0D141F",
@@ -141,7 +141,7 @@
     "terminal.ansiBrightBlue": "#6A8FC8",
     "terminal.ansiCyan": "#209E96",
     "terminal.ansiBrightCyan": "#41ACA6",
-    "terminal.ansiGreen": "#3ED074",
+    "terminal.ansiGreen": "{{ colours.green }}",
     "terminal.ansiBrightGreen": "#5BD789",
     "terminal.ansiMagenta": "#9C57D9",
     "terminal.ansiBrightMagenta": "#AB70DE",
@@ -149,15 +149,15 @@
     "terminal.ansiBrightRed": "#D8615C",
     "terminal.ansiWhite": "{{ ui.text }}",
     "terminal.ansiBrightWhite": "#DDFCFE",
-    "terminal.ansiYellow": "#D9A845",
+    "terminal.ansiYellow": "{{ colours.yellow }}",
     "terminal.ansiBrightYellow": "#DEB561",
     // Welcome Page Colours
     "welcomePage.buttonBackground": "{{ ui.1 }}",
     "welcomePage.buttonHoverBackground": "{{ ui.1 }}81",
     // Git Colours
     "gitDecoration.untrackedResourceForeground": "#209E96",
-    "gitDecoration.addedResourceForeground": "#3ED074",
-    "gitDecoration.modifiedResourceForeground": "#d9a845",
+    "gitDecoration.addedResourceForeground": "{{ colours.green }}",
+    "gitDecoration.modifiedResourceForeground": "{{ colours.yellow }}",
     "gitDecoration.deletedResourceForeground": "{{ colours.red }}",
     "gitDecoration.conflictingResourceForeground": "#9C57D9",
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}6e",
@@ -212,7 +212,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -248,7 +248,7 @@
         "meta.objectliteral meta.object-literal.key"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -258,7 +258,7 @@
         "source.yaml punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -306,7 +306,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -403,7 +403,7 @@
         "support.constant.media"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -414,7 +414,7 @@
         "markup.heading entity.name.section"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -485,7 +485,7 @@
         "meta.separator.markdown"
       ],
       "settings": {
-        "foreground": "#3ed074D9",
+        "foreground": "{{ colours.green }}D9",
         "fontStyle": "bold"
       }
     },
@@ -499,7 +499,7 @@
         "meta.image.inline"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {
@@ -509,7 +509,7 @@
         "source.ruby constant.other.symbol punctuation"
       ],
       "settings": {
-        "foreground": "#3ed074D9"
+        "foreground": "{{ colours.green }}D9"
       }
     },
     {

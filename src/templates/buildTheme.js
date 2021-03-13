@@ -1,12 +1,13 @@
 const fs = require("fs")
+const path = require("path")
 const JSON5 = require("json5")
 const mustache = require("mustache")
 
 const theme = JSON5.parse(
   fs.readFileSync(`${__dirname}/color-theme.json`, (err, data) => data)
 );
-const template = JSON5.stringify(theme, null, 2)
+const template = JSON.stringify(theme, null, 2)
 
 const data = mustache.render(template)
 
-console.log(data)
+fs.writeFileSync(path.resolve(__dirname, '..', '..','themes', 'test-color-theme.json'), data)

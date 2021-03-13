@@ -4,9 +4,9 @@
   "colors": {
     // Base colours
     "focusBorder": "{{ ui.1 }}",
-    "foreground": "#D7FCFED9" ,
+    "foreground": "{{ ui.text }}D9",
     "selection.background": "#527cbf60",
-    "descriptionForeground": "#D7FCFE9f",
+    "descriptionForeground": "{{ ui.text }}9f",
     "errorForeground": "#d1443f",
     "sash.hoverBorder": "#527cbf81",
     // Text Colours
@@ -20,12 +20,12 @@
     "button.hoverBackground": "#527CBF",
     // Dropdown Control
     "dropdown.background": "{{ ui.1 }}",
-    "dropdown.foreground": "#D7FCFE",
+    "dropdown.foreground": "{{ ui.text }}",
     "dropdown.listBackground": "#0D141F",
     // Input Control
     "input.background": "{{ ui.1 }}",
-    "input.foreground": "#D7FCFEc4",
-    "input.placeholderForeground": "#D7FCFE79",
+    "input.foreground": "{{ ui.text }}c4",
+    "input.placeholderForeground": "{{ ui.text }}79",
     "inputOption.activeBackground": "#375380b0",
     "inputValidation.errorBackground": "#D1453F",
     "inputValidation.errorBorder": "#D1453F",
@@ -44,15 +44,15 @@
     "list.inactiveSelectionBackground": "#37538056",
     "list.errorForeground": "#D1453F",
     "list.warningForeground": "#D9A845",
-    "tree.indentGuidesStroke":"#D7FCFE",
+    "tree.indentGuidesStroke":"{{ ui.text }}",
     // Activity Bar
     "activityBar.background": "{{ ui.1 }}",
     "activityBarBadge.background": "#007a2c",
     // Side Bar
     "sideBar.background": "#0D141F",
-    "sideBar.foreground": "#D7FCFEce",
+    "sideBar.foreground": "{{ ui.text }}ce",
     "sideBar.dropBackground": "#527CBF44",
-    "sideBarTitle.foreground": "#bbbbbb",
+    "sideBarTitle.foreground": "{{ ui.text }}",
     "sideBarSectionHeader.background": "{{ ui.1 }}",
     // Minimap
     "minimap.findMatchHighlight": "#b9903faf",
@@ -70,9 +70,9 @@
     "tab.border": "#0D141F",
     "tab.activeBorder": "#007a2c",
     // Editor Colours
-    "editorWhitespace.foreground": "#d7fcfe3b",
+    "editorWhitespace.foreground": "{{ ui.text }}3b",
     "editor.background": "#0D141F",
-    "editor.foreground": "#D7FCFE",
+    "editor.foreground": "{{ ui.text }}",
     "editor.lineHighlightBorder": "#527CBF",
     "editor.selectionBackground": "#527cbf48",
     "editor.inactiveSelectionBackground": "#527cbf4f",
@@ -86,15 +86,15 @@
     "editorBracketMatch.border": "#527CBF71",
     "editorBracketMatch.background": "#527cbf4d",
     "editorCursor.foreground": "#d9a845",
-    "editorLineNumber.foreground": "#d7fcfeb2",
+    "editorLineNumber.foreground": "{{ ui.text }}b2",
     "editorLineNumber.activeForeground": "#FAD97F",
     "editorHoverWidget.statusBarBackground": "#1B2940",
     "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.highlightForeground": "#209E96",
     "editorSuggestWidget.selectedBackground": "#527cbf8c",
-    "editorSuggestWidget.foreground": "#D7FCFE",
+    "editorSuggestWidget.foreground": "{{ ui.text }}",
     "editorLink.activeForeground": "#86DCFF",
-    "editorRuler.foreground": "#d7fcfe3b",
+    "editorRuler.foreground": "{{ ui.text }}3b",
     "editorError.foreground": "#d1443f",
     "editorGutter.addedBackground": "#3ED074",
     "editorOverviewRuler.addedForeground": "#3ED074",
@@ -113,11 +113,11 @@
     "peekViewEditorGutter.background": "#0D141F",
     "peekViewEditor.matchHighlightBackground": "#b9903f50",
     "peekViewResult.background": "{{ ui.1 }}",
-    "peekViewResult.lineForeground": "#D7FCFE",
+    "peekViewResult.lineForeground": "{{ ui.text }}",
     "peekViewResult.matchHighlightBackground": "#b9903f50",
     "peekViewTitle.background": "{{ ui.1 }}",
-    "peekViewTitleDescription.foreground": "#d7fcfea8",
-    "peekViewTitleLabel.foreground": "#D7FCFE",
+    "peekViewTitleDescription.foreground": "{{ ui.text }}a8",
+    "peekViewTitleLabel.foreground": "{{ ui.text }}",
     // Editor Widget Colours
     "editorWidget.background": "{{ ui.1 }}",
     "editorWidget.border": "{{ ui.1 }}",
@@ -125,10 +125,10 @@
     "statusBar.background": "{{ ui.1 }}",
     // Title Bar Colours
     "titleBar.activeBackground": "{{ ui.1 }}",
-    "titleBar.activeForeground": "#D7FCFE",
+    "titleBar.activeForeground": "{{ ui.text }}",
     "titleBar.inactiveBackground": "{{ ui.1 }}",
     // Notification Colours
-    "notificationCenterHeader.foreground": "#D7FCFE",
+    "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "#1B2940",
     "notificationLink.foreground": "#3ED074",
     "notificationsErrorIcon.foreground": "#D1453F",
@@ -147,7 +147,7 @@
     "terminal.ansiBrightMagenta": "#AB70DE",
     "terminal.ansiRed": "#D1453F",
     "terminal.ansiBrightRed": "#D8615C",
-    "terminal.ansiWhite": "#D7FCFE",
+    "terminal.ansiWhite": "{{ ui.text }}",
     "terminal.ansiBrightWhite": "#DDFCFE",
     "terminal.ansiYellow": "#D9A845",
     "terminal.ansiBrightYellow": "#DEB561",
@@ -160,14 +160,14 @@
     "gitDecoration.modifiedResourceForeground": "#d9a845",
     "gitDecoration.deletedResourceForeground": "#D1453F",
     "gitDecoration.conflictingResourceForeground": "#9C57D9",
-    "gitDecoration.ignoredResourceForeground": "#D7FCFE6e",
+    "gitDecoration.ignoredResourceForeground": "{{ ui.text }}6e",
     // Settings Editor Colours
     "settings.modifiedItemIndicator": "#209E96",
     "settings.focusedRowBackground": "#527cbf38",
     "notebook.focusedRowBorder": "#527cbf38",
     "notebook.rowHoverBackground": "#527cbf6c",
     // Breadcrumbs colours
-    "breadcrumb.foreground": "#D7FCFE",
+    "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}81",
     "breadcrumb.focusForeground": "#86DCFF",
     "breadcrumb.activeSelectionForeground": "#86DCFF",
@@ -183,7 +183,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#d7fcfe6c",
+        "foreground": "{{ ui.text }}6c",
         "fontStyle": "italic"
       }
     },
@@ -201,7 +201,7 @@
         "meta.field.declaration"
       ],
       "settings": {
-        "foreground": "#d7fcfecb"
+        "foreground": "{{ ui.text }}cb"
       }
     },
     {
@@ -315,7 +315,7 @@
         "punctuation.definition.tag"
       ],
       "settings": {
-        "foreground": "#d7fcfebb"
+        "foreground": "{{ ui.text }}bb"
       }
     },
     {

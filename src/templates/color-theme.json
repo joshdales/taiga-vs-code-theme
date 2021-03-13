@@ -93,7 +93,7 @@
     "editorSuggestWidget.highlightForeground": "{{ colours.teal }}",
     "editorSuggestWidget.selectedBackground": "{{ colours.blue }}8c",
     "editorSuggestWidget.foreground": "{{ ui.text }}",
-    "editorLink.activeForeground": "#86DCFF",
+    "editorLink.activeForeground": "{{ light.blue }}",
     "editorRuler.foreground": "{{ ui.text }}3b",
     "editorError.foreground": "{{ colours.red }}",
     "editorGutter.addedBackground": "{{ colours.green }}",
@@ -138,15 +138,15 @@
     "terminal.ansiBlack": "{{ ui.0 }}",
     "terminal.ansiBrightBlack": "#252B35",
     "terminal.ansiBlue": "{{ colours.blue }}",
-    "terminal.ansiBrightBlue": "#6A8FC8",
+    "terminal.ansiBrightBlue": "{{ light.blue }}",
     "terminal.ansiCyan": "{{ colours.teal }}",
-    "terminal.ansiBrightCyan": "#41ACA6",
+    "terminal.ansiBrightCyan": "{{ light.teal }}",
     "terminal.ansiGreen": "{{ colours.green }}",
-    "terminal.ansiBrightGreen": "#5BD789",
+    "terminal.ansiBrightGreen": "{{ light.green }}",
     "terminal.ansiMagenta": "{{ colours.purple }}",
-    "terminal.ansiBrightMagenta": "#AB70DE",
+    "terminal.ansiBrightMagenta": "{{ light.purple }}",
     "terminal.ansiRed": "{{ colours.red }}",
-    "terminal.ansiBrightRed": "#D8615C",
+    "terminal.ansiBrightRed": "{{ light.red }}",
     "terminal.ansiWhite": "{{ ui.text }}",
     "terminal.ansiBrightWhite": "#DDFCFE",
     "terminal.ansiYellow": "{{ colours.yellow }}",
@@ -169,8 +169,8 @@
     // Breadcrumbs colours
     "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}81",
-    "breadcrumb.focusForeground": "#86DCFF",
-    "breadcrumb.activeSelectionForeground": "#86DCFF",
+    "breadcrumb.focusForeground": "{{ light.blue }}",
+    "breadcrumb.activeSelectionForeground": "{{ light.blue }}",
     "breadcrumbPicker.background": "{{ ui.1 }}"
     // TODO: Symbol Icons Colours
   },
@@ -226,7 +226,7 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "#C775EAD9",
+        "foreground": "{{ light.purple }}D9",
         "fontStyle": "italic"
       }
     },
@@ -237,7 +237,7 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#81E0A4"
+        "foreground": "{{ light.green }}"
       }
     },
     {
@@ -275,7 +275,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#FAB267"
+        "foreground": "{{ light.yellow }}"
       }
     },
     {
@@ -285,7 +285,7 @@
         "meta.type.annotation"
       ],
       "settings": {
-        "foreground": "#FAB267",
+        "foreground": "{{ light.yellow }}",
         "fontStyle": "italic"
       }
     },
@@ -297,7 +297,7 @@
         "meta.function-call support.function.console"
       ],
       "settings": {
-        "foreground": "#53ceffd5"
+        "foreground": "{{ light.teal }}d5"
       }
     },
     {
@@ -336,7 +336,7 @@
         "support.variable.object"
       ],
       "settings": {
-        "foreground": "#FAB267",
+        "foreground": "{{ light.yellow }}",
         "fontStyle": "italic"
       }
     },
@@ -347,7 +347,7 @@
         "punctuation.definition.template-expression"
       ],
       "settings": {
-        "foreground": "#C775EAD9"
+        "foreground": "{{ light.purple }}D9"
       }
     },
     {
@@ -376,7 +376,7 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#53ceffd9"
+        "foreground": "{{ light.teal }}d9"
       }
     },
     {
@@ -385,7 +385,7 @@
         "source.css support.function"
       ],
       "settings": {
-        "foreground": "#53ceffd9"
+        "foreground": "{{ light.teal }}d9"
       }
     },
     {
@@ -424,7 +424,7 @@
         "markup.italic punctuation.definition.italic"
       ],
       "settings": {
-        "foreground": "#53CEFFD9",
+        "foreground": "{{ light.teal }}D9",
         "fontStyle": "italic"
       }
     },
@@ -435,7 +435,7 @@
         "markup.bold punctuation.definition.bold"
       ],
       "settings": {
-        "foreground": "#C775EAD9",
+        "foreground": "{{ light.purple }}D9",
         "fontStyle": "bold"
       }
     },
@@ -476,7 +476,7 @@
         "markup.quote punctuation.definition"
       ],
       "settings": {
-        "foreground": "#41ACA6"
+        "foreground": "{{ light.teal }}"
       }
     },
     {

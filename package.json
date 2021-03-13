@@ -4,11 +4,12 @@
   "description": "A dark theme for Visual Studio Code",
   "publisher": "joshdales",
   "icon": "logo.png",
+  "license": "MIT",
   "galleryBanner": {
     "color": "#0D141F",
     "theme": "dark"
   },
-  "version": "1.1.1",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -36,5 +37,12 @@
         "path": "./themes/taiga-color-theme.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "node src/buildTheme.js"
+  },
+  "devDependencies": {
+    "json5": "^2.2.0",
+    "mustache": "^4.1.0"
   }
 }

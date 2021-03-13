@@ -1,0 +1,27 @@
+{
+  "ui": {
+    "0": "#0D141F",
+    "1": "#152133",
+    "2": "#1B2940",
+    "3": "#375380",
+    "highlight": "#007A2C",
+    "text": "#D7FCFE"
+  },
+  "main": {
+    "blue": "#507BBF",
+    "green": "#3ED07E",
+    "purple": "#9C57D9",
+    "red": "#D1453F",
+    "teal": "#209E96",
+    "yellow": "#D9A845"
+  },
+  "light": {
+    "blue": "#86DCFF",
+    "green": "#81E0A4",
+    "purple": "#C775EA",
+    "red": "#D8615C",
+    "teal": "#38CEC6",
+    "white": "#DDFCFE",
+    "yellow": "#EDBB54"
+  }
+}

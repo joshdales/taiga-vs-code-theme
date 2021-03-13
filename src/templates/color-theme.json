@@ -1,0 +1,548 @@
+{
+  "name": "Taiga",
+  "type": "dark",
+  "colors": {
+    // Base colours
+    "focusBorder": "{{ ui.1 }}",
+    "foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
+    "selection.background": "{{ main.blue }}{{#opacity}}40{{/opacity}}",
+    "descriptionForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
+    "errorForeground": "{{ main.red }}",
+    "sash.hoverBorder": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    // Text Colours
+    "textBlockQuote.background": "{{ ui.1 }}",
+    "textBlockQuote.border": "{{ main.blue }}",
+    "textLink.foreground": "{{ main.green }}",
+    "textLink.activeForeground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
+    "textPreformat.foreground": "{{ main.yellow }}",
+    // Button Control
+    "button.background": "{{ ui.3 }}",
+    "button.hoverBackground": "{{ main.blue }}",
+    // Dropdown Control
+    "dropdown.background": "{{ ui.1 }}",
+    "dropdown.foreground": "{{ ui.text }}",
+    "dropdown.listBackground": "{{ ui.0 }}",
+    // Input Control
+    "input.background": "{{ ui.1 }}",
+    "input.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
+    "input.placeholderForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+    "inputOption.activeBackground": "{{ ui.3 }}{{#opacity}}75{{/opacity}}",
+    "inputValidation.errorBackground": "{{ main.red }}",
+    "inputValidation.errorBorder": "{{ main.red }}",
+    // Scrollbar Control
+    "scrollbarSlider.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "scrollbarSlider.hoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "scrollbarSlider.activeBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    // Badge
+    "badge.background": "{{ ui.highlight }}",
+    // Progress Bar
+    "progressBar.background": "{{ main.blue }}",
+    // Lists & Trees
+    "list.focusBackground": "{{ ui.2 }}",
+    "list.activeSelectionBackground": "{{ ui.3 }}",
+    "list.hoverBackground": "{{ ui.3 }}9c",
+    "list.inactiveSelectionBackground": "{{ ui.3 }}{{#opacity}}35{{/opacity}}",
+    "list.errorForeground": "{{ main.red }}",
+    "list.warningForeground": "{{ main.yellow }}",
+    "tree.indentGuidesStroke":"{{ ui.text }}",
+    // Activity Bar
+    "activityBar.background": "{{ ui.1 }}",
+    "activityBarBadge.background": "{{ ui.highlight }}",
+    // Side Bar
+    "sideBar.background": "{{ ui.0 }}",
+    "sideBar.foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
+    "sideBar.dropBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "sideBarTitle.foreground": "{{ ui.text }}",
+    "sideBarSectionHeader.background": "{{ ui.1 }}",
+    // Minimap
+    "minimap.findMatchHighlight": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "minimap.selectionHighlight": "{{ main.blue }}",
+    "minimap.errorHighlight": "{{ main.red }}",
+    "minimapGutter.addedBackground": "{{ main.green }}",
+    "minimapGutter.modifiedBackground": "{{ main.teal }}",
+    "minimapGutter.deletedBackground": "{{ main.red }}",
+    // Editor Groups & Tabs
+    "editorGroup.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editorGroup.dropBackground": "{{ ui.2 }}{{#opacity}}75{{/opacity}}",
+    "editorGroupHeader.tabsBackground": "{{ ui.0 }}",
+    "editorGroupHeader.noTabsBackground": "{{ ui.0 }}",
+    "tab.inactiveBackground": "{{ ui.0 }}",
+    "tab.border": "{{ ui.0 }}",
+    "tab.activeBorder": "{{ ui.highlight }}",
+    // Editor Colours
+    "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
+    "editor.background": "{{ ui.0 }}",
+    "editor.foreground": "{{ ui.text }}",
+    "editor.lineHighlightBorder": "{{ main.blue }}",
+    "editor.selectionBackground": "{{ main.blue }}{{#opacity}}45{{/opacity}}",
+    "editor.inactiveSelectionBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "editor.selectionHighlightBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "editor.wordHighlightStrongBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
+    "editor.wordHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
+    "editor.findMatchBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "editor.findMatchHighlightBackground": "{{ main.yellow }}{{#opacity}}15{{/opacity}}",
+    "editor.findRangeHighlightBackground": "{{ light.yellow }}{{#opacity}}15{{/opacity}}",
+    "editor.hoverHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
+    "editorBracketMatch.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editorBracketMatch.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "editorCursor.foreground": "{{ main.yellow }}",
+    "editorLineNumber.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
+    "editorLineNumber.activeForeground": "{{ light.yellow }}",
+    "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
+    "editorSuggestWidget.background": "{{ ui.1 }}",
+    "editorSuggestWidget.highlightForeground": "{{ main.teal }}",
+    "editorSuggestWidget.selectedBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editorSuggestWidget.foreground": "{{ ui.text }}",
+    "editorLink.activeForeground": "{{ light.blue }}",
+    "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
+    "editorError.foreground": "{{ main.red }}",
+    "editorGutter.addedBackground": "{{ main.green }}",
+    "editorOverviewRuler.addedForeground": "{{ main.green }}",
+    "editorGutter.modifiedBackground": "{{ main.teal }}",
+    "editorOverviewRuler.modifiedForeground": "{{ main.teal }}",
+    "editorGutter.deletedBackground": "{{ main.red }}",
+    "editorOverviewRuler.deletedForeground": "{{ main.red }}",
+    "editorOverviewRuler.errorForeground": "{{ main.red }}",
+    "editorMarkerNavigationError.background": "{{ main.red }}",
+    // Diff Editor Colours
+    "diffEditor.insertedTextBackground": "{{ main.green }}{{#opacity}}25{{/opacity}}",
+    "diffEditor.removedTextBackground": "{{ main.red }}{{#opacity}}25{{/opacity}}",
+    // Peek View Colours
+    "peekView.border": "{{ main.blue }}",
+    "peekViewEditor.background": "{{ ui.0 }}",
+    "peekViewEditorGutter.background": "{{ ui.0 }}",
+    "peekViewEditor.matchHighlightBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "peekViewResult.background": "{{ ui.1 }}",
+    "peekViewResult.lineForeground": "{{ ui.text }}",
+    "peekViewResult.matchHighlightBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "peekViewTitle.background": "{{ ui.1 }}",
+    "peekViewTitleDescription.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
+    "peekViewTitleLabel.foreground": "{{ ui.text }}",
+    // Editor Widget Colours
+    "editorWidget.background": "{{ ui.1 }}",
+    "editorWidget.border": "{{ ui.1 }}",
+    // Status Bar Colours
+    "statusBar.background": "{{ ui.1 }}",
+    // Title Bar Colours
+    "titleBar.activeBackground": "{{ ui.1 }}",
+    "titleBar.activeForeground": "{{ ui.text }}",
+    "titleBar.inactiveBackground": "{{ ui.1 }}",
+    // Notification Colours
+    "notificationCenterHeader.foreground": "{{ ui.text }}",
+    "notificationCenterHeader.background": "{{ ui.2 }}",
+    "notificationLink.foreground": "{{ main.green }}",
+    "notificationsErrorIcon.foreground": "{{ main.red }}",
+    "notificationsWarningIcon.foreground": "{{ main.yellow }}",
+    "notificationsInfoIcon.foreground": "{{ main.blue }}",
+    // Integrated Terminal Colours
+    "terminal.ansiBlack": "{{ ui.0 }}",
+    "terminal.ansiBrightBlack": "{{ ui.2 }}",
+    "terminal.ansiBlue": "{{ main.blue }}",
+    "terminal.ansiBrightBlue": "{{ light.blue }}",
+    "terminal.ansiCyan": "{{ main.teal }}",
+    "terminal.ansiBrightCyan": "{{ light.teal }}",
+    "terminal.ansiGreen": "{{ main.green }}",
+    "terminal.ansiBrightGreen": "{{ light.green }}",
+    "terminal.ansiMagenta": "{{ main.purple }}",
+    "terminal.ansiBrightMagenta": "{{ light.purple }}",
+    "terminal.ansiRed": "{{ main.red }}",
+    "terminal.ansiBrightRed": "{{ light.red }}",
+    "terminal.ansiWhite": "{{ ui.text }}",
+    "terminal.ansiBrightWhite": "{{ light.white }}",
+    "terminal.ansiYellow": "{{ main.yellow }}",
+    "terminal.ansiBrightYellow": "{{ light.yellow }}",
+    // Welcome Page Colours
+    "welcomePage.buttonBackground": "{{ ui.1 }}",
+    "welcomePage.buttonHoverBackground": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
+    // Git Colours
+    "gitDecoration.untrackedResourceForeground": "{{ main.teal }}",
+    "gitDecoration.addedResourceForeground": "{{ main.green }}",
+    "gitDecoration.modifiedResourceForeground": "{{ main.yellow }}",
+    "gitDecoration.deletedResourceForeground": "{{ main.red }}",
+    "gitDecoration.conflictingResourceForeground": "{{ main.purple }}",
+    "gitDecoration.ignoredResourceForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+    // Settings Editor Colours
+    "settings.modifiedItemIndicator": "{{ main.teal }}",
+    "settings.focusedRowBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "notebook.focusedRowBorder": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "notebook.rowHoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    // Breadcrumbs colours
+    "breadcrumb.foreground": "{{ ui.text }}",
+    "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
+    "breadcrumb.focusForeground": "{{ light.blue }}",
+    "breadcrumb.activeSelectionForeground": "{{ light.blue }}",
+    "breadcrumbPicker.background": "{{ ui.1 }}"
+    // TODO: Symbol Icons Colours
+  },
+  "semanticHighlighting": true,
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation",
+        "meta.class meta.block",
+        "keyword.operator.type.annotation",
+        "keyword.operator.optional.",
+        "keyword.operator.assignment",
+        "keyword.operator.comparison",
+        "keyword.operator.arithmetic",
+        "meta.type.annotation meta.brace",
+        "meta.field.declaration"
+      ],
+      "settings": {
+        "foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "punctuation.definition.variable",
+        "support.variable.property"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword",
+        "storage.type.function",
+        "storage.type",
+        "storage.modifier",
+        "punctuation.definition.keyword",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "{{ light.green }}"
+      }
+    },
+    {
+      "name": "JSON Key",
+      "scope": [
+        "source.json meta.structure.dictionary.json support.type.property-name.json",
+        "punctuation.support.type.property-name",
+        "meta.objectliteral meta.object-literal.key"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "YAML Key",
+      "scope": [
+        "source.yaml entity.name.tag",
+        "source.yaml punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Class and Interface Names",
+      "scope": [
+        "meta.class",
+        "meta.class entity.name",
+        "meta.class entity.other.inherited-class",
+        "meta.interface entity.name",
+        "meta.interface entity.other.inherited-class",
+        "support.class",
+        "meta.module",
+        "entity.name",
+        "support.constant"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}"
+      }
+    },
+    {
+      "name": "Type definitions",
+      "scope": [
+        "support.type",
+        "meta.type.annotation"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": [
+        "meta.definition entity.name.function",
+        "entity.name.function",
+        "meta.function-call support.function.console"
+      ],
+      "settings": {
+        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Tag Name",
+      "scope": [
+        "entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": [
+        "punctuation.definition.tag"
+      ],
+      "settings": {
+        "foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
+      }
+    },
+    {
+      "name": "Tag attributes",
+      "scope": [
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "foreground": "{{ main.teal }}"
+      }
+    },
+    {
+      "name": "Console This",
+      "scope": [
+        "variable.language.this",
+        "support.class.console",
+        "variable.language.self.ruby",
+        "support.variable.object"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Embedded",
+      "scope": [
+        "punctuation.section.embedded",
+        "punctuation.definition.template-expression"
+      ],
+      "settings": {
+        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant"
+      ],
+      "settings": {
+        "foreground": "{{ main.teal }}"
+      }
+    },
+    {
+      "name": "CSS Class",
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.class.css punctuation.definition.entity.css"
+      ],
+      "settings": {
+        "foreground": "{{ main.teal }}"
+      }
+    },
+    {
+      "name": "CSS ID",
+      "scope": [
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.id.css punctuation.definition.entity.css"
+      ],
+      "settings": {
+        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "CSS function",
+      "scope": [
+        "source.css support.function"
+      ],
+      "settings": {
+        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "CSS unit",
+      "scope": [
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "foreground": "{{ main.teal }}"
+      }
+    },
+    {
+      "name": "CSS unit",
+      "scope": [
+        "support.constant.media"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Markdown Headings",
+      "scope": [
+        "markup.heading",
+        "markup.heading punctuation.definition.heading",
+        "markup.heading entity.name.section"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Markdown Italics",
+      "scope": [
+        "markup.italic",
+        "markup.italic punctuation.definition.italic"
+      ],
+      "settings": {
+        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": [
+        "markup.bold",
+        "markup.bold punctuation.definition.bold"
+      ],
+      "settings": {
+        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown List",
+      "scope": [
+        "markup.list punctuation.definition.list.begin"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Inline Code",
+      "scope": [
+        "markup.inline.raw",
+        "markup.inline.raw punctuation.definition.raw"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}"
+      }
+    },
+    {
+      "name": "Markdown Block Code",
+      "scope": [
+        "markup.fenced_code.block",
+        "markup.fenced_code.block punctuation.definition"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}"
+      }
+    },
+    {
+      "name": "Markdown Quote",
+      "scope": [
+        "markup.quote",
+        "markup.quote punctuation.definition"
+      ],
+      "settings": {
+        "foreground": "{{ light.teal }}"
+      }
+    },
+    {
+      "name": "Markdown Seperator",
+      "scope": [
+        "meta.separator.markdown"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Link",
+      "scope": [
+        "meta.link.inline",
+        "meta.link.inet",
+        "meta.link.inet punctuation.definition.link",
+        "meta.link.reference markup.underline.link",
+        "meta.image.inline"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Ruby Symbol",
+      "scope": [
+        "source.ruby constant.other.symbol",
+        "source.ruby constant.other.symbol punctuation"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "Ruby Class",
+      "scope": [
+        "meta.class.ruby keyword.operator",
+        "meta.module.ruby entity.other.inherited-class punctuation"
+      ],
+      "settings": {
+        "foreground": "{{ light.yellow }}"
+      }
+    },
+    {
+      "name": "Ruby Hash Rocket",
+      "scope": [
+        "source.ruby punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "{{ main.purple }}"
+      }
+    },
+    {
+      "name": "Ruby Hash",
+      "scope": [
+        "source.ruby constant.language.symbol.ruby",
+        "source.ruby punctuation.section.symbol.begin.ruby",
+        "source.ruby punctuation.section.symbol.end.ruby",
+        "source.ruby punctuation.definition.constant.ruby",
+        "source.ruby constant.language.symbol.hashkey.ruby",
+      ],
+      "settings": {
+        "foreground": "{{ main.teal }}",
+      }
+    }
+  ]
+}

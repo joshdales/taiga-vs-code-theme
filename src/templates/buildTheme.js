@@ -3,10 +3,10 @@ const path = require("path")
 const JSON5 = require("json5")
 const mustache = require("mustache")
 
-const opacity = require('./opacity.json')
+const opacity = require('./opacity')
 const colours = require('./colours.json')
 
-const themeValues = {...colours, ...opacity}
+const themeValues = {...colours, opacity}
 
 const theme = JSON5.parse(
   fs.readFileSync(`${__dirname}/color-theme.json`, (err, data) => data)

@@ -1,19 +1,18 @@
 {
-  "mainColours": {
+  "colours": {
     "green": "#3ED07E",
     "yellow": "#D9A845",
     "red": "#D1453F",
     "purple": "#9C57D9",
     "teal": "#209E96",
-    "blue": "#507BBF",
-    "white": "#D7FCFE",
-    "black": "#0D141F"
+    "blue": "#507BBF"
   },
   "ui": {
     "0": "#0D141F",
     "1": "#152133",
     "2": "#1B2940",
-    "4": "#507BBF",
-    "highlight": "#007A2C"
+    "3": "#507BBF",
+    "highlight": "#007A2C",
+    "text": "#D7FCFE"
   }
 }

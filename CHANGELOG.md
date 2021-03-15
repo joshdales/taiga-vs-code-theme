@@ -2,6 +2,10 @@
 
 Here's what's been happening recently
 
+### Unreleased
+
+- 🐛 Functions are blue again
+
 ### 1.2.0
 
 🎉 There is more consistency between all the colours used through out the theme

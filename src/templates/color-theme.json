@@ -297,7 +297,7 @@
         "meta.function-call support.function.console"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ light.blue }}{{#opacity}}85{{/opacity}}"
       }
     },
     {

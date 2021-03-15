@@ -376,16 +376,17 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ light.blue }}"
       }
     },
     {
       "name": "CSS function",
       "scope": [
-        "source.css support.function"
+        "source.css support.function",
+        "entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ main.blue }}"
       }
     },
     {

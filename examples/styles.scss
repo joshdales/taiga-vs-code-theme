@@ -6,6 +6,11 @@ html {
 .html {
   display: block;
   color: aliceblue;
+  height: calc(100% + 12px);
+
+  &--fresh {
+    @include mix-master();
+  }
 }
 
 #html {
@@ -16,6 +21,10 @@ html {
 @media screen and (max-width: 800px) {
   html {
     display: inline;
-    color: red;
+    color: #f00;
   }
+}
+
+@mixin mix-master() {
+  background-color: indigo;
 }

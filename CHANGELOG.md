@@ -5,6 +5,7 @@ Here's what's been happening recently
 ### Unreleased
 
 - 🐛 Functions are blue again
+- 🐛 Fixing a couple of issues with css and scss
 
 ### 1.2.0
 

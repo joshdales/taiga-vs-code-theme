@@ -350,16 +350,17 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#38CEC6D9"
+        "foreground": "#86DCFF"
       }
     },
     {
       "name": "CSS function",
       "scope": [
-        "source.css support.function"
+        "source.css support.function",
+        "entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#38CEC6D9"
+        "foreground": "#507BBF"
       }
     },
     {

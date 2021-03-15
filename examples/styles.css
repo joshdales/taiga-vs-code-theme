@@ -6,6 +6,7 @@ html {
 .html {
   display: block;
   color: aliceblue;
+  height: calc(100% + 12px);
 }
 
 #html {
@@ -16,6 +17,6 @@ html {
 @media screen and (max-width: 800px) {
   html {
     display: inline;
-    color: red;
+    color: #f00;
   }
 }

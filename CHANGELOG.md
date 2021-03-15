@@ -4,8 +4,11 @@ Here's what's been happening recently
 
 ### Unreleased
 
-- 🐛 Functions are blue again
-- 🐛 Fixing a couple of issues with css and scss
+- 🐛 Fix some incorrect token highlight that came up in `1.2.0`
+  - Functions are blue again
+  - Fixing a couple of issues with css and scss
+  - Adds colour to some areas in ruby that were missing
+  - Update Markdown quote blocks
 
 ### 1.2.0
 

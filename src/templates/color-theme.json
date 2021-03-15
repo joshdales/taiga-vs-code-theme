@@ -504,6 +504,17 @@
       }
     },
     {
+      "name": "Markdown Quote",
+      "scope": [
+        "markup.quote.markdown",
+        "markup.quote.markdown punctuation.definition.quote.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "{{ main.blue }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Ruby Symbol",
       "scope": [
         "source.ruby constant.other.symbol",

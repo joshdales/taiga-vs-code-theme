@@ -455,7 +455,7 @@
       }
     },
     {
-      "name": "Markdown Seperator",
+      "name": "Markdown Separator",
       "scope": [
         "meta.separator.markdown"
       ],
@@ -475,6 +475,17 @@
       ],
       "settings": {
         "foreground": "#3ED07ED9"
+      }
+    },
+    {
+      "name": "Markdown Quote",
+      "scope": [
+        "markup.quote.markdown",
+        "markup.quote.markdown punctuation.definition.quote.begin.markdown"
+      ],
+      "settings": {
+        "foreground": "#507BBF",
+        "fontStyle": "italic"
       }
     },
     {
@@ -513,10 +524,29 @@
         "source.ruby punctuation.section.symbol.begin.ruby",
         "source.ruby punctuation.section.symbol.end.ruby",
         "source.ruby punctuation.definition.constant.ruby",
-        "source.ruby constant.language.symbol.hashkey.ruby"
+        "source.ruby constant.language.symbol.hashkey.ruby",
+        "constant.language.symbol.hashkey.ruby punctuation.definition.constant.hashkey.ruby"
       ],
       "settings": {
         "foreground": "#209E96"
+      }
+    },
+    {
+      "name": "Ruby Method",
+      "scope": [
+        "entity.name.function.ruby"
+      ],
+      "settings": {
+        "foreground": "#507BBF"
+      }
+    },
+    {
+      "name": "Ruby Keyword Arguments",
+      "scope": [
+        "meta.function.method.with-arguments.ruby constant.other.symbol.hashkey.parameter.function.ruby punctuation.definition.constant.ruby"
+      ],
+      "settings": {
+        "foreground": "#3ED07E"
       }
     }
   ]

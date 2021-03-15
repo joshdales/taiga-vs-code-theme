@@ -198,7 +198,8 @@
         "keyword.operator.comparison",
         "keyword.operator.arithmetic",
         "meta.type.annotation meta.brace",
-        "meta.field.declaration"
+        "meta.field.declaration",
+        "string.template meta.brace"
       ],
       "settings": {
         "foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
@@ -275,7 +276,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}"
+        "foreground": "{{ light.yellow }}{{#opacity}}85{{/opacity}}"
       }
     },
     {
@@ -285,7 +286,7 @@
         "meta.type.annotation"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}",
+        "foreground": "{{ light.yellow }}{{#opacity}}85{{/opacity}}",
         "fontStyle": "italic"
       }
     },
@@ -297,13 +298,14 @@
         "meta.function-call support.function.console"
       ],
       "settings": {
-        "foreground": "{{ light.blue }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ main.teal }}"
       }
     },
     {
       "name": "Tag Name",
       "scope": [
-        "entity.name.tag"
+        "entity.name.tag",
+        "entity.name.tag support.class.component"
       ],
       "settings": {
         "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
@@ -351,22 +353,24 @@
       }
     },
     {
-      "name": "Numbers",
+      "name": "General Constants",
       "scope": [
         "constant"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}"
+        "foreground": "{{ main.blue }}"
       }
     },
     {
       "name": "CSS Class",
       "scope": [
         "entity.other.attribute-name.class.css",
-        "entity.other.attribute-name.class.css punctuation.definition.entity.css"
+        "entity.other.attribute-name.class.css punctuation.definition.entity.css",
+        "entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
+        "entity.other.attribute-name.placeholder.css"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}"
+        "foreground": "{{ light.teal }}"
       }
     },
     {
@@ -376,23 +380,14 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "{{ light.blue }}"
+        "foreground": "{{ light.teal }}{{#opacity}}75{{/opacity}}"
       }
     },
     {
       "name": "CSS function",
       "scope": [
         "source.css support.function",
-        "entity.name.function.scss"
-      ],
-      "settings": {
-        "foreground": "{{ main.blue }}"
-      }
-    },
-    {
-      "name": "CSS unit",
-      "scope": [
-        "keyword.other.unit"
+        "entity.name.function.scss",
       ],
       "settings": {
         "foreground": "{{ main.teal }}"
@@ -401,10 +396,39 @@
     {
       "name": "CSS unit",
       "scope": [
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "foreground": "{{ main.blue }}"
+      }
+    },
+    {
+      "name": "CSS constant",
+      "scope": [
         "support.constant.media"
       ],
       "settings": {
         "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+      }
+    },
+    {
+      "name": "CSS Property",
+      "scope": [
+        "support.type.property-name.css",
+        "meta.property-list.css entity.name.tag.css",
+        "meta.property-list.scss entity.name.tag.css",
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
+      }
+    },
+    {
+      "name": "CSS Hex",
+      "scope": [
+        "punctuation.definition.constant.css"
+      ],
+      "settings": {
+        "foreground": "{{ main.blue }}",
       }
     },
     {
@@ -563,7 +587,7 @@
         "entity.name.function.ruby"
       ],
       "settings": {
-        "foreground": "{{ main.blue }}",
+        "foreground": "{{ main.teal }}",
       }
     },
     {
@@ -573,6 +597,15 @@
       ],
       "settings": {
         "foreground": "{{ main.green }}",
+      }
+    },
+    {
+      "name": "JSX Tags",
+      "scope": [
+        "string.template meta.brace"
+      ],
+      "settings": {
+        "foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
       }
     }
   ]

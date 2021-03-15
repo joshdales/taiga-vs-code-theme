@@ -172,7 +172,8 @@
         "keyword.operator.comparison",
         "keyword.operator.arithmetic",
         "meta.type.annotation meta.brace",
-        "meta.field.declaration"
+        "meta.field.declaration",
+        "string.template meta.brace"
       ],
       "settings": {
         "foreground": "#D7FCFEBF"
@@ -249,7 +250,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#EDBB54"
+        "foreground": "#EDBB54D9"
       }
     },
     {
@@ -259,7 +260,7 @@
         "meta.type.annotation"
       ],
       "settings": {
-        "foreground": "#EDBB54",
+        "foreground": "#EDBB54D9",
         "fontStyle": "italic"
       }
     },
@@ -271,13 +272,14 @@
         "meta.function-call support.function.console"
       ],
       "settings": {
-        "foreground": "#86DCFFD9"
+        "foreground": "#209E96"
       }
     },
     {
       "name": "Tag Name",
       "scope": [
-        "entity.name.tag"
+        "entity.name.tag",
+        "entity.name.tag support.class.component"
       ],
       "settings": {
         "foreground": "#3ED07ED9"
@@ -325,22 +327,24 @@
       }
     },
     {
-      "name": "Numbers",
+      "name": "General Constants",
       "scope": [
         "constant"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "#507BBF"
       }
     },
     {
       "name": "CSS Class",
       "scope": [
         "entity.other.attribute-name.class.css",
-        "entity.other.attribute-name.class.css punctuation.definition.entity.css"
+        "entity.other.attribute-name.class.css punctuation.definition.entity.css",
+        "entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
+        "entity.other.attribute-name.placeholder.css"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "#38CEC6"
       }
     },
     {
@@ -350,7 +354,7 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#86DCFF"
+        "foreground": "#38CEC6BF"
       }
     },
     {
@@ -360,7 +364,7 @@
         "entity.name.function.scss"
       ],
       "settings": {
-        "foreground": "#507BBF"
+        "foreground": "#209E96"
       }
     },
     {
@@ -369,16 +373,36 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "#209E96"
+        "foreground": "#507BBF"
       }
     },
     {
-      "name": "CSS unit",
+      "name": "CSS constant",
       "scope": [
         "support.constant.media"
       ],
       "settings": {
         "foreground": "#3ED07ED9"
+      }
+    },
+    {
+      "name": "CSS Property",
+      "scope": [
+        "support.type.property-name.css",
+        "meta.property-list.css entity.name.tag.css",
+        "meta.property-list.scss entity.name.tag.css"
+      ],
+      "settings": {
+        "foreground": "#3ED07ED9"
+      }
+    },
+    {
+      "name": "CSS Hex",
+      "scope": [
+        "punctuation.definition.constant.css"
+      ],
+      "settings": {
+        "foreground": "#507BBF"
       }
     },
     {
@@ -537,7 +561,7 @@
         "entity.name.function.ruby"
       ],
       "settings": {
-        "foreground": "#507BBF"
+        "foreground": "#209E96"
       }
     },
     {
@@ -547,6 +571,15 @@
       ],
       "settings": {
         "foreground": "#3ED07E"
+      }
+    },
+    {
+      "name": "JSX Tags",
+      "scope": [
+        "string.template meta.brace"
+      ],
+      "settings": {
+        "foreground": "#D7FCFEBF"
       }
     }
   ]

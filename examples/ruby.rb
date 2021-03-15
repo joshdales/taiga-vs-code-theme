@@ -1,4 +1,4 @@
-require 'somthing'
+require 'something'
 
 module Cool
   # Check if cool
@@ -7,7 +7,7 @@ module Cool
     include Cool
 
     def errrrr_what(yeah)
-      self.suff
+      self.stuff
     end
 
     def stuff(this:, that: nil)
@@ -27,6 +27,6 @@ module Cool
     end
 
     def i_should_think_so
-      return unless Something::Amazing && Cool.suerfly
+      return unless Something::Amazing && Cool.superfly
     end
 end

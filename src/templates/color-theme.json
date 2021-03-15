@@ -481,7 +481,7 @@
       }
     },
     {
-      "name": "Markdown Seperator",
+      "name": "Markdown Separator",
       "scope": [
         "meta.separator.markdown"
       ],
@@ -540,9 +540,28 @@
         "source.ruby punctuation.section.symbol.end.ruby",
         "source.ruby punctuation.definition.constant.ruby",
         "source.ruby constant.language.symbol.hashkey.ruby",
+        "constant.language.symbol.hashkey.ruby punctuation.definition.constant.hashkey.ruby"
       ],
       "settings": {
         "foreground": "{{ main.teal }}",
+      }
+    },
+    {
+      "name": "Ruby Method",
+      "scope": [
+        "entity.name.function.ruby"
+      ],
+      "settings": {
+        "foreground": "{{ main.blue }}",
+      }
+    },
+    {
+      "name": "Ruby Keyword Arguments",
+      "scope": [
+        "meta.function.method.with-arguments.ruby constant.other.symbol.hashkey.parameter.function.ruby punctuation.definition.constant.ruby"
+      ],
+      "settings": {
+        "foreground": "{{ main.green }}",
       }
     }
   ]

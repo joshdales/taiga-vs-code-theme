@@ -2,13 +2,10 @@
 
 Here's what's been happening recently
 
-### Unreleased
+### 1.2.1
 
-- 🐛 Fix some incorrect token highlight that came up in `1.2.0`
-  - Functions are blue again
-  - Fixing a couple of issues with css and scss
-  - Adds colour to some areas in ruby that were missing
-  - Update Markdown quote blocks
+- 🎉 There has been a general change to some of the syntax highlighting to make things a little more subtle, specifically around swapping the colours of constants and functions.
+- 🐛 Fix some incorrect token highlighting that came up in `1.2.0`
 
 ### 1.2.0
 

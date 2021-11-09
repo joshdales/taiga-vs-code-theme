@@ -27,10 +27,14 @@
     "button.secondaryBackground": "{{ ui.3 }}",
     "button.secondaryHoverBackground": "{{ ui.2 }}",
     "button.secondaryForeground": "{{ ui.text }}",
+    "checkbox.background": "{{ ui.1 }}",
+    "checkbox.foreground": "{{ ui.text }}",
+    "checkbox.border": "{{ ui.0 }}",
     // Dropdown Control
     "dropdown.background": "{{ ui.1 }}",
-    "dropdown.foreground": "{{ ui.text }}",
     "dropdown.listBackground": "{{ ui.0 }}",
+    "dropdown.border": "{{ ui.0 }}",
+    "dropdown.foreground": "{{ ui.text }}",
     // Input Control
     "input.background": "{{ ui.1 }}",
     "input.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",

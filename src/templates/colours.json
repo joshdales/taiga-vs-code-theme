@@ -5,7 +5,8 @@
     "2": "#1B2940",
     "3": "#375380",
     "highlight": "#007A2C",
-    "text": "#D7FCFE"
+    "text": "#D7FCFE",
+    "shadow": "#000000"
   },
   "main": {
     "blue": "#507BBF",

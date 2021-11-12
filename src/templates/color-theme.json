@@ -101,13 +101,16 @@
     "minimapGutter.modifiedBackground": "{{ main.teal }}",
     "minimapGutter.deletedBackground": "{{ main.red }}",
     // Editor Groups & Tabs
-    "editorGroup.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editorGroup.border": "{{ ui.1 }}",
     "editorGroup.dropBackground": "{{ ui.2 }}{{#opacity}}75{{/opacity}}",
-    "editorGroupHeader.tabsBackground": "{{ ui.0 }}",
     "editorGroupHeader.noTabsBackground": "{{ ui.0 }}",
+    "editorGroupHeader.tabsBackground": "{{ ui.0 }}",
     "tab.inactiveBackground": "{{ ui.0 }}",
     "tab.border": "{{ ui.0 }}",
     "tab.activeBorder": "{{ ui.highlight }}",
+    "tab.lastPinnedBorder": "{{ ui.1 }}",
+    "tab.inactiveForeground":"{{ ui.text }}{{#opacity}}50{{/opacity}}",
+    "tab.hoverForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     // Editor Colours
     "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
     "editor.background": "{{ ui.0 }}",

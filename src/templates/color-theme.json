@@ -2,7 +2,7 @@
   "name": "Taiga",
   "type": "dark",
   "colors": {
-    // Base colours
+    /* Base colours */
     "focusBorder": "{{ ui.1 }}",
     "foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
     "widget.shadow": "{{ ui.shadow }}",
@@ -11,16 +11,16 @@
     "errorForeground": "{{ main.red }}",
     "icon.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "sash.hoverBorder": "{{ ui.highlight }}{{#opacity}}50{{/opacity}}",
-    // Text Colours
+    /* Text Colours */
     "textBlockQuote.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     "textBlockQuote.border": "{{ ui.2 }}",
     "textLink.activeForeground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
     "textLink.foreground": "{{ main.green }}",
     "textPreformat.foreground": "{{ main.yellow }}",
-    // Action Colours
+    /* Action Colours */
     "toolbar.hoverBackground": "{{ ui.highlight }}{{#opacity}}50{{/opacity}}",
     "toolbar.activeBackground": "{{ ui.highlight }}",
-    // Button Control
+    /* Button Control */
     "button.background": "{{ ui.highlight }}{{#opacity}}50{{/opacity}}",
     "button.hoverBackground": "{{ ui.highlight }}",
     "button.foreground": "{{ ui.text }}",
@@ -30,12 +30,12 @@
     "checkbox.background": "{{ ui.1 }}",
     "checkbox.foreground": "{{ ui.text }}",
     "checkbox.border": "{{ ui.0 }}",
-    // Dropdown Control
+    /* Dropdown Control */
     "dropdown.background": "{{ ui.1 }}",
     "dropdown.listBackground": "{{ ui.0 }}",
     "dropdown.border": "{{ ui.0 }}",
     "dropdown.foreground": "{{ ui.text }}",
-    // Input Control
+    /* Input Control */
     "input.background": "{{ ui.1 }}",
     "input.border": "{{ ui.0 }}",
     "input.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
@@ -51,17 +51,17 @@
     "inputValidation.warningBackground": "{{ ui.1 }}",
     "inputValidation.warningBorder": "{{ main.yellow }}",
     "inputValidation.warningForeground": "{{ main.yellow }}",
-    // Scrollbar Control
+    /* Scrollbar Control */
     "scrollbar.shadow": "{{ ui.shadow }}",
     "scrollbarSlider.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     "scrollbarSlider.hoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
     "scrollbarSlider.activeBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    // Badge
+    /* Badge */
     "badge.background": "{{ ui.highlight }}",
     "badge.foreground": "{{ ui.text }}",
-    // Progress Bar
+    /* Progress Bar */
     "progressBar.background": "{{ main.blue }}",
-    // Lists & Trees
+    /* Lists & Trees */
     "list.activeSelectionBackground": "{{ui.2}}",
     "list.activeSelectionForeground": "{{ui.text}}",
     "list.activeSelectionIconForeground": "{{ui.text}}",
@@ -77,18 +77,18 @@
     "list.filterMatchBackground": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
     "list.filterMatchBorder": "{{ ui.highlight }}",
     "tree.indentGuidesStroke":"{{ ui.text }}",
-    // Activity Bar
+    /* Activity Bar */
     "activityBar.background": "{{ ui.1 }}",
     "activityBar.dropBorder": "{{ ui.highlight }}",
     "activityBarBadge.background": "{{ ui.highlight }}",
-    // Side Bar
+    /* Side Bar */
     "sideBar.background": "{{ ui.0 }}",
     "sideBar.foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
     "sideBar.dropBackground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
     "sideBarTitle.foreground": "{{ ui.text }}",
     "sideBarSectionHeader.background": "{{ ui.1 }}",
     "sideBarSectionHeader.foreground": "{{ ui.text }}",
-    // Minimap
+    /* Minimap */
     "minimap.findMatchHighlight": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
     "minimap.selectionHighlight": "{{ main.blue }}",
     "minimap.errorHighlight": "{{ main.red }}",
@@ -100,7 +100,7 @@
     "minimapGutter.addedBackground": "{{ main.green }}",
     "minimapGutter.modifiedBackground": "{{ main.teal }}",
     "minimapGutter.deletedBackground": "{{ main.red }}",
-    // Editor Groups & Tabs
+    /* Editor Groups & Tabs */
     "editorGroup.border": "{{ ui.1 }}",
     "editorGroup.dropBackground": "{{ ui.2 }}{{#opacity}}75{{/opacity}}",
     "editorGroupHeader.noTabsBackground": "{{ ui.0 }}",
@@ -111,32 +111,38 @@
     "tab.lastPinnedBorder": "{{ ui.1 }}",
     "tab.inactiveForeground":"{{ ui.text }}{{#opacity}}50{{/opacity}}",
     "tab.hoverForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    // Editor Colours
-    "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
+    /* Editor Colours */
     "editor.background": "{{ ui.0 }}",
     "editor.foreground": "{{ ui.text }}",
-    "editor.lineHighlightBorder": "{{ main.blue }}",
-    "editor.selectionBackground": "{{ main.blue }}{{#opacity}}45{{/opacity}}",
-    "editor.inactiveSelectionBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "editor.selectionHighlightBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "editor.wordHighlightStrongBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
-    "editor.wordHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
-    "editor.findMatchBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
-    "editor.findMatchHighlightBackground": "{{ main.yellow }}{{#opacity}}15{{/opacity}}",
-    "editor.findRangeHighlightBackground": "{{ light.yellow }}{{#opacity}}15{{/opacity}}",
-    "editor.hoverHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
-    "editorBracketMatch.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
-    "editorBracketMatch.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "editorCursor.foreground": "{{ main.yellow }}",
     "editorLineNumber.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "editorLineNumber.activeForeground": "{{ light.yellow }}",
+    "editorCursor.foreground": "{{ main.yellow }}",
+    "editor.selectionBackground": "{{ main.blue }}{{#opacity}}45{{/opacity}}",
+    "editor.selectionHighlightBackground": "{{ ui.text }}{{#opacity}}10{{/opacity}}",
+    "editor.wordHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
+    "editor.wordHighlightStrongBackground": "{{ main.teal }}{{#opacity}}40{{/opacity}}",
+    "editor.findMatchBackground": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
+    "editor.findMatchHighlightBackground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
+    "editor.findRangeHighlightBackground": "{{ light.green }}{{#opacity}}10{{/opacity}}",
+    "searchEditor.findMatchBackground": "{{ main.purple }}{{#opacity}}45{{/opacity}}",
+    "editor.hoverHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
+    "editor.lineHighlightBorder": "{{ main.blue }}",
+    "editorLink.activeForeground": "{{ light.blue }}",
+    "editor.rangeHighlightBackground": "{{ light.green }}{{#opacity}}15{{/opacity}}",
+    "editor.symbolHighlightBackground": "{{ main.purple }}{{#opacity}}25{{/opacity}}",
+    "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
+    "editorIndentGuide.activeBackground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+    //  TODO: Editor Inlay Hints
+    "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
+    "editor.linkedEditingBackground": "{{ main.purple }}{{#opacity}}25{{/opacity}}",
+    "editorCodeLens.foreground": "{{ main.blue }}",
+    "editorBracketMatch.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editorBracketMatch.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.highlightForeground": "{{ main.teal }}",
     "editorSuggestWidget.selectedBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
     "editorSuggestWidget.foreground": "{{ ui.text }}",
-    "editorLink.activeForeground": "{{ light.blue }}",
-    "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
     "editorError.foreground": "{{ main.red }}",
     "editorGutter.addedBackground": "{{ main.green }}",
     "editorOverviewRuler.addedForeground": "{{ main.green }}",
@@ -146,10 +152,10 @@
     "editorOverviewRuler.deletedForeground": "{{ main.red }}",
     "editorOverviewRuler.errorForeground": "{{ main.red }}",
     "editorMarkerNavigationError.background": "{{ main.red }}",
-    // Diff Editor Colours
+    /* Diff Editor Colours */
     "diffEditor.insertedTextBackground": "{{ main.green }}{{#opacity}}25{{/opacity}}",
     "diffEditor.removedTextBackground": "{{ main.red }}{{#opacity}}25{{/opacity}}",
-    // Peek View Colours
+    /* Peek View Colours */
     "peekView.border": "{{ main.blue }}",
     "peekViewEditor.background": "{{ ui.0 }}",
     "peekViewEditorGutter.background": "{{ ui.0 }}",
@@ -160,23 +166,23 @@
     "peekViewTitle.background": "{{ ui.1 }}",
     "peekViewTitleDescription.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "peekViewTitleLabel.foreground": "{{ ui.text }}",
-    // Editor Widget Colours
+    /* Editor Widget Colours */
     "editorWidget.background": "{{ ui.1 }}",
     "editorWidget.border": "{{ ui.1 }}",
-    // Status Bar Colours
+    /* Status Bar Colours */
     "statusBar.background": "{{ ui.1 }}",
-    // Title Bar Colours
+    /* Title Bar Colours */
     "titleBar.activeBackground": "{{ ui.1 }}",
     "titleBar.activeForeground": "{{ ui.text }}",
     "titleBar.inactiveBackground": "{{ ui.1 }}",
-    // Notification Colours
+    /* Notification Colours */
     "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "{{ ui.2 }}",
     "notificationLink.foreground": "{{ main.green }}",
     "notificationsErrorIcon.foreground": "{{ main.red }}",
     "notificationsWarningIcon.foreground": "{{ main.yellow }}",
     "notificationsInfoIcon.foreground": "{{ main.blue }}",
-    // Integrated Terminal Colours
+    /* Integrated Terminal Colours */
     "terminal.ansiBlack": "{{ ui.0 }}",
     "terminal.ansiBrightBlack": "{{ ui.2 }}",
     "terminal.ansiBlue": "{{ main.blue }}",
@@ -193,28 +199,28 @@
     "terminal.ansiBrightWhite": "{{ light.white }}",
     "terminal.ansiYellow": "{{ main.yellow }}",
     "terminal.ansiBrightYellow": "{{ light.yellow }}",
-    // Welcome Page Colours
+    /* Welcome Page Colours */
     "welcomePage.buttonBackground": "{{ ui.1 }}",
     "welcomePage.buttonHoverBackground": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
-    // Git Colours
+    /* Git Colours */
     "gitDecoration.untrackedResourceForeground": "{{ main.teal }}",
     "gitDecoration.addedResourceForeground": "{{ main.green }}",
     "gitDecoration.modifiedResourceForeground": "{{ main.yellow }}",
     "gitDecoration.deletedResourceForeground": "{{ main.red }}",
     "gitDecoration.conflictingResourceForeground": "{{ main.purple }}",
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
-    // Settings Editor Colours
+    /* Settings Editor Colours */
     "settings.modifiedItemIndicator": "{{ main.teal }}",
     "settings.focusedRowBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     "notebook.focusedRowBorder": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     "notebook.rowHoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
-    // Breadcrumbs colours
+    /* Breadcrumbs colours */
     "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     "breadcrumb.focusForeground": "{{ light.blue }}",
     "breadcrumb.activeSelectionForeground": "{{ light.blue }}",
     "breadcrumbPicker.background": "{{ ui.1 }}"
-    // TODO: Symbol Icons Colours
+    /* TODO: Symbol Icons Colours */
   },
   "semanticHighlighting": true,
   "tokenColors": [

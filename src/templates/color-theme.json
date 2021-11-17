@@ -184,13 +184,21 @@
     /* Diff Editor Colours */
     "diffEditor.insertedTextBackground": "{{ main.green }}{{#opacity}}25{{/opacity}}",
     "diffEditor.removedTextBackground": "{{ main.red }}{{#opacity}}25{{/opacity}}",
+    "diffEditor.diagonalFill": "{{ ui.2 }}",
     /* Editor Widget Colours */
-    "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
+    "editorWidget.foreground": "{{ ui.text }}",
+    "editorWidget.background": "{{ ui.1 }}",
+    "editorWidget.border": "{{ ui.1 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
-    "editorSuggestWidget.highlightForeground": "{{ main.teal }}",
-    "editorSuggestWidget.selectedBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
-    "editorSuggestWidget.foreground": "{{ ui.text }}",
+    "editorSuggestWidget.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
+    "editorSuggestWidget.focusHighlightForeground": "{{ light.teal }}",
+    "editorSuggestWidget.highlightForeground": "{{ ui.text }}",
+    "editorSuggestWidget.selectedBackground": "{{ ui.3 }}{{#opacity}}75{{/opacity}}",
+    "editorSuggestWidget.selectedIconForeground": "{{ light.teal }}",
+    "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
     "editorMarkerNavigationError.background": "{{ main.red }}",
+    "editorMarkerNavigationWarning.background": "{{ main.yellow }}",
+    "editorMarkerNavigationInfo.background": "{{ main.blue }}",
     /* Peek View Colours */
     "peekView.border": "{{ main.blue }}",
     "peekViewEditor.background": "{{ ui.0 }}",
@@ -202,9 +210,6 @@
     "peekViewTitle.background": "{{ ui.1 }}",
     "peekViewTitleDescription.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "peekViewTitleLabel.foreground": "{{ ui.text }}",
-    /* Editor Widget Colours */
-    "editorWidget.background": "{{ ui.1 }}",
-    "editorWidget.border": "{{ ui.1 }}",
     /* Status Bar Colours */
     "statusBar.background": "{{ ui.1 }}",
     /* Title Bar Colours */

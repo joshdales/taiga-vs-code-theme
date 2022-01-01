@@ -40,11 +40,13 @@
   },
   "scripts": {
     "build": "node src/buildTheme.js",
-    "watch": "nodemon -w ./src/templates ./src/buildTheme.js"
+    "watch": "nodemon -w ./src/templates ./src/buildTheme.js",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "json5": "^2.2.0",
     "mustache": "^4.1.0",
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.14",
+    "vsce": "^2.6.0"
   }
 }

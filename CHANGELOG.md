@@ -2,14 +2,23 @@
 
 Here's what's been happening recently
 
+### 1.3.0
+Bunch of changes here, some small, some larger
+
+- 🎉 Bracket matching highlight
+- 🔧 Updates numerous colours across the board
+  - Try to makes things more consistent throughout the editor
+  - Various validation states
+  - Button colour updates to differentiate between primary and secondary
+
 ### 1.2.1
 
-- 🎉 There has been a general change to some of the syntax highlighting to make things a little more subtle, specifically around swapping the colours of constants and functions.
+- 🔧 There has been a general change to some of the syntax highlighting to make things a little more subtle, specifically around swapping the colours of constants and functions.
 - 🐛 Fix some incorrect token highlighting that came up in `1.2.0`
 
 ### 1.2.0
 
-🎉 There is more consistency between all the colours used through out the theme
+🔧 There is more consistency between all the colours used through out the theme
 
 ### 1.1.1
 
@@ -17,7 +26,7 @@ Here's what's been happening recently
 
 ### 1.1.0
 
-- 🎉 Quite a lot of minor UI tweaks all over the place:
+- 🔧 Quite a lot of minor UI tweaks all over the place:
   - Minimap and scrollbar.
   - Highlight colours when searching.
   - Peek view.

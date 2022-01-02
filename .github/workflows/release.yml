@@ -12,7 +12,7 @@ on:
         - patch
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -23,5 +23,6 @@ jobs:
         git config --global user.email "github-actions@github.com"
     - name: Publish new version
       run: |
+        npm install
         npm run publish ${{ github.event.inputs.release_version }} -p ${{ secrets.access_token }}
         git push

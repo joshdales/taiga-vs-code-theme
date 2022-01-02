@@ -15,9 +15,9 @@ jobs:
     - uses: actions/setup-node@v2
     - name: Setup git config
       run: |
-      git config --global user.name "github-actions"
-      git config --global user.email "github-actions@github.com"
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
     - name: Publish new version
       run: |
-      npm run publish ${{ inputs.release_version }} -p ${{ secrets.access_token }}
-      git push
+        npm run publish ${{ inputs.release_version }} -p ${{ secrets.access_token }}
+        git push

@@ -41,7 +41,6 @@
   "scripts": {
     "build": "node src/buildTheme.js",
     "watch": "nodemon -w ./src/templates ./src/buildTheme.js",
-    "vscode:prepublish": "npm run build",
     "publish": "vsce publish"
   },
   "devDependencies": {

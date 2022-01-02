@@ -2,6 +2,9 @@
 
 Here's what's been happening recently
 
+### 1.3.1
+🐛 Fixes a couple of small errors
+
 ### 1.3.0
 Bunch of changes here, some small, some larger
 

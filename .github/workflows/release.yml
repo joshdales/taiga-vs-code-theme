@@ -1,0 +1,23 @@
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: "Version to release"
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - name: Setup git config
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+    - name: Publish new version
+      run: |
+        npm run publish ${{ inputs.release_version }} -p ${{ secrets.access_token }}
+        git push

@@ -5,7 +5,11 @@ on:
       release_version:
         description: "Version to release"
         required: true
-        type: string
+        type: choice
+        options:
+        - major
+        - minor
+        - patch
 
 jobs:
   build:
@@ -19,5 +23,5 @@ jobs:
         git config --global user.email "github-actions@github.com"
     - name: Publish new version
       run: |
-        npm run publish ${{ inputs.release_version }} -p ${{ secrets.access_token }}
+        npm run publish ${{ github.event.inputs.release_version }} -p ${{ secrets.access_token }}
         git push

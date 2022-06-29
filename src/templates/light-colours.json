@@ -1,15 +1,23 @@
 {
   "type": "light",
   "ui": {
-    "0": "#D7FCFE",
-    "1": "#AEE8EC",
-    "2": "#1B2940",
+    "0": "#D7EFFE",
+    "1": "#A8C8E9",
+    "2": "#7798CA",
     "3": "#375380",
     "highlight": "#007A2C",
     "text": "#0D141F",
     "shadow": "#000000"
   },
   "main": {
+    "blue": "#507BBF",
+    "green": "#3ED07E",
+    "purple": "#9C57D9",
+    "red": "#D1453F",
+    "teal": "#209E96",
+    "yellow": "#D9A845"
+  },
+  "light": {
     "blue": "#86DCFF",
     "green": "#81E0A4",
     "purple": "#C775EA",
@@ -17,13 +25,5 @@
     "teal": "#38CEC6",
     "white": "#DDFCFE",
     "yellow": "#EDBB54"
-  },
-  "light": {
-    "blue": "#507BBF",
-    "green": "#3ED07E",
-    "purple": "#9C57D9",
-    "red": "#D1453F",
-    "teal": "#209E96",
-    "yellow": "#D9A845"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Taiga",
-  "type": "dark",
+  "type": "{{ type }}",
   "colors": {
     /* Base colours */
     "focusBorder": "{{ ui.1 }}",

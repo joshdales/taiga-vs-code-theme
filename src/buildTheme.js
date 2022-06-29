@@ -4,7 +4,7 @@ const JSON5 = require("json5")
 const mustache = require("mustache")
 
 const opacity = require('./templates/opacity')
-const colours = require('./templates/colours.json')
+const colours = require('./templates/dark-colours.json')
 
 const themeValues = {...colours, opacity}
 

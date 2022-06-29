@@ -79,6 +79,7 @@
     "tree.indentGuidesStroke":"{{ ui.text }}",
     /* Activity Bar */
     "activityBar.background": "{{ ui.1 }}",
+    "activityBar.foreground": "{{ ui.text }}",
     "activityBar.dropBorder": "{{ ui.highlight }}",
     "activityBarBadge.background": "{{ ui.highlight }}",
     /* Side Bar */
@@ -252,7 +253,9 @@
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
     /* Settings Editor Colours */
     "settings.modifiedItemIndicator": "{{ main.teal }}",
+    "settings.rowHoverBackground": "{{ ui.1 }}",
     "settings.focusedRowBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "settings.sashBorder": "{{ ui.3 }} ",
     "notebook.focusedRowBorder": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     "notebook.rowHoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
     /* Breadcrumbs colours */

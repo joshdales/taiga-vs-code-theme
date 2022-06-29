@@ -1,5 +1,6 @@
 {
   "type": "light",
+  "dark": false,
   "ui": {
     "0": "#D7EFFE",
     "1": "#A8C8E9",
@@ -7,23 +8,23 @@
     "3": "#375380",
     "highlight": "#007A2C",
     "text": "#0D141F",
-    "shadow": "#000000"
+    "shadow": "#0D141F"
   },
   "main": {
-    "blue": "#507BBF",
-    "green": "#3ED07E",
-    "purple": "#9C57D9",
-    "red": "#D1453F",
-    "teal": "#209E96",
-    "yellow": "#D9A845"
+    "blue": "#34428E",
+    "green": "#0E8C46",
+    "purple": "#713889",
+    "red": "#9F3837",
+    "teal": "#1A7B78",
+    "yellow": "#A5823B"
   },
   "light": {
-    "blue": "#86DCFF",
-    "green": "#81E0A4",
-    "purple": "#C775EA",
-    "red": "#D8615C",
-    "teal": "#38CEC6",
-    "white": "#DDFCFE",
-    "yellow": "#EDBB54"
+    "blue": "#4252B4",
+    "green": "#2DA644",
+    "purple": "#9345AD",
+    "red": "#BC3F3B",
+    "teal": "#1D8F89",
+    "white": "#2C3740",
+    "yellow": "#C39840"
   }
 }

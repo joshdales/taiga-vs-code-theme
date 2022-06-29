@@ -6,6 +6,7 @@ const mustache = require("mustache")
 const opacity = require('./templates/opacity')
 const colours = [
   require('./templates/dark-colours.json'),
+  require('./templates/light-colours.json'),
 ]
 
 function buildTheme(colourTheme) {

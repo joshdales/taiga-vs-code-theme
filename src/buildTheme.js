@@ -10,7 +10,17 @@ const colours = [
 ]
 
 function buildTheme(colourTheme) {
-  const themeValues = {...colourTheme, opacity}
+  const themeValues = {
+    ...colourTheme,
+    opacity,
+    darkLight: () => {
+      return (text, render) => {
+        const [dark, light] = text.split("/")
+        const string = `{{#dark}}${dark}{{/dark}}{{^dark}}${light}{{/dark}}`
+        return render(string)
+      }
+    }
+  }
 
   const theme = JSON5.parse(
     fs.readFileSync(`${__dirname}/templates/color-theme.json`, (err, data) => data)

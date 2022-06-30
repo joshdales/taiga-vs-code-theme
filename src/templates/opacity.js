@@ -5,7 +5,8 @@
 function convertPercentageToHex(percentage) {
   const decimal = Math.round(percentage) / 100
   const alpha = Math.round(decimal * 255)
-  const hex = (alpha + 0x10000).toString(16).substr(-2).toUpperCase()
+  const hexString = (alpha + 0x10000).toString(16).toUpperCase()
+  const hex = hexString.substring(hexString.length - 2)
 
   return hex
 }

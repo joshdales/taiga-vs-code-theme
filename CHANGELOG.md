@@ -2,6 +2,9 @@
 
 Here's what's been happening recently
 
+### Unreleased
+- 🎉 Added a light theme!
+
 ### 1.3.1
 🐛 Fixes a couple of small errors
 

@@ -15,7 +15,7 @@ function buildTheme(colourTheme) {
     opacity,
     darkLight: () => {
       return (text, render) => {
-        const [dark, light] = text.split("/")
+        const [dark, light] = text.split("|")
         const string = `{{#dark}}${dark}{{/dark}}{{^dark}}${light}{{/dark}}`
         return render(string)
       }

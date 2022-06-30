@@ -245,9 +245,6 @@
     "terminal.ansiBrightWhite": "{{ light.white }}",
     "terminal.ansiYellow": "{{ main.yellow }}",
     "terminal.ansiBrightYellow": "{{ light.yellow }}",
-    /* Welcome Page Colours */
-    "welcomePage.buttonBackground": "{{ ui.1 }}",
-    "welcomePage.buttonHoverBackground": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     /* Git Colours */
     "gitDecoration.untrackedResourceForeground": "{{ main.teal }}",
     "gitDecoration.addedResourceForeground": "{{ main.green }}",
@@ -262,8 +259,6 @@
     "settings.focusedRowBorder": "{{ ui.2 }}{{#opacity}}25{{/opacity}}",
     "settings.headerBorder": "{{ ui.3 }}",
     "settings.sashBorder": "{{ ui.3 }}",
-    "notebook.focusedRowBorder": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "notebook.rowHoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
     /* Breadcrumbs colours */
     "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",

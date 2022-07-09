@@ -51,7 +51,7 @@
     "scrollbarSlider.hoverBackground": "#34428E80",
     "scrollbarSlider.activeBackground": "#34428E40",
     "badge.background": "#007A2C",
-    "badge.foreground": "#0D141F",
+    "badge.foreground": "#D7EFFE",
     "progressBar.background": "#34428E",
     "list.activeSelectionBackground": "#375380",
     "list.activeSelectionForeground": "#D7EFFE",

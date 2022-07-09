@@ -59,7 +59,7 @@
     "scrollbarSlider.activeBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
     /* Badge */
     "badge.background": "{{ ui.highlight }}",
-    "badge.foreground": "{{ ui.text }}",
+    "badge.foreground": "{{#darkLight}}{{ui.text}}|{{ui.0}}{{/darkLight}}",
     /* Progress Bar */
     "progressBar.background": "{{ main.blue }}",
     /* Lists & Trees */

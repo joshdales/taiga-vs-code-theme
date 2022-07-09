@@ -221,6 +221,12 @@
     "titleBar.activeBackground": "{{ ui.1 }}",
     "titleBar.activeForeground": "{{ ui.text }}",
     "titleBar.inactiveBackground": "{{ ui.1 }}",
+    /* Command Center Colours */
+    "commandCenter.foreground": "{{ ui.text }}",
+    "commandCenter.activeForeground": "{{ ui.text }}",
+    "commandCenter.background": "{{ ui.0 }}",
+    "commandCenter.activeBackground": "{{ ui.1 }}",
+    "commandCenter.border": "{{ ui.0 }}",
     /* Notification Colours */
     "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "{{ ui.2 }}",

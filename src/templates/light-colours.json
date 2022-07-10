@@ -2,13 +2,13 @@
   "type": "light",
   "dark": false,
   "ui": {
-    "0": "#D7EFFE",
-    "1": "#A8C8E9",
-    "2": "#7798CA",
+    "0": "#dcdee0",
+    "1": "#a2aec0",
+    "2": "#6b80a0",
     "3": "#375380",
     "highlight": "#007A2C",
-    "text": "#0D141F",
-    "shadow": "#0D141F"
+    "text": "#0d141f",
+    "shadow": "#636363"
   },
   "main": {
     "blue": "#34428E",

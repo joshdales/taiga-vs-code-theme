@@ -194,7 +194,7 @@
     "editorWidget.border": "{{ ui.1 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorSuggestWidget.focusHighlightForeground": "{{ light.teal }}",
+    "editorSuggestWidget.focusHighlightForeground": "{{ teal.3 }}",
     "editorSuggestWidget.highlightForeground": "{{ ui.text }}",
     "editorSuggestWidget.selectedBackground": "{{ ui.3 }}{{#opacity}}75{{/opacity}}",
     "editorSuggestWidget.selectedIconForeground": "{{ teal.3 }}",

@@ -10,23 +10,6 @@
     "text": "#dcdee0",
     "shadow": "#000000"
   },
-  "main": {
-    "blue": "#507BBF",
-    "green": "#3ED07E",
-    "purple": "#9C57D9",
-    "red": "#D1453F",
-    "teal": "#209E96",
-    "yellow": "#D9A845"
-  },
-  "light": {
-    "blue": "#7a9cd0",
-    "green": "#7ddd9e",
-    "purple": "#b484e5",
-    "red": "#e2786e",
-    "teal": "#69b6af",
-    "white": "#DDFCFE",
-    "yellow": "#e3be7a"
-  },
   "blue": {
       "0": "#1a2c48",
       "1": "#345281",

@@ -1,7 +1,7 @@
 {
   "name": "taiga-theme",
   "displayName": "Taiga Theme",
-  "description": "A dark theme for Visual Studio Code",
+  "description": "A theme for VSCode theme - with light and dark modes",
   "publisher": "joshdales",
   "icon": "logo.png",
   "license": "MIT",
@@ -27,7 +27,9 @@
   "keywords": [
     "theme",
     "dark theme",
-    "taiga"
+    "light theme",
+    "taiga",
+    "italics"
   ],
   "contributes": {
     "themes": [

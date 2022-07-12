@@ -282,7 +282,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+        "foreground": "{{ ui.text }}{{#darkLight}}{{#opacity}}50{{/opacity}}|{{#opacity}}65{{/opacity}}{{/darkLight}}",
         "fontStyle": "italic"
       }
     },

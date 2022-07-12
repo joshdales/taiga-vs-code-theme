@@ -4,7 +4,7 @@ Here's what's been happening recently
 
 ### Unreleased
 - 🎉 Added a light theme!
-- 🔧 Change from using opacity on all the colours - to using a more consistent colours gradients
+- 🔧 Change from using opacity on pretty much all the colours - to using a more consistent colours gradients
 
 ### 1.3.1
 🐛 Fixes a couple of small errors

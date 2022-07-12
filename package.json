@@ -49,9 +49,9 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "json5": "^2.2.0",
+    "json5": "^2.2.1",
     "mustache": "^4.1.0",
-    "nodemon": "^2.0.14",
-    "vsce": "^2.6.0"
+    "nodemon": "^2.0.19",
+    "vsce": "^2.9.2"
   }
 }

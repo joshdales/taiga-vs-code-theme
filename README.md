@@ -8,15 +8,15 @@ or [Dank Mono](https://philpl.gumroad.com/l/dank-mono).
 ## Example Settings
 Coding-specific fonts that have a cursive variant and/or ligatures
 ```json
-  "editor.fontFamily": "MonoLisa, Dank Mono, JetBrains Mono, Victor Mono, Menlo, Monaco, 'Courier New', monospace",
+"editor.fontFamily": "MonoLisa, Dank Mono, JetBrains Mono, Victor Mono",
 ```
 Personally I use `MonoLisa` with the following settings:
 ```json
-  "editor.fontLigatures": "'ss02' on, 'calt' on, 'liga' on, 'zero' on",
+"editor.fontLigatures": "'ss02' on, 'calt' on, 'liga' on, 'zero' on",
 ```
 
 Other VSCode settings:
 ```json
-  "editor.guides.bracketPairs": "active",
+"editor.guides.bracketPairs": "active",
   "window.commandCenter": true,
 ```

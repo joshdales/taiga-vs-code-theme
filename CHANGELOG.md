@@ -2,6 +2,10 @@
 
 Here's what's been happening recently
 
+### 2.0.0
+- 🎉 Added a light theme!
+- 🔧 Change from using opacity on pretty much all the colours - to using a more consistent colours gradients
+
 ### 1.3.1
 🐛 Fixes a couple of small errors
 

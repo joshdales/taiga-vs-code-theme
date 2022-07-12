@@ -32,9 +32,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Taiga",
+        "label": "Taiga - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/taiga-color-theme.json"
+        "path": "./themes/dark-color-theme.json"
+      },
+      {
+        "label": "Taiga - Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
       }
     ]
   },

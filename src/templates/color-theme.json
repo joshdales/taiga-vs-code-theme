@@ -1,22 +1,22 @@
 {
   "name": "Taiga",
-  "type": "dark",
+  "type": "{{ type }}",
   "colors": {
     /* Base colours */
     "focusBorder": "{{ ui.1 }}",
     "foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
     "widget.shadow": "{{ ui.shadow }}",
-    "selection.background": "{{ main.blue }}{{#opacity}}40{{/opacity}}",
+    "selection.background": "{{ blue.1 }}",
     "descriptionForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "errorForeground": "{{ main.red }}",
+    "errorForeground": "{{ red.2 }}",
     "icon.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "sash.hoverBorder": "{{ ui.highlight }}{{#opacity}}50{{/opacity}}",
     /* Text Colours */
     "textBlockQuote.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     "textBlockQuote.border": "{{ ui.2 }}",
-    "textLink.activeForeground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
-    "textLink.foreground": "{{ main.green }}",
-    "textPreformat.foreground": "{{ main.yellow }}",
+    "textLink.activeForeground": "{{ green.3 }}",
+    "textLink.foreground": "{{ green.2 }}",
+    "textPreformat.foreground": "{{ yellow.2 }}",
     /* Action Colours */
     "toolbar.hoverBackground": "{{ ui.highlight }}{{#opacity}}50{{/opacity}}",
     "toolbar.activeBackground": "{{ ui.highlight }}",
@@ -31,54 +31,57 @@
     "checkbox.foreground": "{{ ui.text }}",
     "checkbox.border": "{{ ui.0 }}",
     /* Dropdown Control */
-    "dropdown.background": "{{ ui.1 }}",
+    "dropdown.background": "{{ ui.0 }}",
     "dropdown.listBackground": "{{ ui.0 }}",
     "dropdown.border": "{{ ui.0 }}",
     "dropdown.foreground": "{{ ui.text }}",
     /* Input Control */
     "input.background": "{{ ui.1 }}",
-    "input.border": "{{ ui.0 }}",
+    "input.border": "{{ ui.1 }}",
     "input.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "input.placeholderForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
-    "inputOption.activeBorder": "{{ main.blue }}",
-    "inputOption.activeForeground": "{{ main.blue }}",
+    "inputOption.activeBorder": "{{ blue.2 }}",
+    "inputOption.activeForeground": "{{ blue.2 }}",
+    "inputOption.hoverBackground": "{{ blue.1 }}",
     "inputValidation.errorBackground": "{{ ui.1 }}",
-    "inputValidation.errorForeground": "{{ main.red }}",
-    "inputValidation.errorBorder": "{{ main.red }}",
+    "inputValidation.errorForeground": "{{ red.2 }}",
+    "inputValidation.errorBorder": "{{ red.2 }}",
     "inputValidation.infoBackground": "{{ ui.1 }}",
-    "inputValidation.infoBorder": "{{ main.blue }}",
-    "inputValidation.infoForeground": "{{ main.blue }}",
+    "inputValidation.infoBorder": "{{ blue.2 }}",
+    "inputValidation.infoForeground": "{{ blue.2 }}",
     "inputValidation.warningBackground": "{{ ui.1 }}",
-    "inputValidation.warningBorder": "{{ main.yellow }}",
-    "inputValidation.warningForeground": "{{ main.yellow }}",
+    "inputValidation.warningBorder": "{{ yellow.2 }}",
+    "inputValidation.warningForeground": "{{ yellow.2 }}",
     /* Scrollbar Control */
     "scrollbar.shadow": "{{ ui.shadow }}",
-    "scrollbarSlider.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "scrollbarSlider.hoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
-    "scrollbarSlider.activeBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
+    "scrollbarSlider.background": "{{ blue.3 }}{{#opacity}}25{{/opacity}}",
+    "scrollbarSlider.hoverBackground": "{{ blue.3 }}{{#opacity}}50{{/opacity}}",
+    "scrollbarSlider.activeBackground": "{{ blue.3 }}{{#opacity}}75{{/opacity}}",
     /* Badge */
     "badge.background": "{{ ui.highlight }}",
-    "badge.foreground": "{{ ui.text }}",
+    "badge.foreground": "{{#darkLight}}{{ui.text}}|{{ui.0}}{{/darkLight}}",
     /* Progress Bar */
-    "progressBar.background": "{{ main.blue }}",
+    "progressBar.background": "{{ blue.2 }}",
     /* Lists & Trees */
-    "list.activeSelectionBackground": "{{ui.2}}",
-    "list.activeSelectionForeground": "{{ui.text}}",
+    "list.activeSelectionBackground": "{{ ui.3 }}",
+    "list.activeSelectionForeground": "{{#darkLight}}{{ui.text}}|{{ui.0}}{{/darkLight}}",
     "list.activeSelectionIconForeground": "{{ui.text}}",
     "list.dropBackground": "{{ui.highlight}}{{#opacity}}25{{/opacity}}",
-    "list.focusOutline": "{{ ui.3 }}",
-    "list.hoverBackground": "{{ ui.3 }}",
-    "list.inactiveSelectionBackground": "{{ ui.3 }}{{#opacity}}35{{/opacity}}",
-    "list.errorForeground": "{{ main.red }}{{#opacity}}75{{/opacity}}",
-    "list.warningForeground": "{{ main.yellow }}{{#opacity}}75{{/opacity}}",
+    "list.focusOutline": "{{ ui.2 }}",
+    "list.hoverBackground": "{{#darkLight}}{{ui.3}}{{#opacity}}40{{/opacity}}|{{ui.2}}{{/darkLight}}",
+    "list.inactiveSelectionBackground": "{{ ui.3 }}",
+    "list.inactiveSelectionForeground": "{{#darkLight}}{{ui.text}}|{{ui.0}}{{/darkLight}}",
+    "list.errorForeground": "{{ red.1 }}",
+    "list.warningForeground": "{{ yellow.1 }}",
     "listFilterWidget.background": "{{ui.highlight}}{{#opacity}}75{{/opacity}}",
     "listFilterWidget.outline": "{{ui.highlight}}{{#opacity}}75{{/opacity}}",
-    "listFilterWidget.noMatchesOutline": "{{ main.red}}{{#opacity}}75{{/opacity}}",
+    "listFilterWidget.noMatchesOutline": "{{ red.1 }}",
     "list.filterMatchBackground": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
     "list.filterMatchBorder": "{{ ui.highlight }}",
     "tree.indentGuidesStroke":"{{ ui.text }}",
     /* Activity Bar */
     "activityBar.background": "{{ ui.1 }}",
+    "activityBar.foreground": "{{ ui.text }}",
     "activityBar.dropBorder": "{{ ui.highlight }}",
     "activityBarBadge.background": "{{ ui.highlight }}",
     /* Side Bar */
@@ -90,16 +93,16 @@
     "sideBarSectionHeader.foreground": "{{ ui.text }}",
     /* Minimap */
     "minimap.findMatchHighlight": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
-    "minimap.selectionHighlight": "{{ main.blue }}",
-    "minimap.errorHighlight": "{{ main.red }}",
-    "minimap.warningHighlight": "{{ main.yellow }}",
+    "minimap.selectionHighlight": "{{ blue.2 }}",
+    "minimap.errorHighlight": "{{ red.2 }}",
+    "minimap.warningHighlight": "{{ yellow.2 }}",
     "minimap.selectionOccurrenceHighlight": "{{ ui.highlight}}{{#opacity}}25{{/opacity}}",
     "minimapSlider.background": "{{ ui.2 }}{{#opacity}}75{{/opacity}}",
     "minimapSlider.hoverBackground": "{{ ui.3 }}{{#opacity}}75{{/opacity}}",
     "minimapSlider.activeBackground": "{{ ui.1 }}{{#opacity}}75{{/opacity}}",
-    "minimapGutter.addedBackground": "{{ main.green }}",
-    "minimapGutter.modifiedBackground": "{{ main.teal }}",
-    "minimapGutter.deletedBackground": "{{ main.red }}",
+    "minimapGutter.addedBackground": "{{ green.2 }}",
+    "minimapGutter.modifiedBackground": "{{ teal.2 }}",
+    "minimapGutter.deletedBackground": "{{ red.2 }}",
     /* Editor Groups & Tabs */
     "editorGroup.border": "{{ ui.1 }}",
     "editorGroup.dropBackground": "{{ ui.2 }}{{#opacity}}75{{/opacity}}",
@@ -115,75 +118,75 @@
     "editor.background": "{{ ui.0 }}",
     "editor.foreground": "{{ ui.text }}",
     "editorLineNumber.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorLineNumber.activeForeground": "{{ light.yellow }}",
-    "editorCursor.foreground": "{{ main.yellow }}",
-    "editor.selectionBackground": "{{ main.blue }}{{#opacity}}45{{/opacity}}",
+    "editorLineNumber.activeForeground": "{{ yellow.3 }}",
+    "editorCursor.foreground": "{{ yellow.2 }}",
+    "editor.selectionBackground": "{{ blue.0 }}",
     "editor.selectionHighlightBackground": "{{ ui.text }}{{#opacity}}10{{/opacity}}",
-    "editor.wordHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
-    "editor.wordHighlightStrongBackground": "{{ main.teal }}{{#opacity}}40{{/opacity}}",
+    "editor.wordHighlightBackground": "{{ teal.2 }}{{#opacity}}25{{/opacity}}",
+    "editor.wordHighlightStrongBackground": "{{ teal.2 }}{{#opacity}}40{{/opacity}}",
     "editor.findMatchBackground": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
     "editor.findMatchHighlightBackground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
-    "editor.findRangeHighlightBackground": "{{ light.green }}{{#opacity}}10{{/opacity}}",
-    "searchEditor.findMatchBackground": "{{ main.purple }}{{#opacity}}45{{/opacity}}",
-    "editor.hoverHighlightBackground": "{{ main.teal }}{{#opacity}}25{{/opacity}}",
-    "editor.lineHighlightBorder": "{{ main.blue }}",
-    "editorLink.activeForeground": "{{ light.blue }}",
-    "editor.rangeHighlightBackground": "{{ light.green }}{{#opacity}}15{{/opacity}}",
-    "editor.symbolHighlightBackground": "{{ main.purple }}{{#opacity}}25{{/opacity}}",
+    "editor.findRangeHighlightBackground": "{{ green.4 }}{{#opacity}}10{{/opacity}}",
+    "searchEditor.findMatchBackground": "{{ purple.1 }}",
+    "editor.hoverHighlightBackground": "{{ teal.2 }}{{#opacity}}25{{/opacity}}",
+    "editor.lineHighlightBorder": "{{ ui.3 }}{{#opacity}}50{{/opacity}}",
+    "editorLink.activeForeground": "{{ blue.4 }}",
+    "editor.rangeHighlightBackground": "{{ green.4 }}{{#opacity}}15{{/opacity}}",
+    "editor.symbolHighlightBackground": "{{ purple.2 }}{{#opacity}}25{{/opacity}}",
     "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
     "editorIndentGuide.activeBackground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
     //  TODO: Editor Inlay Hints
     "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
-    "editor.linkedEditingBackground": "{{ main.purple }}{{#opacity}}25{{/opacity}}",
-    "editorCodeLens.foreground": "{{ main.blue }}",
-    "editorBracketMatch.background": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "editorBracketMatch.border": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "editor.linkedEditingBackground": "{{ purple.0 }}",
+    "editorCodeLens.foreground": "{{ blue.2 }}",
+    "editorBracketMatch.background": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
+    "editorBracketMatch.border": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
     "editorBracketHighlight.foreground1": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorBracketHighlight.foreground2": "{{ light.blue }}{{#opacity}}75{{/opacity}}",
-    "editorBracketHighlight.foreground3": "{{ light.purple }}{{#opacity}}75{{/opacity}}",
-    "editorBracketHighlight.foreground4": "{{ light.teal }}{{#opacity}}75{{/opacity}}",
-    "editorBracketHighlight.foreground5": "{{ light.green }}{{#opacity}}75{{/opacity}}",
-    "editorBracketHighlight.foreground6": "{{ light.yellow }}{{#opacity}}75{{/opacity}}",
+    "editorBracketHighlight.foreground2": "{{ blue.4 }}{{#opacity}}75{{/opacity}}",
+    "editorBracketHighlight.foreground3": "{{ purple.4 }}{{#opacity}}75{{/opacity}}",
+    "editorBracketHighlight.foreground4": "{{ teal.4 }}{{#opacity}}75{{/opacity}}",
+    "editorBracketHighlight.foreground5": "{{ green.4 }}{{#opacity}}75{{/opacity}}",
+    "editorBracketHighlight.foreground6": "{{ yellow.4 }}{{#opacity}}75{{/opacity}}",
     "editorBracketPairGuide.activeBackground1": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorBracketPairGuide.activeBackground2": "{{ light.blue }}{{#opacity}}75{{/opacity}}",
-    "editorBracketPairGuide.activeBackground3": "{{ light.purple }}{{#opacity}}75{{/opacity}}",
-    "editorBracketPairGuide.activeBackground4": "{{ light.teal }}{{#opacity}}75{{/opacity}}",
-    "editorBracketPairGuide.activeBackground5": "{{ light.green }}{{#opacity}}75{{/opacity}}",
-    "editorBracketPairGuide.activeBackground6": "{{ light.yellow }}{{#opacity}}75{{/opacity}}",
+    "editorBracketPairGuide.activeBackground2": "{{ blue.3 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.activeBackground3": "{{ purple.3 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.activeBackground4": "{{ teal.3 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.activeBackground5": "{{ green.3 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.activeBackground6": "{{ yellow.3 }}{{#opacity}}50{{/opacity}}",
     "editorBracketPairGuide.background1": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
-    "editorBracketPairGuide.background2": "{{ light.blue }}{{#opacity}}50{{/opacity}}",
-    "editorBracketPairGuide.background3": "{{ light.purple }}{{#opacity}}50{{/opacity}}",
-    "editorBracketPairGuide.background4": "{{ light.teal }}{{#opacity}}50{{/opacity}}",
-    "editorBracketPairGuide.background5": "{{ light.green }}{{#opacity}}50{{/opacity}}",
-    "editorBracketPairGuide.background6": "{{ light.yellow }}{{#opacity}}50{{/opacity}}",
-    "editorBracketHighlight.unexpectedBracket.foreground": "{{ main.red }}",
-    "editor.foldBackground": "{{ light.purple }}{{#opacity}}10{{/opacity}}",
+    "editorBracketPairGuide.background2": "{{ blue.4 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.background3": "{{ purple.4 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.background4": "{{ teal.4 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.background5": "{{ green.4 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketPairGuide.background6": "{{ yellow.4 }}{{#opacity}}50{{/opacity}}",
+    "editorBracketHighlight.unexpectedBracket.foreground": "{{ red.2 }}",
+    "editor.foldBackground": "{{ purple.0 }}{{#opacity}}50{{/opacity}}",
     "editorOverviewRuler.background": "{{ ui.0 }}",
     "editorOverviewRuler.border": "{{ ui.0 }}",
     "editorOverviewRuler.findMatchForeground": "{{ ui.highlight }}",
     "editorOverviewRuler.rangeHighlightForeground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
-    "editorOverviewRuler.selectionHighlightForeground": "{{ main.blue }}",
+    "editorOverviewRuler.selectionHighlightForeground": "{{ blue.2 }}",
     "editorOverviewRuler.wordHighlightForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorOverviewRuler.wordHighlightStrongForeground": "{{ main.teal }}{{#opacity}}40{{/opacity}}",
-    "editorOverviewRuler.modifiedForeground": "{{ light.teal }}",
-    "editorOverviewRuler.addedForeground": "{{ light.green }}",
-    "editorOverviewRuler.deletedForeground": "{{ light.red }}",
-    "editorOverviewRuler.errorForeground": "{{ main.red }}",
-    "editorOverviewRuler.warningForeground": "{{ main.yellow }}",
-    "editorOverviewRuler.infoForeground": "{{ light.blue }}",
-    "editorError.foreground": "{{ main.red }}",
-    "editorWarning.foreground": "{{ main.yellow }}",
-    "editorInfo.foreground": "{{ light.blue }}",
-    "problemsErrorIcon.foreground": "{{ main.red }}",
-    "problemsWarningIcon.foreground": "{{ main.yellow }}",
-    "problemsInfoIcon.foreground": "{{ main.blue }}",
+    "editorOverviewRuler.wordHighlightStrongForeground": "{{ teal.2 }}{{#opacity}}40{{/opacity}}",
+    "editorOverviewRuler.modifiedForeground": "{{ teal.2 }}",
+    "editorOverviewRuler.addedForeground": "{{ green.2 }}",
+    "editorOverviewRuler.deletedForeground": "{{ red.2 }}",
+    "editorOverviewRuler.errorForeground": "{{ red.2 }}",
+    "editorOverviewRuler.warningForeground": "{{ yellow.2 }}",
+    "editorOverviewRuler.infoForeground": "{{ blue.2 }}",
+    "editorError.foreground": "{{ red.2 }}",
+    "editorWarning.foreground": "{{ yellow.2 }}",
+    "editorInfo.foreground": "{{ blue.2 }}",
+    "problemsErrorIcon.foreground": "{{ red.2 }}",
+    "problemsWarningIcon.foreground": "{{ yellow.2 }}",
+    "problemsInfoIcon.foreground": "{{ blue.2 }}",
     "editorUnnecessaryCode.opacity": "#000000{{#opacity}}65{{/opacity}}",
-    "editorGutter.addedBackground": "{{ light.green }}{{#opacity}}80{{/opacity}}",
-    "editorGutter.modifiedBackground": "{{ light.teal }}{{#opacity}}80{{/opacity}}",
-    "editorGutter.deletedBackground": "{{ light.red }}{{#opacity}}80{{/opacity}}",
+    "editorGutter.addedBackground": "{{ green.3 }}",
+    "editorGutter.modifiedBackground": "{{ teal.3 }}",
+    "editorGutter.deletedBackground": "{{ red.3 }}",
     /* Diff Editor Colours */
-    "diffEditor.insertedTextBackground": "{{ main.green }}{{#opacity}}25{{/opacity}}",
-    "diffEditor.removedTextBackground": "{{ main.red }}{{#opacity}}25{{/opacity}}",
+    "diffEditor.insertedTextBackground": "{{ green.2 }}{{#opacity}}25{{/opacity}}",
+    "diffEditor.removedTextBackground": "{{ red.2 }}{{#opacity}}25{{/opacity}}",
     "diffEditor.diagonalFill": "{{ ui.2 }}",
     /* Editor Widget Colours */
     "editorWidget.foreground": "{{ ui.text }}",
@@ -191,75 +194,82 @@
     "editorWidget.border": "{{ ui.1 }}",
     "editorSuggestWidget.background": "{{ ui.1 }}",
     "editorSuggestWidget.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorSuggestWidget.focusHighlightForeground": "{{ light.teal }}",
+    "editorSuggestWidget.focusHighlightForeground": "{{ teal.3 }}",
     "editorSuggestWidget.highlightForeground": "{{ ui.text }}",
     "editorSuggestWidget.selectedBackground": "{{ ui.3 }}{{#opacity}}75{{/opacity}}",
-    "editorSuggestWidget.selectedIconForeground": "{{ light.teal }}",
+    "editorSuggestWidget.selectedIconForeground": "{{ teal.3 }}",
     "editorHoverWidget.statusBarBackground": "{{ ui.2 }}",
-    "editorMarkerNavigationError.background": "{{ main.red }}",
-    "editorMarkerNavigationWarning.background": "{{ main.yellow }}",
-    "editorMarkerNavigationInfo.background": "{{ main.blue }}",
+    "editorMarkerNavigationError.background": "{{ red.2 }}",
+    "editorMarkerNavigationWarning.background": "{{ yellow.2 }}",
+    "editorMarkerNavigationInfo.background": "{{ blue.2 }}",
     /* Peek View Colours */
-    "peekView.border": "{{ main.blue }}",
+    "peekView.border": "{{ blue.2 }}",
     "peekViewEditor.background": "{{ ui.0 }}",
     "peekViewEditorGutter.background": "{{ ui.0 }}",
-    "peekViewEditor.matchHighlightBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "peekViewEditor.matchHighlightBackground": "{{ yellow.0 }}",
     "peekViewResult.background": "{{ ui.1 }}",
     "peekViewResult.lineForeground": "{{ ui.text }}",
-    "peekViewResult.matchHighlightBackground": "{{ main.yellow }}{{#opacity}}25{{/opacity}}",
+    "peekViewResult.matchHighlightBackground": "{{ yellow.0 }}",
     "peekViewTitle.background": "{{ ui.1 }}",
     "peekViewTitleDescription.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "peekViewTitleLabel.foreground": "{{ ui.text }}",
     /* Status Bar Colours */
     "statusBar.background": "{{ ui.1 }}",
+    "statusBar.foreground": "{{ ui.text }}",
+    "statusBar.noFolderBackground": "{{ teal.2 }}",
     /* Title Bar Colours */
     "titleBar.activeBackground": "{{ ui.1 }}",
     "titleBar.activeForeground": "{{ ui.text }}",
     "titleBar.inactiveBackground": "{{ ui.1 }}",
+    /* Command Center Colours */
+    "commandCenter.foreground": "{{ ui.text }}",
+    "commandCenter.activeForeground": "{{ ui.text }}",
+    "commandCenter.background": "{{ ui.0 }}",
+    "commandCenter.activeBackground": "{{ ui.1 }}",
+    "commandCenter.border": "{{ ui.0 }}",
     /* Notification Colours */
     "notificationCenterHeader.foreground": "{{ ui.text }}",
     "notificationCenterHeader.background": "{{ ui.2 }}",
-    "notificationLink.foreground": "{{ main.green }}",
-    "notificationsErrorIcon.foreground": "{{ main.red }}",
-    "notificationsWarningIcon.foreground": "{{ main.yellow }}",
-    "notificationsInfoIcon.foreground": "{{ main.blue }}",
+    "notificationLink.foreground": "{{ green.2 }}",
+    "notificationsErrorIcon.foreground": "{{ red.2 }}",
+    "notificationsWarningIcon.foreground": "{{ yellow.2 }}",
+    "notificationsInfoIcon.foreground": "{{ blue.2 }}",
     /* Integrated Terminal Colours */
     "terminal.ansiBlack": "{{ ui.0 }}",
     "terminal.ansiBrightBlack": "{{ ui.2 }}",
-    "terminal.ansiBlue": "{{ main.blue }}",
-    "terminal.ansiBrightBlue": "{{ light.blue }}",
-    "terminal.ansiCyan": "{{ main.teal }}",
-    "terminal.ansiBrightCyan": "{{ light.teal }}",
-    "terminal.ansiGreen": "{{ main.green }}",
-    "terminal.ansiBrightGreen": "{{ light.green }}",
-    "terminal.ansiMagenta": "{{ main.purple }}",
-    "terminal.ansiBrightMagenta": "{{ light.purple }}",
-    "terminal.ansiRed": "{{ main.red }}",
-    "terminal.ansiBrightRed": "{{ light.red }}",
+    "terminal.ansiBlue": "{{ blue.2 }}",
+    "terminal.ansiBrightBlue": "{{ blue.4 }}",
+    "terminal.ansiCyan": "{{ teal.2 }}",
+    "terminal.ansiBrightCyan": "{{ teal.4 }}",
+    "terminal.ansiGreen": "{{ green.2 }}",
+    "terminal.ansiBrightGreen": "{{ green.4 }}",
+    "terminal.ansiMagenta": "{{ purple.2 }}",
+    "terminal.ansiBrightMagenta": "{{ purple.4 }}",
+    "terminal.ansiRed": "{{ red.2 }}",
+    "terminal.ansiBrightRed": "{{ red.4 }}",
     "terminal.ansiWhite": "{{ ui.text }}",
-    "terminal.ansiBrightWhite": "{{ light.white }}",
-    "terminal.ansiYellow": "{{ main.yellow }}",
-    "terminal.ansiBrightYellow": "{{ light.yellow }}",
-    /* Welcome Page Colours */
-    "welcomePage.buttonBackground": "{{ ui.1 }}",
-    "welcomePage.buttonHoverBackground": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
+    "terminal.ansiBrightWhite": "{{ white.4 }}",
+    "terminal.ansiYellow": "{{ yellow.2 }}",
+    "terminal.ansiBrightYellow": "{{ yellow.4 }}",
     /* Git Colours */
-    "gitDecoration.untrackedResourceForeground": "{{ main.teal }}",
-    "gitDecoration.addedResourceForeground": "{{ main.green }}",
-    "gitDecoration.modifiedResourceForeground": "{{ main.yellow }}",
-    "gitDecoration.deletedResourceForeground": "{{ main.red }}",
-    "gitDecoration.conflictingResourceForeground": "{{ main.purple }}",
+    "gitDecoration.untrackedResourceForeground": "{{ teal.2 }}",
+    "gitDecoration.addedResourceForeground": "{{ green.2 }}",
+    "gitDecoration.modifiedResourceForeground": "{{ yellow.2 }}",
+    "gitDecoration.deletedResourceForeground": "{{ red.2 }}",
+    "gitDecoration.conflictingResourceForeground": "{{ purple.2 }}",
     "gitDecoration.ignoredResourceForeground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
     /* Settings Editor Colours */
-    "settings.modifiedItemIndicator": "{{ main.teal }}",
-    "settings.focusedRowBackground": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "notebook.focusedRowBorder": "{{ main.blue }}{{#opacity}}25{{/opacity}}",
-    "notebook.rowHoverBackground": "{{ main.blue }}{{#opacity}}50{{/opacity}}",
+    "settings.modifiedItemIndicator": "{{ teal.2 }}",
+    "settings.rowHoverBackground": "{{ ui.1 }}",
+    "settings.focusedRowBackground": "{{ ui.2 }}{{#opacity}}25{{/opacity}}",
+    "settings.focusedRowBorder": "{{ ui.2 }}{{#opacity}}25{{/opacity}}",
+    "settings.headerBorder": "{{ ui.3 }}",
+    "settings.sashBorder": "{{ ui.3 }}",
     /* Breadcrumbs colours */
     "breadcrumb.foreground": "{{ ui.text }}",
     "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
-    "breadcrumb.focusForeground": "{{ light.blue }}",
-    "breadcrumb.activeSelectionForeground": "{{ light.blue }}",
+    "breadcrumb.focusForeground": "{{ blue.3 }}",
+    "breadcrumb.activeSelectionForeground": "{{ blue.4 }}",
     "breadcrumbPicker.background": "{{ ui.1 }}"
     /* TODO: Symbol Icons Colours */
   },
@@ -272,7 +282,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+        "foreground": "{{ ui.text }}{{#darkLight}}{{#opacity}}50{{/opacity}}|{{#opacity}}65{{/opacity}}{{/darkLight}}",
         "fontStyle": "italic"
       }
     },
@@ -302,7 +312,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.1 }}"
       }
     },
     {
@@ -316,7 +326,7 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ purple.2 }}",
         "fontStyle": "italic"
       }
     },
@@ -327,7 +337,7 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "{{ light.green }}"
+        "foreground": "{{ green.3 }}"
       }
     },
     {
@@ -338,7 +348,7 @@
         "meta.objectliteral meta.object-literal.key"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.1 }}"
       }
     },
     {
@@ -348,7 +358,7 @@
         "source.yaml punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.1 }}"
       }
     },
     {
@@ -365,7 +375,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ yellow.3 }}"
       }
     },
     {
@@ -375,7 +385,7 @@
         "meta.type.annotation"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ yellow.3 }}",
         "fontStyle": "italic"
       }
     },
@@ -387,7 +397,7 @@
         "meta.function-call support.function.console"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}"
+        "foreground": "{{ teal.2 }}"
       }
     },
     {
@@ -397,7 +407,7 @@
         "entity.name.tag support.class.component"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.2 }}"
       }
     },
     {
@@ -415,7 +425,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}"
+        "foreground": "{{ teal.2 }}"
       }
     },
     {
@@ -427,7 +437,7 @@
         "support.variable.object"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}",
+        "foreground": "{{ yellow.3 }}",
         "fontStyle": "italic"
       }
     },
@@ -435,10 +445,11 @@
       "name": "Embedded",
       "scope": [
         "punctuation.section.embedded",
-        "punctuation.definition.template-expression"
+        "punctuation.definition.template-expression",
+
       ],
       "settings": {
-        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ purple.3 }}"
       }
     },
     {
@@ -447,7 +458,7 @@
         "constant"
       ],
       "settings": {
-        "foreground": "{{ main.blue }}"
+        "foreground": "{{ blue.2 }}"
       }
     },
     {
@@ -459,7 +470,7 @@
         "entity.other.attribute-name.placeholder.css"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}"
+        "foreground": "{{ teal.3 }}"
       }
     },
     {
@@ -469,7 +480,7 @@
         "entity.other.attribute-name.id.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}{{#opacity}}75{{/opacity}}"
+        "foreground": "{{ teal.2 }}"
       }
     },
     {
@@ -479,7 +490,7 @@
         "entity.name.function.scss",
       ],
       "settings": {
-        "foreground": "{{ main.teal }}"
+        "foreground": "{{ purple.3 }}"
       }
     },
     {
@@ -488,7 +499,7 @@
         "keyword.other.unit"
       ],
       "settings": {
-        "foreground": "{{ main.blue }}"
+        "foreground": "{{ blue.2 }}"
       }
     },
     {
@@ -497,7 +508,7 @@
         "support.constant.media"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.2 }}"
       }
     },
     {
@@ -508,7 +519,7 @@
         "meta.property-list.scss entity.name.tag.css",
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ green.2 }}",
       }
     },
     {
@@ -517,7 +528,7 @@
         "punctuation.definition.constant.css"
       ],
       "settings": {
-        "foreground": "{{ main.blue }}",
+        "foreground": "{{ blue.2 }}",
       }
     },
     {
@@ -528,7 +539,7 @@
         "markup.heading entity.name.section"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.2 }}"
       }
     },
     {
@@ -538,7 +549,7 @@
         "markup.italic punctuation.definition.italic"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ teal.3 }}",
         "fontStyle": "italic"
       }
     },
@@ -549,7 +560,7 @@
         "markup.bold punctuation.definition.bold"
       ],
       "settings": {
-        "foreground": "{{ light.purple }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ purple.3 }}",
         "fontStyle": "bold"
       }
     },
@@ -559,7 +570,7 @@
         "markup.list punctuation.definition.list.begin"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}",
+        "foreground": "{{ yellow.3 }}",
         "fontStyle": "bold"
       }
     },
@@ -570,7 +581,7 @@
         "markup.inline.raw punctuation.definition.raw"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}"
+        "foreground": "{{ yellow.3 }}"
       }
     },
     {
@@ -580,7 +591,7 @@
         "markup.fenced_code.block punctuation.definition"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}"
+        "foreground": "{{ yellow.3 }}"
       }
     },
     {
@@ -590,7 +601,7 @@
         "markup.quote punctuation.definition"
       ],
       "settings": {
-        "foreground": "{{ light.teal }}"
+        "foreground": "{{ teal.3 }}"
       }
     },
     {
@@ -599,7 +610,7 @@
         "meta.separator.markdown"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}",
+        "foreground": "{{ green.1 }}",
         "fontStyle": "bold"
       }
     },
@@ -613,7 +624,7 @@
         "meta.image.inline"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.2 }}"
       }
     },
     {
@@ -623,7 +634,7 @@
         "markup.quote.markdown punctuation.definition.quote.begin.markdown"
       ],
       "settings": {
-        "foreground": "{{ main.blue }}",
+        "foreground": "{{ blue.2 }}",
         "fontStyle": "italic"
       }
     },
@@ -634,7 +645,7 @@
         "source.ruby constant.other.symbol punctuation"
       ],
       "settings": {
-        "foreground": "{{ main.green }}{{#opacity}}85{{/opacity}}"
+        "foreground": "{{ green.2 }}"
       }
     },
     {
@@ -644,7 +655,7 @@
         "meta.module.ruby entity.other.inherited-class punctuation"
       ],
       "settings": {
-        "foreground": "{{ light.yellow }}"
+        "foreground": "{{ yellow.3 }}"
       }
     },
     {
@@ -653,7 +664,7 @@
         "source.ruby punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "{{ main.purple }}"
+        "foreground": "{{ purple.2 }}"
       }
     },
     {
@@ -667,7 +678,7 @@
         "constant.language.symbol.hashkey.ruby punctuation.definition.constant.hashkey.ruby"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}",
+        "foreground": "{{ teal.2 }}",
       }
     },
     {
@@ -676,7 +687,7 @@
         "entity.name.function.ruby"
       ],
       "settings": {
-        "foreground": "{{ main.teal }}",
+        "foreground": "{{ teal.2 }}",
       }
     },
     {
@@ -685,7 +696,7 @@
         "meta.function.method.with-arguments.ruby constant.other.symbol.hashkey.parameter.function.ruby punctuation.definition.constant.ruby"
       ],
       "settings": {
-        "foreground": "{{ main.green }}",
+        "foreground": "{{ green.2 }}",
       }
     },
     {

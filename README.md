@@ -20,3 +20,8 @@ Other VSCode settings:
 "editor.guides.bracketPairs": "active",
   "window.commandCenter": true,
 ```
+
+If you want a slack theme based on this then I recommend:
+```
+#0D141F,#2C3849,#375380,#DCDEE0,#283D5D,#DCDEE0,#3ED07E,#1A283D,#1A283D,#DCDEE0
+```

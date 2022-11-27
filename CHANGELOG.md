@@ -2,8 +2,11 @@
 
 Here's what's been happening recently
 
+### 2.0.2
+- 🔧 Just some minor documentation updates
+
 ### 2.0.1
-- 🐛 Change the name of the dark theme back to what it was so it doesn't breaak old installs
+- 🐛 Change the name of the dark theme back to what it was so it doesn't break old installs
 
 ### 2.0.0
 - 🎉 Added a light theme!

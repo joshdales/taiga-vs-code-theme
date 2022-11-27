@@ -18,7 +18,7 @@ Personally I use `MonoLisa` with the following settings:
 Other VSCode settings:
 ```json
 "editor.guides.bracketPairs": "active",
-  "window.commandCenter": true,
+"window.commandCenter": true,
 ```
 
 If you want a slack theme based on this then I recommend:

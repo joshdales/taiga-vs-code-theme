@@ -1,0 +1,15 @@
+{
+	"configurations": [
+		{
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			],
+			"name": "Launch Theme",
+			"outFiles": [
+				"${workspaceFolder/out/**/*.(m|c|)js",
+			],
+			"request": "launch",
+			"type": "extensionHost"
+		}
+	]
+}

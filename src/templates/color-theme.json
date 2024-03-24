@@ -4,7 +4,7 @@
   "colors": {
     /* Base colours */
     "focusBorder": "{{ ui.1 }}",
-    "foreground": "{{ ui.text }}{{#opacity}}85{{/opacity}}",
+    "foreground": "{{ ui.text }}",
     "widget.shadow": "{{ ui.shadow }}",
     "selection.background": "{{ blue.1 }}",
     "descriptionForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
@@ -93,7 +93,7 @@
     "sideBarSectionHeader.foreground": "{{ ui.text }}",
     /* Minimap */
     "minimap.findMatchHighlight": "{{ ui.highlight }}{{#opacity}}45{{/opacity}}",
-    "minimap.selectionHighlight": "{{ blue.2 }}",
+    "minimap.selectionHighlight": "{{ blue.2 }}{{#opacity}}20{{/opacity}}",
     "minimap.errorHighlight": "{{ red.2 }}",
     "minimap.warningHighlight": "{{ yellow.2 }}",
     "minimap.selectionOccurrenceHighlight": "{{ ui.highlight}}{{#opacity}}25{{/opacity}}",
@@ -118,9 +118,10 @@
     "editor.background": "{{ ui.0 }}",
     "editor.foreground": "{{ ui.text }}",
     "editorLineNumber.foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-    "editorLineNumber.activeForeground": "{{ yellow.3 }}",
-    "editorCursor.foreground": "{{ yellow.2 }}",
-    "editor.selectionBackground": "{{ blue.0 }}",
+    "editorLineNumber.activeForeground": "{{ green.4 }}",
+    "editorCursor.background": "{{ui.0}}",
+    "editorCursor.foreground": "{{green.4}}",
+    "editor.selectionBackground": "{{ blue.0 }}{{#opacity}}25{{/opacity}}",
     "editor.selectionHighlightBackground": "{{ ui.text }}{{#opacity}}10{{/opacity}}",
     "editor.wordHighlightBackground": "{{ teal.2 }}{{#opacity}}25{{/opacity}}",
     "editor.wordHighlightStrongBackground": "{{ teal.2 }}{{#opacity}}40{{/opacity}}",
@@ -132,12 +133,12 @@
     "editor.lineHighlightBorder": "{{ ui.3 }}{{#opacity}}50{{/opacity}}",
     "editorLink.activeForeground": "{{ blue.4 }}",
     "editor.rangeHighlightBackground": "{{ green.4 }}{{#opacity}}15{{/opacity}}",
-    "editor.symbolHighlightBackground": "{{ purple.2 }}{{#opacity}}25{{/opacity}}",
+    "editor.symbolHighlightBackground": "{{ purple.2 }}{{#opacity}}15{{/opacity}}",
     "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
-    "editorIndentGuide.activeBackground": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+    "editorIndentGuide.activeBackground1": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
     //  TODO: Editor Inlay Hints
     "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
-    "editor.linkedEditingBackground": "{{ purple.0 }}",
+    "editor.linkedEditingBackground": "{{ purple.0 }}{{#opacity}}25{{/opacity}}",
     "editorCodeLens.foreground": "{{ blue.2 }}",
     "editorBracketMatch.background": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
     "editorBracketMatch.border": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
@@ -163,9 +164,9 @@
     "editor.foldBackground": "{{ purple.0 }}{{#opacity}}50{{/opacity}}",
     "editorOverviewRuler.background": "{{ ui.0 }}",
     "editorOverviewRuler.border": "{{ ui.0 }}",
-    "editorOverviewRuler.findMatchForeground": "{{ ui.highlight }}",
+    "editorOverviewRuler.findMatchForeground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
     "editorOverviewRuler.rangeHighlightForeground": "{{ ui.highlight }}{{#opacity}}25{{/opacity}}",
-    "editorOverviewRuler.selectionHighlightForeground": "{{ blue.2 }}",
+    "editorOverviewRuler.selectionHighlightForeground": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
     "editorOverviewRuler.wordHighlightForeground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
     "editorOverviewRuler.wordHighlightStrongForeground": "{{ teal.2 }}{{#opacity}}40{{/opacity}}",
     "editorOverviewRuler.modifiedForeground": "{{ teal.2 }}",
@@ -235,22 +236,22 @@
     "notificationsWarningIcon.foreground": "{{ yellow.2 }}",
     "notificationsInfoIcon.foreground": "{{ blue.2 }}",
     /* Integrated Terminal Colours */
-    "terminal.ansiBlack": "{{ ui.0 }}",
-    "terminal.ansiBrightBlack": "{{ ui.2 }}",
-    "terminal.ansiBlue": "{{ blue.2 }}",
-    "terminal.ansiBrightBlue": "{{ blue.4 }}",
-    "terminal.ansiCyan": "{{ teal.2 }}",
-    "terminal.ansiBrightCyan": "{{ teal.4 }}",
-    "terminal.ansiGreen": "{{ green.2 }}",
-    "terminal.ansiBrightGreen": "{{ green.4 }}",
-    "terminal.ansiMagenta": "{{ purple.2 }}",
-    "terminal.ansiBrightMagenta": "{{ purple.4 }}",
-    "terminal.ansiRed": "{{ red.2 }}",
-    "terminal.ansiBrightRed": "{{ red.4 }}",
-    "terminal.ansiWhite": "{{ ui.text }}",
-    "terminal.ansiBrightWhite": "{{ white.4 }}",
-    "terminal.ansiYellow": "{{ yellow.2 }}",
-    "terminal.ansiBrightYellow": "{{ yellow.4 }}",
+    "terminal.ansiBlack": "#0F171F",
+    "terminal.ansiBrightBlack": "#404952",
+    "terminal.ansiBlue": "#3A81D7",
+    "terminal.ansiBrightBlue": "#91C1FF",
+    "terminal.ansiCyan": "#14938D",
+    "terminal.ansiBrightCyan": "#43B2AC",
+    "terminal.ansiGreen": "#2C965D",
+    "terminal.ansiBrightGreen": "#51B67A",
+    "terminal.ansiMagenta": "#945CE1",
+    "terminal.ansiBrightMagenta": "#B17EFF",
+    "terminal.ansiRed": "#DE3E2D",
+    "terminal.ansiBrightRed": "#FF6551",
+    "terminal.ansiWhite": "#95A0AB",
+    "terminal.ansiBrightWhite": "#D4DFEB",
+    "terminal.ansiYellow": "#F0B135",
+    "terminal.ansiBrightYellow": "#FFD896",
     /* Git Colours */
     "gitDecoration.untrackedResourceForeground": "{{ teal.2 }}",
     "gitDecoration.addedResourceForeground": "{{ green.2 }}",
@@ -270,8 +271,9 @@
     "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     "breadcrumb.focusForeground": "{{ blue.3 }}",
     "breadcrumb.activeSelectionForeground": "{{ blue.4 }}",
-    "breadcrumbPicker.background": "{{ ui.1 }}"
+    "breadcrumbPicker.background": "{{ ui.1 }}",
     /* TODO: Symbol Icons Colours */
+    "debugExceptionWidget.background": "{{ui.0}}"
   },
   "semanticHighlighting": true,
   "tokenColors": [
@@ -282,7 +284,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "{{ ui.text }}{{#darkLight}}{{#opacity}}50{{/opacity}}|{{#opacity}}65{{/opacity}}{{/darkLight}}",
+        "foreground": "{{ ui.text }}{{#opacity}}60{{/opacity}}",
         "fontStyle": "italic"
       }
     },
@@ -490,7 +492,7 @@
         "entity.name.function.scss",
       ],
       "settings": {
-        "foreground": "{{ purple.3 }}"
+        "foreground": "{{ purple.2 }}"
       }
     },
     {

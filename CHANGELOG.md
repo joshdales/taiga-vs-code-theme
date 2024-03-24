@@ -2,6 +2,13 @@
 
 Here's what's been happening recently
 
+### 3.0.0 (Currently unreleased)
+- 🎉 Update of the base theme colours.
+  - The gradient across the colours are more consistent.
+  - Should have better contrast better UI and text.
+- 🔧 A few small tweaks here and there.
+- 🐛 Fix some opacity issues with background colours.
+
 ### 2.0.2
 - 🔧 Just some minor documentation updates
 

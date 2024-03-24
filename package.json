@@ -48,7 +48,7 @@
   "scripts": {
     "build": "node src/buildTheme.js",
     "publish": "vsce publish",
-    "start": "nodemon -w ./src/templates ./src/buildTheme.js"
+    "watch": "nodemon -w ./src/templates ./src/buildTheme.js"
   },
   "devDependencies": {
     "@vscode/vsce": "^2.24.0",

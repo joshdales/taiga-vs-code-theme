@@ -8,7 +8,6 @@
 			"outFiles": [
 				"${workspaceFolder/out/**/*.(m|c|)js",
 			],
-			"preLaunchTask": "npm",
 			"request": "launch",
 			"type": "extensionHost"
 		}

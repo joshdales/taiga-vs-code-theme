@@ -6,7 +6,7 @@
   "icon": "logo.png",
   "license": "MIT",
   "galleryBanner": {
-    "color": "#0D141F",
+    "color": "#000924",
     "theme": "dark"
   },
   "version": "2.0.2",

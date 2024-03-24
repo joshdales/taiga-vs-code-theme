@@ -133,12 +133,12 @@
     "editor.lineHighlightBorder": "{{ ui.3 }}{{#opacity}}50{{/opacity}}",
     "editorLink.activeForeground": "{{ blue.4 }}",
     "editor.rangeHighlightBackground": "{{ green.4 }}{{#opacity}}15{{/opacity}}",
-    "editor.symbolHighlightBackground": "{{ purple.2 }}{{#opacity}}25{{/opacity}}",
+    "editor.symbolHighlightBackground": "{{ purple.2 }}{{#opacity}}15{{/opacity}}",
     "editorWhitespace.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
     "editorIndentGuide.activeBackground1": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
     //  TODO: Editor Inlay Hints
     "editorRuler.foreground": "{{ ui.text }}{{#opacity}}25{{/opacity}}",
-    "editor.linkedEditingBackground": "{{ purple.0 }}",
+    "editor.linkedEditingBackground": "{{ purple.0 }}{{#opacity}}25{{/opacity}}",
     "editorCodeLens.foreground": "{{ blue.2 }}",
     "editorBracketMatch.background": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
     "editorBracketMatch.border": "{{ blue.2 }}{{#opacity}}25{{/opacity}}",
@@ -271,8 +271,9 @@
     "breadcrumb.background": "{{ ui.1 }}{{#opacity}}50{{/opacity}}",
     "breadcrumb.focusForeground": "{{ blue.3 }}",
     "breadcrumb.activeSelectionForeground": "{{ blue.4 }}",
-    "breadcrumbPicker.background": "{{ ui.1 }}"
+    "breadcrumbPicker.background": "{{ ui.1 }}",
     /* TODO: Symbol Icons Colours */
+    "debugExceptionWidget.background": "{{ui.0}}"
   },
   "semanticHighlighting": true,
   "tokenColors": [

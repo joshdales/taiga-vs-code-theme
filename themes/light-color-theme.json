@@ -118,11 +118,11 @@
     "editor.lineHighlightBorder": "#5C80BC80",
     "editorLink.activeForeground": "#002D5E",
     "editor.rangeHighlightBackground": "#00381C26",
-    "editor.symbolHighlightBackground": "#773CBF40",
+    "editor.symbolHighlightBackground": "#773CBF26",
     "editorWhitespace.foreground": "#0F171F40",
     "editorIndentGuide.activeBackground1": "#0F171F80",
     "editorRuler.foreground": "#0F171F40",
-    "editor.linkedEditingBackground": "#B17EFF",
+    "editor.linkedEditingBackground": "#B17EFF40",
     "editorCodeLens.foreground": "#1762B6",
     "editorBracketMatch.background": "#1762B640",
     "editorBracketMatch.border": "#1762B640",
@@ -244,7 +244,8 @@
     "breadcrumb.background": "#98BFFE80",
     "breadcrumb.focusForeground": "#00468C",
     "breadcrumb.activeSelectionForeground": "#002D5E",
-    "breadcrumbPicker.background": "#98BFFE"
+    "breadcrumbPicker.background": "#98BFFE",
+    "debugExceptionWidget.background": "#E5EFFF"
   },
   "semanticHighlighting": true,
   "tokenColors": [

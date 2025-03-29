@@ -9,7 +9,7 @@
     "color": "#000924",
     "theme": "dark"
   },
-  "version": "3.0.0",
+  "version": "3.0.1",
   "engines": {
     "vscode": "^1.40.0"
   },

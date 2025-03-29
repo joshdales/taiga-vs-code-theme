@@ -7,11 +7,6 @@ import { opacity } from './templates/opacity.js'
 import darkColours from './templates/dark-colours.json' with { type: 'json'}
 import lightColours from './templates/light-colours.json' with { type: 'json'}
 
-const colours = [
-  darkColours,
-  lightColours,
-]
-
 const theme = JSON5.parse(
   readFileSync(`${import.meta.dirname}/templates/color-theme.json`, (_err, data) => data)
 )
@@ -39,4 +34,7 @@ function buildTheme(colourTheme) {
   )
 }
 
-colours.map(buildTheme)
+[
+  darkColours,
+  lightColours,
+].map(buildTheme)

@@ -51,8 +51,9 @@
     "watch": "node --watch-path=./src ./src/buildTheme.js"
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.24.0",
+    "@vscode/vsce": "^3.3.0",
     "json5": "^2.2.3",
     "mustache": "^4.2.0"
-  }
+  },
+  "type": "module"
 }

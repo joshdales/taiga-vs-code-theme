@@ -1,13 +1,20 @@
-const fs = require("fs")
-const path = require("path")
-const JSON5 = require("json5")
-const mustache = require("mustache")
+import {readFileSync, writeFileSync} from 'node:fs'
+import {resolve} from 'node:path'
+import JSON5 from 'json5'
+import mustache from 'mustache'
 
-const opacity = require('./templates/opacity')
+import { opacity } from './templates/opacity.js'
+import darkColours from './templates/dark-colours.json' with { type: 'json'}
+import lightColours from './templates/light-colours.json' with { type: 'json'}
+
 const colours = [
-  require('./templates/dark-colours.json'),
-  require('./templates/light-colours.json'),
+  darkColours,
+  lightColours,
 ]
+
+const theme = JSON5.parse(
+  readFileSync(`${import.meta.dirname}/templates/color-theme.json`, (_err, data) => data)
+)
 
 function buildTheme(colourTheme) {
   const themeValues = {
@@ -22,16 +29,12 @@ function buildTheme(colourTheme) {
     }
   }
 
-  const theme = JSON5.parse(
-    fs.readFileSync(`${__dirname}/templates/color-theme.json`, (err, data) => data)
-  )
-
   const template = JSON.stringify(theme, null, 2)
 
   const data = mustache.render(template, themeValues)
 
-  fs.writeFileSync(
-    path.resolve(__dirname, '..', 'themes', `${colourTheme.type}-color-theme.json`),
+  writeFileSync(
+    resolve(import.meta.dirname, '..', 'themes', `${colourTheme.type}-color-theme.json`),
     data
   )
 }

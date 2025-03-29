@@ -54,5 +54,6 @@
     "@vscode/vsce": "^3.3.0",
     "json5": "^2.2.3",
     "mustache": "^4.2.0"
-  }
+  },
+  "type": "module"
 }

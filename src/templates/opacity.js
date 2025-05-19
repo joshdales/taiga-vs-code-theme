@@ -3,18 +3,18 @@
  * Adapted from https://codepen.io/chriscoyier/pen/XjbzAW
  */
 function convertPercentageToHex(percentage) {
-  const decimal = Math.round(percentage) / 100
-  const alpha = Math.round(decimal * 255)
-  const hexString = (alpha + 0x10000).toString(16).toUpperCase()
-  const hex = hexString.substring(hexString.length - 2)
+	const decimal = Math.round(percentage) / 100
+	const alpha = Math.round(decimal * 255)
+	const hexString = (alpha + 0x10000).toString(16).toUpperCase()
+	const hex = hexString.substring(hexString.length - 2)
 
-  return hex
+	return hex
 }
 
 export function opacity() {
-  return function(value, render) {
-    const hex = convertPercentageToHex(value)
+	return function (value, render) {
+		const hex = convertPercentageToHex(value)
 
-    return render(hex)
-  }
+		return render(hex)
+	}
 }

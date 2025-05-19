@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFile } from 'node:fs'
 import { resolve } from 'node:path'
 import JSON5 from 'json5'
 import mustache from 'mustache'
@@ -23,9 +23,13 @@ function buildTheme(colourTheme) {
 
 	const data = mustache.render(template, themeValues)
 
-	writeFileSync(
+	writeFile(
 		resolve(import.meta.dirname, '..', 'themes', `${colourTheme.type}-color-theme.json`),
-		data
+		data,
+		(err) => {
+			if (err) throw err
+			console.log(`Wrote ${colourTheme.type} theme`)
+		}
 	)
 }
 

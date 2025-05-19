@@ -18,12 +18,12 @@ jobs:
       VSCE_PAT: ${{ secrets.access_token }}
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
     - name: Setup git config
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-    - name: Publish new version
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - uses: actions/setup-node@v4
+    - name: Publish extension to VSCode Marketplace
       run: |
         npm install
         npm run publish ${{ github.event.inputs.release_version }}

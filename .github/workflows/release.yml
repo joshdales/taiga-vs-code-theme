@@ -15,7 +15,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      VSCE_PAT: ${{ secrets.access_token }}
+      VSCE_PAT: ${{ secrets.ACCESS_TOKEN }}
+      OPEN_VSX_PAT: ${{ secrets.OPEN_VSX_PAT }}
     steps:
     - uses: actions/checkout@v4
     - name: Setup git config
@@ -23,8 +24,17 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - uses: actions/setup-node@v4
-    - name: Publish extension to VSCode Marketplace
+      with:
+        node-version: 22.x
+        cache: npm
+        cache-dependency-path: package-lock.json
+    - name: Package extension
       run: |
         npm install
-        npm run publish ${{ github.event.inputs.release_version }}
+        npm run package ${{ github.event.inputs.release_version }}
         git push
+    - name: Publish to VSCode Marketplace
+      run: npm run publish:vsce -- --packagePath $(find . -iname *.vsix)
+    - name: Publish to Open VSX Registry
+      run: npm run publish:ovsx -- --packagePath $(find . -iname *.vsix)
+

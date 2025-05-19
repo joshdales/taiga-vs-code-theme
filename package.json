@@ -47,7 +47,9 @@
   },
   "scripts": {
     "build": "node src/buildTheme.js",
-    "publish": "vsce publish",
+    "package": "vsce package",
+    "publish:ovsx": "ovsx publish",
+    "publish:vsce": "vsce publish",
     "vscode:prepublish": "npm run build",
     "watch": "node --watch-path=./src ./src/buildTheme.js"
   },

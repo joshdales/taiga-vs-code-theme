@@ -3,8 +3,8 @@ import { resolve } from 'node:path'
 import JSON5 from 'json5'
 import mustache from 'mustache'
 
-import { opacity } from './templates/opacity.js'
-import { darkLight } from './templates/darkLight.js'
+import { opacity } from './utils/opacity.js'
+import { darkLight } from './utils/darkLight.js'
 import darkColours from './templates/dark-colours.json' with { type: 'json'}
 import lightColours from './templates/light-colours.json' with { type: 'json'}
 

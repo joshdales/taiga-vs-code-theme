@@ -2,8 +2,8 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      release_version:
-        description: "Version to release"
+      release_type:
+        description: "Type of version to release"
         required: true
         type: choice
         options:
@@ -31,7 +31,7 @@ jobs:
     - name: Package extension
       run: |
         npm install
-        npm run package ${{ github.event.inputs.release_version }}
+        npm run package ${{ github.event.inputs.release_type }}
         git push
     - name: Publish to VSCode Marketplace
       run: npm run publish:vsce

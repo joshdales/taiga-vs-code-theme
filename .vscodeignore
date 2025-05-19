@@ -1,7 +1,9 @@
-.vscode/**
-.vscode-test/**
-.github/**
+.github
 .gitignore
-examples/**
-images/**
-src/**
+.nvmrc
+.vscode
+.vscode-test
+examples
+images
+node_modules
+src

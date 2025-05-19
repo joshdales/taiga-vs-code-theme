@@ -15,16 +15,26 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      VSCE_PAT: ${{ secrets.access_token }}
+      VSCE_PAT: ${{ secrets.ACCESS_TOKEN }}
+      OVSX_PAT: ${{ secrets.OPEN_VSX_PAT }}
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
     - name: Setup git config
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-    - name: Publish new version
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22.x
+        cache: npm
+        cache-dependency-path: package-lock.json
+    - name: Package extension
       run: |
         npm install
-        npm run publish ${{ github.event.inputs.release_version }}
+        npm run package -- ${{ github.event.inputs.release_version }} -o release.vsix
         git push
+    - name: Publish to VSCode Marketplace
+      run: npm run publish:vsce release.vsix
+    - name: Publish to Open VSX Registry
+      run: npm run publish:ovsx release.vsix
+

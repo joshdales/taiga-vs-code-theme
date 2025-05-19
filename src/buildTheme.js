@@ -12,6 +12,10 @@ const theme = JSON5.parse(
 	readFileSync(`${import.meta.dirname}/templates/color-theme.json`, (_err, data) => data)
 )
 
+/**
+ * Create the Taiga theme variant based on the provided configuration
+ * @param {object} colourTheme The theme configuration, which includes the type and colours
+ */
 function buildTheme(colourTheme) {
 	const themeValues = {
 		...colourTheme,

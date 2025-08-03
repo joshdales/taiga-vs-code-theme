@@ -5,8 +5,6 @@ import mustache from 'mustache'
 
 import { opacity } from "../utils/opacity.ts";
 import { darkLight } from "../utils/darkLight.ts";
-import darkColours from "../colours/dark-colours.json" with { type: "json" };
-import lightColours from "../colours/light-colours.json" with { type: "json" };
 
 const theme = JSON5.parse(
 	readFileSync(`${import.meta.dirname}/color-theme.json`, {
@@ -19,7 +17,7 @@ const theme = JSON5.parse(
  * Create the Taiga theme variant based on the provided configuration
  * @param colourTheme The theme configuration, which includes the type and colours
  */
-function generate(colourTheme: Record<string, unknown>) {
+export function generate(colourTheme: Record<string, unknown>) {
 	const themeValues = {
 		...colourTheme,
 		opacity,
@@ -46,8 +44,4 @@ function generate(colourTheme: Record<string, unknown>) {
 			console.log(`Wrote VSCode ${colourTheme.type} theme`);
 		},
 	);
-}
-
-export function buildVsCodeThemes() {
-	[darkColours, lightColours].forEach(generate);
 }

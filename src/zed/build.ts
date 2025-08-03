@@ -1,0 +1,36 @@
+import { writeFile } from "node:fs";
+import { resolve } from "node:path";
+import mustache from "mustache";
+
+import { opacity } from "../utils/opacity.ts";
+import { darkLight } from "../utils/darkLight.ts";
+import zedTheme from "../zed/theme.json" with { type: "json" };
+
+/**
+ * Create the Taiga theme variant based on the provided configuration
+ * @param colourTheme The theme configuration, which includes the type and colours
+ */
+export function generate(
+	dirPath: string,
+	colourTheme: Record<string, unknown>[],
+) {
+	const themeTempalte = zedTheme.themes[0];
+	const themes = colourTheme.map((colours) => {
+		const themeValues = {
+			...colours,
+			opacity,
+			darkLight,
+		};
+		const template = JSON.stringify(themeTempalte, null, 2);
+		const data = mustache.render(template, themeValues);
+		return JSON.parse(data);
+	});
+
+	zedTheme.themes = themes;
+	const data = JSON.stringify(zedTheme, null, 2);
+
+	writeFile(resolve(dirPath, "zed", `taiga.json`), data, (err) => {
+		if (err) throw err;
+		console.log(`Wrote Zed theme`);
+	});
+}

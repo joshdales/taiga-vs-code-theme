@@ -1,0 +1,14 @@
+{
+	"$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+	"author": "Josh Dales",
+	"name": "Taiga",
+	"themes": [
+		{
+			"name": "Tagia - {{ type }}",
+			"appearance": "{{type}}",
+			"style": {
+				"background": "{{ ui.0 }}"
+			}
+		}
+	]
+}

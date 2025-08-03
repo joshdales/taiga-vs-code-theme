@@ -1,0 +1,21 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "author": "Josh Dales",
+  "name": "Taiga",
+  "themes": [
+    {
+      "name": "Tagia - dark",
+      "appearance": "dark",
+      "style": {
+        "background": "#000924"
+      }
+    },
+    {
+      "name": "Tagia - light",
+      "appearance": "light",
+      "style": {
+        "background": "#E5EFFF"
+      }
+    }
+  ]
+}

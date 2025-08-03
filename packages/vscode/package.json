@@ -46,8 +46,12 @@
     ]
   },
   "scripts": {
-    "build": "node src/buildTheme.ts",
-    "watch": "node --watch-path=./src ./src/buildTheme.ts"
+    "build": "node src/buildTheme.js",
+    "package": "vsce package -o taiga-theme.vsix",
+    "publish:ovsx": "ovsx publish taiga-theme.vsix",
+    "publish:vsce": "vsce publish taiga-theme.vsix",
+    "vscode:prepublish": "npm run build",
+    "watch": "node --watch-path=./src ./src/buildTheme.js"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.3.0",

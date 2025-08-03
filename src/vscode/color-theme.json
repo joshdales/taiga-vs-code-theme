@@ -273,7 +273,7 @@
 		"breadcrumb.activeSelectionForeground": "{{ blue.4 }}",
 		"breadcrumbPicker.background": "{{ ui.1 }}",
 		/* TODO: Symbol Icons Colours */
-		"debugExceptionWidget.background": "{{ui.0}}",
+		"debugExceptionWidget.background": "{{ui.0}}"
 	},
 	"semanticHighlighting": true,
 	"tokenColors": [
@@ -282,8 +282,8 @@
 			"scope": ["comment", "punctuation.definition.comment"],
 			"settings": {
 				"foreground": "{{ ui.text }}{{#opacity}}60{{/opacity}}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Punctuation",
@@ -297,22 +297,22 @@
 				"keyword.operator.arithmetic",
 				"meta.type.annotation meta.brace",
 				"meta.field.declaration",
-				"string.template meta.brace",
+				"string.template meta.brace"
 			],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-			},
+				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
+			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
 				"punctuation.definition.variable",
-				"support.variable.property",
+				"support.variable.property"
 			],
 			"settings": {
-				"foreground": "{{ green.1 }}",
-			},
+				"foreground": "{{ green.1 }}"
+			}
 		},
 		{
 			"name": "Keywords",
@@ -322,40 +322,40 @@
 				"storage.type",
 				"storage.modifier",
 				"punctuation.definition.keyword",
-				"support.function",
+				"support.function"
 			],
 			"settings": {
 				"foreground": "{{ purple.2 }}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Strings",
 			"scope": ["string", "punctuation.definition.string"],
 			"settings": {
-				"foreground": "{{ green.3 }}",
-			},
+				"foreground": "{{ green.3 }}"
+			}
 		},
 		{
 			"name": "JSON Key",
 			"scope": [
 				"source.json meta.structure.dictionary.json support.type.property-name.json",
 				"punctuation.support.type.property-name",
-				"meta.objectliteral meta.object-literal.key",
+				"meta.objectliteral meta.object-literal.key"
 			],
 			"settings": {
-				"foreground": "{{ green.1 }}",
-			},
+				"foreground": "{{ green.1 }}"
+			}
 		},
 		{
 			"name": "YAML Key",
 			"scope": [
 				"source.yaml entity.name.tag",
-				"source.yaml punctuation.separator.key-value",
+				"source.yaml punctuation.separator.key-value"
 			],
 			"settings": {
-				"foreground": "{{ green.1 }}",
-			},
+				"foreground": "{{ green.1 }}"
+			}
 		},
 		{
 			"name": "Class and Interface Names",
@@ -368,51 +368,51 @@
 				"support.class",
 				"meta.module",
 				"entity.name",
-				"support.constant",
+				"support.constant"
 			],
 			"settings": {
-				"foreground": "{{ yellow.3 }}",
-			},
+				"foreground": "{{ yellow.3 }}"
+			}
 		},
 		{
 			"name": "Type definitions",
 			"scope": ["support.type", "meta.type.annotation"],
 			"settings": {
 				"foreground": "{{ yellow.3 }}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Functions",
 			"scope": [
 				"meta.definition entity.name.function",
 				"entity.name.function",
-				"meta.function-call support.function.console",
+				"meta.function-call support.function.console"
 			],
 			"settings": {
-				"foreground": "{{ teal.2 }}",
-			},
+				"foreground": "{{ teal.2 }}"
+			}
 		},
 		{
 			"name": "Tag Name",
 			"scope": ["entity.name.tag", "entity.name.tag support.class.component"],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "Tag",
 			"scope": ["punctuation.definition.tag"],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-			},
+				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
+			}
 		},
 		{
 			"name": "Tag attributes",
 			"scope": ["entity.other.attribute-name"],
 			"settings": {
-				"foreground": "{{ teal.2 }}",
-			},
+				"foreground": "{{ teal.2 }}"
+			}
 		},
 		{
 			"name": "Console This",
@@ -420,29 +420,29 @@
 				"variable.language.this",
 				"support.class.console",
 				"variable.language.self.ruby",
-				"support.variable.object",
+				"support.variable.object"
 			],
 			"settings": {
 				"foreground": "{{ yellow.3 }}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Embedded",
 			"scope": [
 				"punctuation.section.embedded",
-				"punctuation.definition.template-expression",
+				"punctuation.definition.template-expression"
 			],
 			"settings": {
-				"foreground": "{{ purple.3 }}",
-			},
+				"foreground": "{{ purple.3 }}"
+			}
 		},
 		{
 			"name": "General Constants",
 			"scope": ["constant"],
 			"settings": {
-				"foreground": "{{ blue.2 }}",
-			},
+				"foreground": "{{ blue.2 }}"
+			}
 		},
 		{
 			"name": "CSS Class",
@@ -450,130 +450,130 @@
 				"entity.other.attribute-name.class.css",
 				"entity.other.attribute-name.class.css punctuation.definition.entity.css",
 				"entity.other.attribute-name.placeholder.css punctuation.definition.entity.css",
-				"entity.other.attribute-name.placeholder.css",
+				"entity.other.attribute-name.placeholder.css"
 			],
 			"settings": {
-				"foreground": "{{ teal.3 }}",
-			},
+				"foreground": "{{ teal.3 }}"
+			}
 		},
 		{
 			"name": "CSS ID",
 			"scope": [
 				"entity.other.attribute-name.id.css",
-				"entity.other.attribute-name.id.css punctuation.definition.entity.css",
+				"entity.other.attribute-name.id.css punctuation.definition.entity.css"
 			],
 			"settings": {
-				"foreground": "{{ teal.2 }}",
-			},
+				"foreground": "{{ teal.2 }}"
+			}
 		},
 		{
 			"name": "CSS function",
 			"scope": ["source.css support.function", "entity.name.function.scss"],
 			"settings": {
-				"foreground": "{{ purple.2 }}",
-			},
+				"foreground": "{{ purple.2 }}"
+			}
 		},
 		{
 			"name": "CSS unit",
 			"scope": ["keyword.other.unit"],
 			"settings": {
-				"foreground": "{{ blue.2 }}",
-			},
+				"foreground": "{{ blue.2 }}"
+			}
 		},
 		{
 			"name": "CSS constant",
 			"scope": ["support.constant.media"],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "CSS Property",
 			"scope": [
 				"support.type.property-name.css",
 				"meta.property-list.css entity.name.tag.css",
-				"meta.property-list.scss entity.name.tag.css",
+				"meta.property-list.scss entity.name.tag.css"
 			],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "CSS Hex",
 			"scope": ["punctuation.definition.constant.css"],
 			"settings": {
-				"foreground": "{{ blue.2 }}",
-			},
+				"foreground": "{{ blue.2 }}"
+			}
 		},
 		{
 			"name": "Markdown Headings",
 			"scope": [
 				"markup.heading",
 				"markup.heading punctuation.definition.heading",
-				"markup.heading entity.name.section",
+				"markup.heading entity.name.section"
 			],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "Markdown Italics",
 			"scope": ["markup.italic", "markup.italic punctuation.definition.italic"],
 			"settings": {
 				"foreground": "{{ teal.3 }}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Markdown Bold",
 			"scope": ["markup.bold", "markup.bold punctuation.definition.bold"],
 			"settings": {
 				"foreground": "{{ purple.3 }}",
-				"fontStyle": "bold",
-			},
+				"fontStyle": "bold"
+			}
 		},
 		{
 			"name": "Markdown List",
 			"scope": ["markup.list punctuation.definition.list.begin"],
 			"settings": {
 				"foreground": "{{ yellow.3 }}",
-				"fontStyle": "bold",
-			},
+				"fontStyle": "bold"
+			}
 		},
 		{
 			"name": "Markdown Inline Code",
 			"scope": [
 				"markup.inline.raw",
-				"markup.inline.raw punctuation.definition.raw",
+				"markup.inline.raw punctuation.definition.raw"
 			],
 			"settings": {
-				"foreground": "{{ yellow.3 }}",
-			},
+				"foreground": "{{ yellow.3 }}"
+			}
 		},
 		{
 			"name": "Markdown Block Code",
 			"scope": [
 				"markup.fenced_code.block",
-				"markup.fenced_code.block punctuation.definition",
+				"markup.fenced_code.block punctuation.definition"
 			],
 			"settings": {
-				"foreground": "{{ yellow.3 }}",
-			},
+				"foreground": "{{ yellow.3 }}"
+			}
 		},
 		{
 			"name": "Markdown Quote",
 			"scope": ["markup.quote", "markup.quote punctuation.definition"],
 			"settings": {
-				"foreground": "{{ teal.3 }}",
-			},
+				"foreground": "{{ teal.3 }}"
+			}
 		},
 		{
 			"name": "Markdown Separator",
 			"scope": ["meta.separator.markdown"],
 			"settings": {
 				"foreground": "{{ green.1 }}",
-				"fontStyle": "bold",
-			},
+				"fontStyle": "bold"
+			}
 		},
 		{
 			"name": "Markdown Link",
@@ -582,49 +582,49 @@
 				"meta.link.inet",
 				"meta.link.inet punctuation.definition.link",
 				"meta.link.reference markup.underline.link",
-				"meta.image.inline",
+				"meta.image.inline"
 			],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "Markdown Quote",
 			"scope": [
 				"markup.quote.markdown",
-				"markup.quote.markdown punctuation.definition.quote.begin.markdown",
+				"markup.quote.markdown punctuation.definition.quote.begin.markdown"
 			],
 			"settings": {
 				"foreground": "{{ blue.2 }}",
-				"fontStyle": "italic",
-			},
+				"fontStyle": "italic"
+			}
 		},
 		{
 			"name": "Ruby Symbol",
 			"scope": [
 				"source.ruby constant.other.symbol",
-				"source.ruby constant.other.symbol punctuation",
+				"source.ruby constant.other.symbol punctuation"
 			],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "Ruby Class",
 			"scope": [
 				"meta.class.ruby keyword.operator",
-				"meta.module.ruby entity.other.inherited-class punctuation",
+				"meta.module.ruby entity.other.inherited-class punctuation"
 			],
 			"settings": {
-				"foreground": "{{ yellow.3 }}",
-			},
+				"foreground": "{{ yellow.3 }}"
+			}
 		},
 		{
 			"name": "Ruby Hash Rocket",
 			"scope": ["source.ruby punctuation.separator.key-value"],
 			"settings": {
-				"foreground": "{{ purple.2 }}",
-			},
+				"foreground": "{{ purple.2 }}"
+			}
 		},
 		{
 			"name": "Ruby Hash",
@@ -634,34 +634,34 @@
 				"source.ruby punctuation.section.symbol.end.ruby",
 				"source.ruby punctuation.definition.constant.ruby",
 				"source.ruby constant.language.symbol.hashkey.ruby",
-				"constant.language.symbol.hashkey.ruby punctuation.definition.constant.hashkey.ruby",
+				"constant.language.symbol.hashkey.ruby punctuation.definition.constant.hashkey.ruby"
 			],
 			"settings": {
-				"foreground": "{{ teal.2 }}",
-			},
+				"foreground": "{{ teal.2 }}"
+			}
 		},
 		{
 			"name": "Ruby Method",
 			"scope": ["entity.name.function.ruby"],
 			"settings": {
-				"foreground": "{{ teal.2 }}",
-			},
+				"foreground": "{{ teal.2 }}"
+			}
 		},
 		{
 			"name": "Ruby Keyword Arguments",
 			"scope": [
-				"meta.function.method.with-arguments.ruby constant.other.symbol.hashkey.parameter.function.ruby punctuation.definition.constant.ruby",
+				"meta.function.method.with-arguments.ruby constant.other.symbol.hashkey.parameter.function.ruby punctuation.definition.constant.ruby"
 			],
 			"settings": {
-				"foreground": "{{ green.2 }}",
-			},
+				"foreground": "{{ green.2 }}"
+			}
 		},
 		{
 			"name": "JSX Tags",
 			"scope": ["string.template meta.brace"],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}",
-			},
-		},
-	],
+				"foreground": "{{ ui.text }}{{#opacity}}75{{/opacity}}"
+			}
+		}
+	]
 }

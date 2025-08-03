@@ -12,7 +12,7 @@ function convertPercentageToHex(percentage) {
 }
 
 export function opacity() {
-	return function (value, render) {
+	return function (value: string, render: Function) {
 		const hex = convertPercentageToHex(value)
 
 		return render(hex)

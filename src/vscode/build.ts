@@ -17,7 +17,7 @@ const theme = JSON5.parse(
  * Create the Taiga theme variant based on the provided configuration
  * @param colourTheme The theme configuration, which includes the type and colours
  */
-export function generate(colourTheme: Record<string, unknown>) {
+export function generate(dirPath: string, colourTheme: Record<string, unknown>) {
 	const themeValues = {
 		...colourTheme,
 		opacity,
@@ -30,10 +30,7 @@ export function generate(colourTheme: Record<string, unknown>) {
 
 	writeFile(
 		resolve(
-			import.meta.dirname,
-			"..",
-			"..",
-			"packages",
+			dirPath,
 			"vscode",
 			"themes",
 			`${colourTheme.type}-color-theme.json`,

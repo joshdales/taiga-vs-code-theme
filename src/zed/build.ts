@@ -14,14 +14,14 @@ export function generate(
 	dirPath: string,
 	colourTheme: Record<string, unknown>[],
 ) {
-	const themeTempalte = zedTheme.themes[0];
+	const themeTemplate = zedTheme.themes[0];
 	const themes = colourTheme.map((colours) => {
 		const themeValues = {
 			...colours,
 			opacity,
 			darkLight,
 		};
-		const template = JSON.stringify(themeTempalte, null, 2);
+		const template = JSON.stringify(themeTemplate);
 		const data = mustache.render(template, themeValues);
 		return JSON.parse(data);
 	});

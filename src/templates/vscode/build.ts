@@ -1,10 +1,10 @@
 import { readFileSync, writeFile } from "node:fs";
 import { resolve } from "node:path";
 import JSON5 from "json5";
-import mustache from 'mustache'
+import mustache from "mustache";
 
-import { opacity } from "../utils/opacity.ts";
-import { darkLight } from "../utils/darkLight.ts";
+import { opacity } from "../../utils/opacity.ts";
+import { darkLight } from "../../utils/darkLight.ts";
 
 const theme = JSON5.parse(
 	readFileSync(`${import.meta.dirname}/color-theme.json`, {
@@ -17,7 +17,10 @@ const theme = JSON5.parse(
  * Create the Taiga theme variant based on the provided configuration
  * @param colourTheme The theme configuration, which includes the type and colours
  */
-export function generate(dirPath: string, colourTheme: Record<string, unknown>) {
+export function generate(
+	dirPath: string,
+	colourTheme: Record<string, unknown>,
+) {
 	const themeValues = {
 		...colourTheme,
 		opacity,

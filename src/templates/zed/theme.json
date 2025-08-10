@@ -7,18 +7,18 @@
 			"name": "Taiga - {{ type }}",
 			"appearance": "{{type}}",
 			"style": {
-				"background": "{{ ui.0 }}",
+				"background": "{{ui.0}}",
 				"border": "{{ui.0}}",
 				"border.focused": "{{ui.2}}",
 				"border.selected": "{{ui.highlight}}",
 				"border.disabled": "{{ui.shadow}}",
 				"border.transparent": "{{ui.1}}",
-				"editor.background": "{{ ui.0 }}",
-				"editor.foreground": "{{ ui.text }}",
-				"editor.gutter.background": "{{ ui.0 }}",
+				"editor.background": "{{ui.0}}",
+				"editor.foreground": "{{ui.text}}",
+				"editor.gutter.background": "{{ui.0}}",
 				"editor.line_number": "{{ui.text}}{{#opacity}}75{{/opacity}}",
 				"editor.active_line_number": "{{green.4}}",
-				"editor.invisible": "{{ ui.text }}{{#opacity}}50{{/opacity}}",
+				"editor.invisible": "{{ui.text}}{{#opacity}}25{{/opacity}}",
 				"status_bar.background": "{{ui.1}}",
 				"tab_bar.background": "{{ui.0}}",
 				"tab.active_background": "{{ui.1}}",
@@ -32,9 +32,11 @@
 				"drop_target.background": "{{ui.1}}{{#opacity}}50{{/opacity}}",
 				"element.hover": "{{ui.1}}{{#opacity}}50{{/opacity}}",
 				"element.selected": "{{ui.2}}{{#opacity}}50{{/opacity}}",
-				"conflict": "{{purple.1}}",
-				"conflict.border": "{{purple.1}}",
-				"conflict.background": "{{purple.1}}{{#opacity}}50{{/opacity}}",
+				"element.background": "{{ui.2}}",
+				"element.active": "{{ui.3}}",
+				"conflict": "{{purple.2}}",
+				"conflict.border": "{{purple.0}}",
+				"conflict.background": "{{purple.0}}",
 				"editor.active_line.background": "{{ui.2}}{{#opacity}}50{{/opacity}}",
 				"modified": "{{teal.2}}",
 				"modified.background": "{{teal.2}}",
@@ -51,14 +53,41 @@
 				"text": "{{ui.text}}",
 				"text.placeholder": "{{ui.text}}{{#opacity}}50{{/opacity}}",
 				"text.disabled": "{{ui.text}}{{#opacity}}50{{/opacity}}",
-				"text.accent": "{{green.2}}",
+				"text.accent": "{{blue.2}}",
 				"text.muted": "{{ui.text}}{{#opacity}}75{{/opacity}}",
 				"ghost_element.hover": "{{ui.3}}{{#opacity}}50{{/opacity}}",
 				"ghost_element.active": "{{ui.3}}",
 				"ghost_element.selected": "{{ui.3}}",
 				"ghost_element.disabled": "{{ui.text}}{{#opacity}}25{{/opacity}}",
-				"element.background": "{{red.0}}",
-				"element.active": "{{ui.red}}"
+				"editor.wrap_guide": "{{ui.text}}{{#opacity}}25{{/opacity}}",
+				"terminal.background": "{{ui.0}}",
+				"terminal.foreground": "{{ui.text}}",
+				"syntax": {
+					"property": {
+						"color": "{{green.1}}",
+						"font_style": "italic"
+					},
+					"string": {
+						"color": "{{green.3}}"
+					},
+					"keyword": {
+						"color": "{{purple.2}}",
+						"font_style": "italic"
+					},
+					"comment": {
+						"color": "{{ui.text}}{{#opacity}}50{{/opacity}}",
+						"font_style": "italic"
+					},
+					"comment.doc": {
+						"color": "{{ui.text}}{{#opacity}}50{{/opacity}}",
+						"font_style": "italic"
+					}
+				},
+				"players": [
+					{
+						"cursor": "{{ui.highlight}}"
+					}
+				]
 			}
 		}
 	]

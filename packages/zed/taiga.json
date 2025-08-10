@@ -18,7 +18,7 @@
         "editor.gutter.background": "#000924",
         "editor.line_number": "#D4DFEBBF",
         "editor.active_line_number": "#93F8B8",
-        "editor.invisible": "#D4DFEB80",
+        "editor.invisible": "#D4DFEB40",
         "status_bar.background": "#10213e",
         "tab_bar.background": "#000924",
         "tab.active_background": "#10213e",
@@ -32,9 +32,11 @@
         "drop_target.background": "#10213e80",
         "element.hover": "#10213e80",
         "element.selected": "#283b5a80",
-        "conflict": "#945CE1",
-        "conflict.border": "#945CE1",
-        "conflict.background": "#945CE180",
+        "element.background": "#283b5a",
+        "element.active": "#425677",
+        "conflict": "#B17EFF",
+        "conflict.border": "#773CBF",
+        "conflict.background": "#773CBF",
         "editor.active_line.background": "#283b5a80",
         "modified": "#43B2AC",
         "modified.background": "#43B2AC",
@@ -51,14 +53,41 @@
         "text": "#D4DFEB",
         "text.placeholder": "#D4DFEB80",
         "text.disabled": "#D4DFEB80",
-        "text.accent": "#51B67A",
+        "text.accent": "#59A0F9",
         "text.muted": "#D4DFEBBF",
         "ghost_element.hover": "#42567780",
         "ghost_element.active": "#425677",
         "ghost_element.selected": "#425677",
         "ghost_element.disabled": "#D4DFEB40",
-        "element.background": "#BA0D01",
-        "element.active": ""
+        "editor.wrap_guide": "#D4DFEB40",
+        "terminal.background": "#000924",
+        "terminal.foreground": "#D4DFEB",
+        "syntax": {
+          "property": {
+            "color": "#2C965D",
+            "font_style": "italic"
+          },
+          "string": {
+            "color": "#72D699"
+          },
+          "keyword": {
+            "color": "#B17EFF",
+            "font_style": "italic"
+          },
+          "comment": {
+            "color": "#D4DFEB80",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#D4DFEB80",
+            "font_style": "italic"
+          }
+        },
+        "players": [
+          {
+            "cursor": "#00782D"
+          }
+        ]
       }
     },
     {
@@ -76,7 +105,7 @@
         "editor.gutter.background": "#E5EFFF",
         "editor.line_number": "#0F171FBF",
         "editor.active_line_number": "#00381C",
-        "editor.invisible": "#0F171F80",
+        "editor.invisible": "#0F171F40",
         "status_bar.background": "#98BFFE",
         "tab_bar.background": "#E5EFFF",
         "tab.active_background": "#98BFFE",
@@ -90,9 +119,11 @@
         "drop_target.background": "#98BFFE80",
         "element.hover": "#98BFFE80",
         "element.selected": "#7A9FDD80",
-        "conflict": "#945CE1",
-        "conflict.border": "#945CE1",
-        "conflict.background": "#945CE180",
+        "element.background": "#7A9FDD",
+        "element.active": "#5C80BC",
+        "conflict": "#773CBF",
+        "conflict.border": "#B17EFF",
+        "conflict.background": "#B17EFF",
         "editor.active_line.background": "#7A9FDD80",
         "modified": "#00736E",
         "modified.background": "#00736E",
@@ -109,14 +140,41 @@
         "text": "#0F171F",
         "text.placeholder": "#0F171F80",
         "text.disabled": "#0F171F80",
-        "text.accent": "#007742",
+        "text.accent": "#1762B6",
         "text.muted": "#0F171FBF",
         "ghost_element.hover": "#5C80BC80",
         "ghost_element.active": "#5C80BC",
         "ghost_element.selected": "#5C80BC",
         "ghost_element.disabled": "#0F171F40",
-        "element.background": "#FF6551",
-        "element.active": ""
+        "editor.wrap_guide": "#0F171F40",
+        "terminal.background": "#E5EFFF",
+        "terminal.foreground": "#0F171F",
+        "syntax": {
+          "property": {
+            "color": "#2C965D",
+            "font_style": "italic"
+          },
+          "string": {
+            "color": "#00572F"
+          },
+          "keyword": {
+            "color": "#773CBF",
+            "font_style": "italic"
+          },
+          "comment": {
+            "color": "#0F171F80",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#0F171F80",
+            "font_style": "italic"
+          }
+        },
+        "players": [
+          {
+            "cursor": "#00782D"
+          }
+        ]
       }
     }
   ]

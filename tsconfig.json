@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"erasableSyntaxOnly": true,
+		"strict": true,
+		"module": "ESNext",
+		"target": "ESNext",
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	}
+}

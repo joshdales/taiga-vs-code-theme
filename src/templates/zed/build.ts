@@ -29,7 +29,7 @@ export function generate(
 	zedTheme.themes = themes;
 	const data = JSON.stringify(zedTheme, null, 2);
 
-	writeFile(resolve(dirPath, "zed", `taiga.json`), data, (err) => {
+	writeFile(resolve(dirPath, "zed", "themes", `taiga.json`), data, (err) => {
 		if (err) throw err;
 		console.log(`Wrote Zed theme`);
 	});

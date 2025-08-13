@@ -3,6 +3,7 @@
 		"erasableSyntaxOnly": true,
 		"strict": true,
 		"module": "ESNext",
+		"moduleResolution": "nodenext",
 		"target": "ESNext",
 		"skipLibCheck": true,
 		"esModuleInterop": true

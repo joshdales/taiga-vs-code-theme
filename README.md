@@ -1,8 +1,8 @@
 # Taiga Theme
 
 A theme for editors with light and dark themes that was built with a font that has cursive italics in mind.
-![Screenshot of the dark version of the theme](./images/screenshot-dark.png)
-![Screenshot of the light version of the theme](./images/screenshot-light.png)
+![Screenshot of VS Code dark version of the theme](./images/screenshot-dark.png)
+![Screenshot of VS Code light version of the theme](./images/screenshot-light.png)
 
 Currently supported editors and terminals:
 - Ghostty

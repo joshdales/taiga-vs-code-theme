@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import JSON5 from "json5";
 import mustache from "mustache";
 
-import { opacity } from "../../utils/opacity.ts";
+import { opacity as alpha } from "../../utils/opacity.ts";
 import { darkLight } from "../../utils/darkLight.ts";
 
 const theme = JSON5.parse(
@@ -23,7 +23,7 @@ export function generate(
 ) {
 	const themeValues = {
 		...colourTheme,
-		opacity,
+		alpha,
 		darkLight,
 	};
 

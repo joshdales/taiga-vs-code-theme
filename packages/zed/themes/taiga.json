@@ -7,11 +7,8 @@
       "name": "Taiga - dark",
       "appearance": "dark",
       "style": {
-        "accents": [
-          "#00681b"
-        ],
+        "accents": [],
         "background": "#000924",
-        "background.appearance": null,
         "border": "#000924",
         "border.disabled": "#0F171F",
         "border.focused": "#283b5a",
@@ -39,7 +36,7 @@
         "element.active": "#283b5a",
         "element.background": "#10213e",
         "element.disabled": "#00681b40",
-        "element.hover": "#10213eBF",
+        "element.hover": "#283b5a",
         "element.selected": "#10213e80",
         "elevated_surface.background": "#283b5a",
         "error": "#FF6551",
@@ -54,6 +51,9 @@
         "modified.border": "#43B2AC",
         "panel.background": "#000924",
         "status_bar.background": "#10213e",
+        "success": "#2C965D",
+        "success.background": "#007742",
+        "success.border": "#007742",
         "surface.background": "#10213e",
         "text": "#D3DEF5",
         "text.accent": "#59A0F9",
@@ -82,7 +82,7 @@
             "font_weight": null
           },
           "comment": {
-            "color": "#A4AEC4",
+            "color": "#5A6377",
             "font_style": "italic",
             "font_weight": null
           },
@@ -97,7 +97,7 @@
             "font_weight": null
           },
           "constructor": {
-            "color": "#ff0000",
+            "color": "#B17EFF",
             "font_style": null,
             "font_weight": null
           },
@@ -107,12 +107,12 @@
             "font_weight": null
           },
           "emphasis": {
-            "color": "#ff0000",
-            "font_style": null,
+            "color": "#67D2CC",
+            "font_style": "italic",
             "font_weight": null
           },
           "emphasis.strong": {
-            "color": "#ff0000",
+            "color": "#C9ACFF",
             "font_style": null,
             "font_weight": 700
           },
@@ -142,12 +142,12 @@
             "font_weight": null
           },
           "link_text": {
-            "color": "#ff0000",
+            "color": "#72D699",
             "font_style": "normal",
             "font_weight": null
           },
           "link_uri": {
-            "color": "#ff0000",
+            "color": "#72D699",
             "font_style": null,
             "font_weight": null
           },
@@ -202,7 +202,7 @@
             "font_weight": null
           },
           "punctuation.list_marker": {
-            "color": "#ff0000",
+            "color": "#A4AEC4",
             "font_style": null,
             "font_weight": null
           },
@@ -212,12 +212,12 @@
             "font_weight": null
           },
           "selector": {
-            "color": "#ff0000",
+            "color": "#43B2AC",
             "font_style": null,
             "font_weight": null
           },
           "selector.pseudo": {
-            "color": "#ff0000",
+            "color": "#14938D",
             "font_style": null,
             "font_weight": null
           },
@@ -252,12 +252,12 @@
             "font_weight": null
           },
           "text.literal": {
-            "color": "#ff0000",
+            "color": "#F0B135",
             "font_style": null,
             "font_weight": null
           },
           "title": {
-            "color": "#ff0000",
+            "color": "#2C965D",
             "font_style": null,
             "font_weight": 400
           },
@@ -272,7 +272,7 @@
             "font_weight": null
           },
           "variable.special": {
-            "color": "#2C965D",
+            "color": "#F0B135",
             "font_style": "italic",
             "font_weight": null
           },
@@ -285,16 +285,29 @@
       },
       "players": [
         {
-          "cursor": "#93F8B8"
+          "cursor": "#93F8B8",
+          "background": "#93F8B8",
+          "selection": "#93F8B880"
         },
         {
-          "cursor": "#C9E0FF"
+          "cursor": "#C9E0FF",
+          "background": "#C9E0FF",
+          "selection": "#C9E0FF80"
         },
         {
-          "cursor": "#FFD2CA"
+          "cursor": "#FFD2CA",
+          "background": "#FFD2CA",
+          "selection": "#FFD2CA80"
         },
         {
-          "cursor": "#FFD896"
+          "cursor": "#FFD896",
+          "background": "#FFD896",
+          "selection": "#FFD89680"
+        },
+        {
+          "cursor": "#E3D6FF",
+          "background": "#E3D6FF",
+          "selection": "#E3D6FF80"
         }
       ]
     },
@@ -302,11 +315,8 @@
       "name": "Taiga - light",
       "appearance": "light",
       "style": {
-        "accents": [
-          "#00681b"
-        ],
+        "accents": [],
         "background": "#E5EFFF",
-        "background.appearance": null,
         "border": "#E5EFFF",
         "border.disabled": "#01030E",
         "border.focused": "#7A9FDD",
@@ -334,7 +344,7 @@
         "element.active": "#7A9FDD",
         "element.background": "#98BFFE",
         "element.disabled": "#00681b40",
-        "element.hover": "#98BFFEBF",
+        "element.hover": "#7A9FDD",
         "element.selected": "#98BFFE80",
         "elevated_surface.background": "#7A9FDD",
         "error": "#BA0D01",
@@ -349,6 +359,9 @@
         "modified.border": "#00736E",
         "panel.background": "#E5EFFF",
         "status_bar.background": "#98BFFE",
+        "success": "#2C965D",
+        "success.background": "#51B67A",
+        "success.border": "#51B67A",
         "surface.background": "#98BFFE",
         "text": "#01030E",
         "text.accent": "#1762B6",
@@ -377,7 +390,7 @@
             "font_weight": null
           },
           "comment": {
-            "color": "#2D3547",
+            "color": "#5A6377",
             "font_style": "italic",
             "font_weight": null
           },
@@ -392,7 +405,7 @@
             "font_weight": null
           },
           "constructor": {
-            "color": "#ff0000",
+            "color": "#773CBF",
             "font_style": null,
             "font_weight": null
           },
@@ -402,12 +415,12 @@
             "font_weight": null
           },
           "emphasis": {
-            "color": "#ff0000",
-            "font_style": null,
+            "color": "#005350",
+            "font_style": "italic",
             "font_weight": null
           },
           "emphasis.strong": {
-            "color": "#ff0000",
+            "color": "#5B169E",
             "font_style": null,
             "font_weight": 700
           },
@@ -437,12 +450,12 @@
             "font_weight": null
           },
           "link_text": {
-            "color": "#ff0000",
+            "color": "#00572F",
             "font_style": "normal",
             "font_weight": null
           },
           "link_uri": {
-            "color": "#ff0000",
+            "color": "#00572F",
             "font_style": null,
             "font_weight": null
           },
@@ -497,7 +510,7 @@
             "font_weight": null
           },
           "punctuation.list_marker": {
-            "color": "#ff0000",
+            "color": "#2D3547",
             "font_style": null,
             "font_weight": null
           },
@@ -507,12 +520,12 @@
             "font_weight": null
           },
           "selector": {
-            "color": "#ff0000",
+            "color": "#00736E",
             "font_style": null,
             "font_weight": null
           },
           "selector.pseudo": {
-            "color": "#ff0000",
+            "color": "#14938D",
             "font_style": null,
             "font_weight": null
           },
@@ -547,12 +560,12 @@
             "font_weight": null
           },
           "text.literal": {
-            "color": "#ff0000",
+            "color": "#5F4200",
             "font_style": null,
             "font_weight": null
           },
           "title": {
-            "color": "#ff0000",
+            "color": "#2C965D",
             "font_style": null,
             "font_weight": 400
           },
@@ -567,7 +580,7 @@
             "font_weight": null
           },
           "variable.special": {
-            "color": "#2C965D",
+            "color": "#5F4200",
             "font_style": "italic",
             "font_weight": null
           },
@@ -580,16 +593,29 @@
       },
       "players": [
         {
-          "cursor": "#00381C"
+          "cursor": "#00381C",
+          "background": "#00381C",
+          "selection": "#00381C80"
         },
         {
-          "cursor": "#002D5E"
+          "cursor": "#002D5E",
+          "background": "#002D5E",
+          "selection": "#002D5E80"
         },
         {
-          "cursor": "#5C0300"
+          "cursor": "#5C0300",
+          "background": "#5C0300",
+          "selection": "#5C030080"
         },
         {
-          "cursor": "#3E2A00"
+          "cursor": "#3E2A00",
+          "background": "#3E2A00",
+          "selection": "#3E2A0080"
+        },
+        {
+          "cursor": "#3D006F",
+          "background": "#3D006F",
+          "selection": "#3D006F80"
         }
       ]
     }

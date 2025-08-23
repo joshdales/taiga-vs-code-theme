@@ -7,9 +7,8 @@
 			"name": "Taiga - {{ type }}",
 			"appearance": "{{type}}",
 			"style": {
-				"accents": ["{{ui.highlight}}"],
+				"accents": [],
 				"background": "{{ui.0}}",
-				"background.appearance": null,
 				"border": "{{ui.0}}",
 				"border.disabled": "{{ui.shadow}}",
 				"border.focused": "{{ui.2}}",
@@ -37,7 +36,7 @@
 				"element.active": "{{ui.2}}",
 				"element.background": "{{ui.1}}",
 				"element.disabled": "{{ui.highlight}}{{#alpha}}25{{/alpha}}",
-				"element.hover": "{{ui.1}}{{#alpha}}75{{/alpha}}",
+				"element.hover": "{{ui.2}}",
 				"element.selected": "{{ui.1}}{{#alpha}}50{{/alpha}}",
 				"elevated_surface.background": "{{ui.2}}",
 				"error": "{{red.2}}",
@@ -52,6 +51,9 @@
 				"modified.border": "{{teal.2}}",
 				"panel.background": "{{ui.0}}",
 				"status_bar.background": "{{ui.1}}",
+				"success": "{{green.1}}",
+				"success.background": "{{green.0}}",
+				"success.border": "{{green.0}}",
 				"surface.background": "{{ui.1}}",
 				"text": "{{text.1}}",
 				"text.accent": "{{blue.2}}",
@@ -81,7 +83,7 @@
 						"font_weight": null
 					},
 					"comment": {
-						"color": "{{text.2}}",
+						"color": "{{text.3}}",
 						"font_style": "italic",
 						"font_weight": null
 					},
@@ -96,7 +98,7 @@
 						"font_weight": null
 					},
 					"constructor": {
-						"color": "#ff0000",
+						"color": "{{purple.2}}",
 						"font_style": null,
 						"font_weight": null
 					},
@@ -106,12 +108,12 @@
 						"font_weight": null
 					},
 					"emphasis": {
-						"color": "#ff0000",
-						"font_style": null,
+						"color": "{{teal.3}}",
+						"font_style": "italic",
 						"font_weight": null
 					},
 					"emphasis.strong": {
-						"color": "#ff0000",
+						"color": "{{purple.3}}",
 						"font_style": null,
 						"font_weight": 700
 					},
@@ -141,12 +143,12 @@
 						"font_weight": null
 					},
 					"link_text": {
-						"color": "#ff0000",
+						"color": "{{green.3}}",
 						"font_style": "normal",
 						"font_weight": null
 					},
 					"link_uri": {
-						"color": "#ff0000",
+						"color": "{{green.3}}",
 						"font_style": null,
 						"font_weight": null
 					},
@@ -201,7 +203,7 @@
 						"font_weight": null
 					},
 					"punctuation.list_marker": {
-						"color": "#ff0000",
+						"color": "{{text.2}}",
 						"font_style": null,
 						"font_weight": null
 					},
@@ -211,12 +213,12 @@
 						"font_weight": null
 					},
 					"selector": {
-						"color": "#ff0000",
+						"color": "{{teal.2}}",
 						"font_style": null,
 						"font_weight": null
 					},
 					"selector.pseudo": {
-						"color": "#ff0000",
+						"color": "{{teal.1}}",
 						"font_style": null,
 						"font_weight": null
 					},
@@ -251,12 +253,12 @@
 						"font_weight": null
 					},
 					"text.literal": {
-						"color": "#ff0000",
+						"color": "{{yellow.3}}",
 						"font_style": null,
 						"font_weight": null
 					},
 					"title": {
-						"color": "#ff0000",
+						"color": "{{green.1}}",
 						"font_style": null,
 						"font_weight": 400
 					},
@@ -271,7 +273,7 @@
 						"font_weight": null
 					},
 					"variable.special": {
-						"color": "{{green.1}}",
+						"color": "{{yellow.3}}",
 						"font_style": "italic",
 						"font_weight": null
 					},
@@ -282,19 +284,31 @@
 					}
 				}
 			},
-
 			"players": [
 				{
-					"cursor": "{{green.4}}"
+					"cursor": "{{green.4}}",
+					"background": "{{green.4}}",
+					"selection": "{{green.4}}{{#alpha}}50{{/alpha}}"
 				},
 				{
-					"cursor": "{{blue.4}}"
+					"cursor": "{{blue.4}}",
+					"background": "{{blue.4}}",
+					"selection": "{{blue.4}}{{#alpha}}50{{/alpha}}"
 				},
 				{
-					"cursor": "{{red.4}}"
+					"cursor": "{{red.4}}",
+					"background": "{{red.4}}",
+					"selection": "{{red.4}}{{#alpha}}50{{/alpha}}"
 				},
 				{
-					"cursor": "{{yellow.4}}"
+					"cursor": "{{yellow.4}}",
+					"background": "{{yellow.4}}",
+					"selection": "{{yellow.4}}{{#alpha}}50{{/alpha}}"
+				},
+				{
+					"cursor": "{{purple.4}}",
+					"background": "{{purple.4}}",
+					"selection": "{{purple.4}}{{#alpha}}50{{/alpha}}"
 				}
 			]
 		}

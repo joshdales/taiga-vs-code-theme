@@ -4,7 +4,7 @@ import mustache from "mustache";
 
 import { alpha } from "../../utils/alpha.ts";
 import { darkLight } from "../../utils/darkLight.ts";
-import zedTheme from "../zed/theme.json" with { type: "json" };
+import zedTheme from "./theme.json" with { type: "json" };
 
 /**
  * Create the Taiga theme variant based on the provided configuration

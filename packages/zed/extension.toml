@@ -1,6 +1,6 @@
 id = "taiga-theme"
 name = "Taiga Theme"
-version = "0.0.1"
+version = "3.0.1"
 schema_version = 1
 authors = ["Josh Dales"]
 description = "A theme for Zed - with light and dark modes"

@@ -3,12 +3,12 @@
 	"type": "{{ type }}",
 	"colors": {
 		"focusBorder": "{{ ui.1 }}",
-		"foreground": "{{ ui.text }}",
+		"foreground": "{{ text.1 }}",
 		"widget.shadow": "{{ ui.shadow }}",
 		"selection.background": "{{ blue.1 }}",
-		"descriptionForeground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"descriptionForeground": "{{text.2}}",
 		"errorForeground": "{{ red.2 }}",
-		"icon.foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"icon.foreground": "{{text.2}}",
 		"sash.hoverBorder": "{{ ui.highlight }}{{#alpha}}50{{/alpha}}",
 		"textBlockQuote.background": "{{ ui.1 }}{{#alpha}}50{{/alpha}}",
 		"textBlockQuote.border": "{{ ui.2 }}",
@@ -32,8 +32,8 @@
 		"dropdown.foreground": "{{ ui.text }}",
 		"input.background": "{{ ui.1 }}",
 		"input.border": "{{ ui.1 }}",
-		"input.foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
-		"input.placeholderForeground": "{{ ui.text }}{{#alpha}}50{{/alpha}}",
+		"input.foreground": "{{text.2}}",
+		"input.placeholderForeground": "{{text.3}}",
 		"inputOption.activeBorder": "{{ blue.2 }}",
 		"inputOption.activeForeground": "{{ blue.2 }}",
 		"inputOption.hoverBackground": "{{ blue.1 }}",
@@ -98,11 +98,11 @@
 		"tab.border": "{{ ui.0 }}",
 		"tab.activeBorder": "{{ ui.highlight }}",
 		"tab.lastPinnedBorder": "{{ ui.1 }}",
-		"tab.inactiveForeground": "{{ ui.text }}{{#alpha}}50{{/alpha}}",
-		"tab.hoverForeground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"tab.inactiveForeground": "{{text.3}}",
+		"tab.hoverForeground": "{{text.2}}",
 		"editor.background": "{{ ui.0 }}",
 		"editor.foreground": "{{ ui.text }}",
-		"editorLineNumber.foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"editorLineNumber.foreground": "{{text.2}}",
 		"editorLineNumber.activeForeground": "{{ green.4 }}",
 		"editorCursor.background": "{{ui.0}}",
 		"editorCursor.foreground": "{{green.4}}",
@@ -120,25 +120,25 @@
 		"editor.rangeHighlightBackground": "{{ green.4 }}{{#alpha}}15{{/alpha}}",
 		"editor.symbolHighlightBackground": "{{ purple.2 }}{{#alpha}}15{{/alpha}}",
 		"editorWhitespace.foreground": "{{ ui.text }}{{#alpha}}25{{/alpha}}",
-		"editorIndentGuide.activeBackground1": "{{ ui.text }}{{#alpha}}50{{/alpha}}",
+		"editorIndentGuide.activeBackground1": "{{text.3}}",
 		"editorRuler.foreground": "{{ ui.text }}{{#alpha}}25{{/alpha}}",
 		"editor.linkedEditingBackground": "{{ purple.0 }}{{#alpha}}25{{/alpha}}",
 		"editorCodeLens.foreground": "{{ blue.2 }}",
 		"editorBracketMatch.background": "{{ blue.2 }}{{#alpha}}25{{/alpha}}",
 		"editorBracketMatch.border": "{{ blue.2 }}{{#alpha}}25{{/alpha}}",
-		"editorBracketHighlight.foreground1": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"editorBracketHighlight.foreground1": "{{text.2}}",
 		"editorBracketHighlight.foreground2": "{{ blue.4 }}{{#alpha}}75{{/alpha}}",
 		"editorBracketHighlight.foreground3": "{{ purple.4 }}{{#alpha}}75{{/alpha}}",
 		"editorBracketHighlight.foreground4": "{{ teal.4 }}{{#alpha}}75{{/alpha}}",
 		"editorBracketHighlight.foreground5": "{{ green.4 }}{{#alpha}}75{{/alpha}}",
 		"editorBracketHighlight.foreground6": "{{ yellow.4 }}{{#alpha}}75{{/alpha}}",
-		"editorBracketPairGuide.activeBackground1": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"editorBracketPairGuide.activeBackground1": "{{text.2}}",
 		"editorBracketPairGuide.activeBackground2": "{{ blue.3 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.activeBackground3": "{{ purple.3 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.activeBackground4": "{{ teal.3 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.activeBackground5": "{{ green.3 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.activeBackground6": "{{ yellow.3 }}{{#alpha}}50{{/alpha}}",
-		"editorBracketPairGuide.background1": "{{ ui.text }}{{#alpha}}50{{/alpha}}",
+		"editorBracketPairGuide.background1": "{{text.3}}",
 		"editorBracketPairGuide.background2": "{{ blue.4 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.background3": "{{ purple.4 }}{{#alpha}}50{{/alpha}}",
 		"editorBracketPairGuide.background4": "{{ teal.4 }}{{#alpha}}50{{/alpha}}",
@@ -151,7 +151,7 @@
 		"editorOverviewRuler.findMatchForeground": "{{ ui.highlight }}{{#alpha}}25{{/alpha}}",
 		"editorOverviewRuler.rangeHighlightForeground": "{{ ui.highlight }}{{#alpha}}25{{/alpha}}",
 		"editorOverviewRuler.selectionHighlightForeground": "{{ blue.2 }}{{#alpha}}25{{/alpha}}",
-		"editorOverviewRuler.wordHighlightForeground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"editorOverviewRuler.wordHighlightForeground": "{{text.2}}",
 		"editorOverviewRuler.wordHighlightStrongForeground": "{{ teal.2 }}{{#alpha}}40{{/alpha}}",
 		"editorOverviewRuler.modifiedForeground": "{{ teal.2 }}",
 		"editorOverviewRuler.addedForeground": "{{ green.2 }}",
@@ -173,7 +173,7 @@
 		"editorWidget.background": "{{ ui.1 }}",
 		"editorWidget.border": "{{ ui.1 }}",
 		"editorSuggestWidget.background": "{{ ui.1 }}",
-		"editorSuggestWidget.foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"editorSuggestWidget.foreground": "{{text.2}}",
 		"editorSuggestWidget.focusHighlightForeground": "{{ teal.3 }}",
 		"editorSuggestWidget.highlightForeground": "{{ ui.text }}",
 		"editorSuggestWidget.selectedBackground": "{{ ui.3 }}{{#alpha}}75{{/alpha}}",
@@ -190,7 +190,7 @@
 		"peekViewResult.lineForeground": "{{ ui.text }}",
 		"peekViewResult.matchHighlightBackground": "{{ yellow.0 }}",
 		"peekViewTitle.background": "{{ ui.1 }}",
-		"peekViewTitleDescription.foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}",
+		"peekViewTitleDescription.foreground": "{{text.2}}",
 		"peekViewTitleLabel.foreground": "{{ ui.text }}",
 		"statusBar.background": "{{ ui.1 }}",
 		"statusBar.foreground": "{{ ui.text }}",
@@ -230,7 +230,7 @@
 		"gitDecoration.modifiedResourceForeground": "{{ yellow.2 }}",
 		"gitDecoration.deletedResourceForeground": "{{ red.2 }}",
 		"gitDecoration.conflictingResourceForeground": "{{ purple.2 }}",
-		"gitDecoration.ignoredResourceForeground": "{{ ui.text }}{{#alpha}}50{{/alpha}}",
+		"gitDecoration.ignoredResourceForeground": "{{text.3}}",
 		"settings.modifiedItemIndicator": "{{ teal.2 }}",
 		"settings.rowHoverBackground": "{{ ui.1 }}",
 		"settings.focusedRowBackground": "{{ ui.2 }}{{#alpha}}25{{/alpha}}",
@@ -269,7 +269,7 @@
 				"string.template meta.brace"
 			],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}"
+				"foreground": "{{text.2}}"
 			}
 		},
 		{
@@ -373,7 +373,7 @@
 			"name": "Tag",
 			"scope": ["punctuation.definition.tag"],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}"
+				"foreground": "{{text.2}}"
 			}
 		},
 		{
@@ -629,7 +629,7 @@
 			"name": "JSX Tags",
 			"scope": ["string.template meta.brace"],
 			"settings": {
-				"foreground": "{{ ui.text }}{{#alpha}}75{{/alpha}}"
+				"foreground": "{{text.2}}"
 			}
 		}
 	]

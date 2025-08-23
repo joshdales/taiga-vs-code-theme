@@ -1,17 +1,10 @@
-import { readFileSync, writeFile } from "node:fs";
+import { writeFile } from "node:fs";
 import { resolve } from "node:path";
-import JSON5 from "json5";
 import mustache from "mustache";
 
 import { alpha } from "../../utils/alpha.ts";
 import { darkLight } from "../../utils/darkLight.ts";
-
-const theme = JSON5.parse(
-	readFileSync(`${import.meta.dirname}/color-theme.json`, {
-		encoding: "utf-8",
-	}),
-	(_err, data) => data,
-);
+import vsCodetheme from "./color-theme.json" with { type: "json" };
 
 /**
  * Create the Taiga theme variant based on the provided configuration
@@ -27,7 +20,7 @@ export function generate(
 		darkLight,
 	};
 
-	const template = JSON.stringify(theme, null, 2);
+	const template = JSON.stringify(vsCodetheme, null, 2);
 
 	const data = mustache.render(template, themeValues);
 

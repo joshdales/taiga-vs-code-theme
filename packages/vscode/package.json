@@ -49,7 +49,7 @@
     "package": "vsce package -o taiga-theme.vsix",
     "publish:ovsx": "ovsx publish taiga-theme.vsix",
     "publish:vsce": "vsce publish taiga-theme.vsix",
-    "vscode:prepublish": "npm run build"
+    "vscode:prepublish": "cd ../ && pnpm run build"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.3.0",

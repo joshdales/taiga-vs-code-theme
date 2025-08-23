@@ -5,13 +5,9 @@
   "publisher": "joshdales",
   "icon": "logo.png",
   "license": "MIT",
-  "galleryBanner": {
-    "color": "#000924",
-    "theme": "dark"
-  },
   "version": "3.0.1",
   "engines": {
-    "vscode": "^1.40.0"
+    "node": "22"
   },
   "repository": {
     "type": "git",
@@ -31,20 +27,6 @@
     "taiga",
     "italics"
   ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Taiga",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-color-theme.json"
-      },
-      {
-        "label": "Taiga Light",
-        "uiTheme": "vs",
-        "path": "./themes/light-color-theme.json"
-      }
-    ]
-  },
   "scripts": {
     "build": "node src/main.ts",
     "watch": "node --watch-path=./src ./src/main.ts"

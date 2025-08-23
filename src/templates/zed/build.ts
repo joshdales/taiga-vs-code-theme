@@ -2,7 +2,7 @@ import { writeFile } from "node:fs";
 import { resolve } from "node:path";
 import mustache from "mustache";
 
-import { opacity } from "../../utils/opacity.ts";
+import { opacity as alpha } from "../../utils/opacity.ts";
 import { darkLight } from "../../utils/darkLight.ts";
 import zedTheme from "../zed/theme.json" with { type: "json" };
 
@@ -18,7 +18,7 @@ export function generate(
 	const themes = colourTheme.map((colours) => {
 		const themeValues = {
 			...colours,
-			opacity,
+			alpha,
 			darkLight,
 		};
 		const template = JSON.stringify(themeTemplate);

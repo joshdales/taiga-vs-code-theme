@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import JSON5 from "json5";
 import mustache from "mustache";
 
-import { alpha } from "../../utils/opacity.ts";
+import { alpha } from "../../utils/alpha.ts";
 import { darkLight } from "../../utils/darkLight.ts";
 
 const theme = JSON5.parse(

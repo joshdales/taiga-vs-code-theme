@@ -2,10 +2,13 @@
 	"compilerOptions": {
 		"erasableSyntaxOnly": true,
 		"strict": true,
-		"module": "ESNext",
-		"moduleResolution": "nodenext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"target": "ESNext",
 		"skipLibCheck": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true
 	}
 }

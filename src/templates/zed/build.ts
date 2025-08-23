@@ -2,7 +2,7 @@ import { writeFile } from "node:fs";
 import { resolve } from "node:path";
 import mustache from "mustache";
 
-import { opacity as alpha } from "../../utils/opacity.ts";
+import { alpha } from "../../utils/opacity.ts";
 import { darkLight } from "../../utils/darkLight.ts";
 import zedTheme from "../zed/theme.json" with { type: "json" };
 

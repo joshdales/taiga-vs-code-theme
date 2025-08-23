@@ -1,7 +1,7 @@
 {
   "name": "taiga-theme",
   "displayName": "Taiga Theme",
-  "description": "A theme for VSCode theme - with light and dark modes",
+  "description": "A theme for editors and terminals",
   "publisher": "joshdales",
   "icon": "logo.png",
   "license": "MIT",

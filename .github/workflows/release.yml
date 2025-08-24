@@ -1,4 +1,4 @@
-name: Release
+name: VSCode Release
 on:
   workflow_dispatch:
     inputs:
@@ -7,9 +7,9 @@ on:
         required: true
         type: choice
         options:
-        - major
-        - minor
-        - patch
+          - major
+          - minor
+          - patch
 env:
   PACKAGE_NAME: taiga-theme.vsix
 jobs:
@@ -21,32 +21,40 @@ jobs:
       VSCE_PAT: ${{ secrets.ACCESS_TOKEN }}
       OVSX_PAT: ${{ secrets.OPEN_VSX_PAT }}
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup git config
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 22.x
-        cache: npm
-        cache-dependency-path: package-lock.json
-    - name: Package extension
-      run: |
-        npm install
-        npm run package ${{ github.event.inputs.release_type }}
-        git push
-    - name: Publish to VSCode Marketplace
-      run: npm run publish:vsce
-    - name: Publish to Open VSX Registry
-      run: npm run publish:ovsx
-    - name: Set version output
-      id: set_version
-      run: echo "VERSION=v$(npm pkg get version | tr -d \")" >> "$GITHUB_OUTPUT"
-    - uses: actions/upload-artifact@v4
-      with:
-        name: ${{ env.PACKAGE_NAME }}
-        path: ${{ env.PACKAGE_NAME }}
+      - uses: actions/checkout@v4
+      - name: Setup git config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Package extension
+        working-directory: packages/vscode
+        run: |
+          pnpm install
+          pnpm run package ${{ github.event.inputs.release_type }}
+          git push
+      - name: Publish to VSCode Marketplace
+        working-directory: packages/vscode
+        run: pnpm run publish:vsce
+      - name: Publish to Open VSX Registry
+        working-directory: packages/vscode
+        run: pnpm run publish:ovsx
+      - name: Set version output
+        working-directory: packages/vscode
+        id: set_version
+        run: echo "VERSION=v$(npm pkg get version | tr -d \")" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PACKAGE_NAME }}
+          path: packages/vscode/${{ env.PACKAGE_NAME }}
   release:
     runs-on: ubuntu-latest
     needs: publish
@@ -61,4 +69,4 @@ jobs:
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           VERSION: ${{ needs.publish.outputs.VERSION }}
-        run: gh release create $VERSION $PACKAGE_NAME --generate-notes
+        run: gh release create "VSCode v$VERSION" $PACKAGE_NAME --generate-notes

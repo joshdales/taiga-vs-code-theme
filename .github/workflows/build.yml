@@ -8,7 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -21,15 +20,11 @@ jobs:
       - name: Install Deps
         run: |
           pnpm install
-
       - name: Build themes
         run: pnpm run build
-
       - name: Check if projects are up to date
         run: |
-          $status = $(git status --porcelain)
-          if [[ -n "$status" ]]; then
-            echo "There are themes that have beern updated. Please commit those changes:"
-            echo "$status"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "There are themes that have been updated. Please commit those changes"
             exit 1
           fi

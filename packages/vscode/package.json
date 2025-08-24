@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshdales/taiga-vs-code-theme"
+    "url": "https://github.com/joshdales/taiga-theme"
   },
   "bugs": {
-    "url": "https://github.com/joshdales/taiga-vs-code-theme/issues"
+    "url": "https://github.com/joshdales/taiga-theme/issues"
   },
-  "homepage": "https://github.com/joshdales/taiga-vs-code-theme",
+  "homepage": "https://github.com/joshdales/taiga-theme",
   "categories": [
     "Themes"
   ],

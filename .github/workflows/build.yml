@@ -1,0 +1,30 @@
+name: Build Check
+
+on: push
+
+jobs:
+  build-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install Deps
+        run: |
+          pnpm install
+      - name: Build themes
+        run: pnpm run build
+      - name: Check if projects are up to date
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "There are themes that have been updated. Please commit those changes"
+            exit 1
+          fi

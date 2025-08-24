@@ -1,0 +1,59 @@
+{
+  "name": "taiga-theme",
+  "displayName": "Taiga Theme",
+  "description": "A theme for VSCode theme - with light and dark modes",
+  "publisher": "joshdales",
+  "icon": "logo.png",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#000924",
+    "theme": "dark"
+  },
+  "version": "3.0.1",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshdales/taiga-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/joshdales/taiga-theme/issues"
+  },
+  "homepage": "https://github.com/joshdales/taiga-theme",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "taiga",
+    "italics"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Taiga",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-color-theme.json"
+      },
+      {
+        "label": "Taiga Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package -o taiga-theme.vsix",
+    "publish:ovsx": "ovsx publish taiga-theme.vsix",
+    "publish:vsce": "vsce publish taiga-theme.vsix",
+    "vscode:prepublish": "cd ../ && pnpm run build"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.3.0",
+    "ovsx": "^0.10.2"
+  },
+  "type": "module"
+}

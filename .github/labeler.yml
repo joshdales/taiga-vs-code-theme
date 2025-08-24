@@ -1,0 +1,32 @@
+colours:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/colours/*
+
+ghostty:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/templates/ghostty/theme.ini
+          - packages/ghostty/**/*
+  - base-branch: ghostty
+
+vscode:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/templates/vscode/color-theme.json
+          - packages/vscode/**/*
+  - base-branch: vscode
+
+warp:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/templates/warp/theme.yml
+          - packages/warp/**/*
+  - base-branch: warp
+
+zed:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/templates/zed/theme.json
+          - packages/zed/**/*
+  - base-branch: zed

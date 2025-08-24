@@ -1,0 +1,23 @@
+details: {{ type }}er # Whether the theme is lighter or darker.
+background: '{{ ui.0 }}' # Terminal background color
+foreground: '{{ ui.text }}' # The foreground color.
+accent: '{{ ui.highlight }}' # Accent color for UI elements
+terminal_colors: # Ansi escape colors.
+  normal:
+    black: '{{ ui.shadow }}'
+    red: '{{ red.2 }}'
+    green: '{{ green.2 }}'
+    yellow: '{{ yellow.3 }}'
+    blue: '{{ blue.2 }}'
+    magenta: '{{ purple.2 }}'
+    cyan: '{{ teal.2 }}'
+    white: '#78818c'
+  bright:
+    black: '#404952'
+    red: '{{ red.3 }}'
+    green: '{{ green.4 }}'
+    yellow: '{{ yellow.4 }}'
+    blue: '{{ blue.4 }}'
+    magenta: '{{ purple.3 }}'
+    cyan: '{{ teal.4 }}'
+    white: '#b4bfca'

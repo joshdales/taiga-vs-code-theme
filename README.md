@@ -1,8 +1,14 @@
-# Taiga VSCode Theme
+# Taiga Theme
 
-A theme for VSCode with light and dark themes that was built with a font that has cursive italics in mind.
-![Screenshot of the dark version of the theme](./images/screenshot-dark.png)
-![Screenshot of the light version of the theme](./images/screenshot-light.png)
+A theme for editors with light and dark themes that was built with a font that has cursive italics in mind.
+![Screenshot of VS Code dark version of the theme](./images/screenshot-dark.png)
+![Screenshot of VS Code light version of the theme](./images/screenshot-light.png)
+
+Currently supported editors and terminals:
+- Ghostty
+- VS Code
+- Warp
+- Zed
 
 ## Font Settings
 Coding-specific fonts that have a cursive variant and/or ligatures like [MonoLisa](https://www.monolisa.dev/)

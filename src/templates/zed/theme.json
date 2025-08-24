@@ -130,7 +130,7 @@
 						"font_weight": null
 					},
 					"embedded": {
-						"color": "#ff0000",
+						"color": "{{green.3}}",
 						"font_style": null,
 						"font_weight": null
 					},

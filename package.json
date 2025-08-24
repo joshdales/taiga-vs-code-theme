@@ -5,7 +5,6 @@
   "publisher": "joshdales",
   "icon": "logo.png",
   "license": "MIT",
-  "version": "3.0.1",
   "engines": {
     "node": "22"
   },

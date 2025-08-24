@@ -3,7 +3,7 @@ name: Build Check
 on: push
 
 jobs:
-  build-css:
+  build-packages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

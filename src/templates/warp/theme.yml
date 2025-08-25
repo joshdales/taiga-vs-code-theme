@@ -1,6 +1,6 @@
 details: {{ type }}er # Whether the theme is lighter or darker.
 background: '{{ ui.0 }}' # Terminal background color
-foreground: '{{ ui.text }}' # The foreground color.
+foreground: '{{ text.1 }}' # The foreground color.
 accent: '{{ ui.highlight }}' # Accent color for UI elements
 terminal_colors: # Ansi escape colors.
   normal:
